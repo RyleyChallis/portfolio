@@ -1,9 +1,9 @@
 .btn-primary {
     background-color: var(--main-yellow);
-    color: var(--text-main);
+    color: var(--header-main);
     padding: 16px 24px !important;
 
-    border: 1.8px solid var(--text-main);
+    border: 1.8px solid var(--header-main);
     border-radius: 50px;
     text-decoration: none;
 
@@ -20,7 +20,7 @@
 
 nav .btn-primary:hover {
     background-color: var(--main-yellow);
-    box-shadow: 0 5px 0 0 var(--text-main);
+    box-shadow: 0 5px 0 0 var(--header-main);
 }
 
 .btn-primary:hover {
@@ -48,10 +48,10 @@ nav .btn-primary:hover {
     align-items: flex-start;
   
     background-color: var(--main-white);
-    color: var(--text-main);
+    color: var(--header-main);
     
     padding: 16px 24px !important;
-    border: 1.8px solid var(--text-main);
+    border: 1.8px solid var(--header-main);
     border-radius: 50px;
     font-size: var(--fs-p);
     
@@ -62,13 +62,13 @@ nav .btn-primary:hover {
 }
 
 .nav-links-second .cta-two:hover {
-    box-shadow: 0 5px 0 0 var(--text-main);
+    box-shadow: 0 5px 0 0 var(--header-main);
     filter: brightness(95%);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--text-main);
+    color: var(--header-main);
     font-size: var(--fs-p);
     font-family: var(--ff-body);
 

@@ -82,7 +82,6 @@ h2 {
 h3 {
     font-size: var(--fs-h3);
     font-family: var(--ff-header);
-    font-weight: 400;
     color: var(--header-main);
     margin: 0 0 20px 0;
 }
