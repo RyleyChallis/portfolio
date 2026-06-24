@@ -276,6 +276,7 @@ h3 {
     display: flex;
     width: max-content;
     animation: marquee-slide 25s linear infinite;
+    overflow: hidden;
 }
 
 .stats-group {
