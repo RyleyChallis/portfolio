@@ -67,7 +67,7 @@
 
         .nav-links a {
             text-decoration: none;
-            color: var(--header-main);
+            color: var(--text-main);
             font-weight: 500;
 
             font-size: var(--fs-p);
@@ -104,10 +104,6 @@
             align-items: center;
         }
 
-        .openbtn:hover {
-            box-shadow: 0 5px 0 0 var(--header-main);
-        }
-
         #mySidebar {
             display: flex !important;
             flex-direction: column !important;
@@ -120,7 +116,7 @@
             top: 0;
             right: 0;
             background-color: var(--main-white);
-            border-left: 3px solid var(--header-main);
+            border-left: 3px solid var(--text-main);
             overflow: hidden;
             transition: all 0.6s;
             padding: 60px 0 30px 0;
@@ -159,7 +155,7 @@
             font-size: var(--fs-h4);
             font-weight: 500;
 
-            color: var(--header-main);
+            color: var(--text-main);
             text-decoration: none;
             padding: 16px 0 !important;
             text-align: left; 
@@ -175,7 +171,7 @@
             font-size: var(--fs-h4);
             font-weight: 500;
             width: 100%;
-            color: var(--header-main);
+            color: var(--text-main);
             text-decoration: none;
             
             padding: 16px 20px; 
@@ -233,8 +229,8 @@
             font-size: var(--fs-p);
             cursor: pointer;
 
-            background-color: var(--main-white);
-            border: 1.8px solid var(--header-main);
+            background-color: var(--main-white) !important;
+            border: 1.8px solid var(--text-main);
             padding: 8px 18px;
             margin: 0 !important;
             position: fixed;
@@ -248,7 +244,8 @@
         }
 
         .openbtn:hover {
-            background-color: #efefef;
+            box-shadow: 0 5px 0 0 var(--text-main);
+            filter: brightness(90%);
         }
 
         .sidebar-footer {
@@ -304,7 +301,7 @@
             padding: 0 !important;
             text-decoration: none;
             font-size: 1.1rem;
-            color: var(--header-main);
+            color: var(--text-main);
             display: flex;
             align-items: center !important;
             justify-content: space-between !important;
