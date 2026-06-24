@@ -210,6 +210,18 @@ h3 {
     color: var(--text-main);
 }
 
+#featured {
+    min-height: auto;
+}
+
+#featured .container {
+    max-width: 90%;
+}
+
+#featured .featured-image {
+    max-width: 100%;
+}
+
 #about {
     display: flex;
     flex-direction: column;
@@ -334,37 +346,38 @@ h3 {
 }
 
 .faq-question {
-  width: 100%;
-  padding: 20px 0;
-  background: none;
-  border: none;
-  outline: none;
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.3s;
+    width: 100%;
+    padding: 20px 0;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
 }
 
 .faq-question::after {
-  content: '+';
-  font-size: 1.5rem;
-  background-color: var(--main-yellow);
-  border-radius: 50px;
-  width: 40px;
-  height: 40px;
+    content: '+';
+    font-size: 1.5rem;
+    background-color: var(--main-yellow);
+    border-radius: 50px;
+    
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1 / 1;
 
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 
-  color: var(--text-main);
-  transition: all 0.3s ease;
+    color: var(--text-main);
+    transition: all 0.3s ease;
 }
 
 .faq-card.active .faq-question::after {
@@ -385,8 +398,16 @@ h3 {
 }
 
 #final {
-    min-height: 30vh !important;
+    min-height: 30vh;
     padding-bottom: 75px;
+}
+
+#final h2 {
+    padding-bottom: 20px;
+}
+
+#final .container {
+    max-width: none;
 }
 
 .legal-page h2 {
@@ -488,6 +509,10 @@ footer .footer-container {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.footer-col ul li {
+    text-align: center;
 }
 
 .footer-col ul li a {
