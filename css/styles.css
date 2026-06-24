@@ -348,16 +348,20 @@ h3 {
 .faq-question {
     width: 100%;
     padding: 20px 0;
+
     background: none;
     border: none;
     outline: none;
+    
     text-align: left;
     font-size: 1.2rem;
     font-weight: 600;
+    
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     transition: 0.3s;
 }
 
@@ -373,10 +377,9 @@ h3 {
 
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
 
-    color: var(--text-main);
+    color: var(--header-main);
     transition: all 0.3s ease;
 }
 
