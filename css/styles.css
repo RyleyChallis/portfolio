@@ -348,6 +348,10 @@ h3 {
     margin-bottom: 30px;
 }
 
+#packages-page .package-card li {
+    list-style: disc;
+}
+
 #packages-page .package-card .package-answer {
     max-width: 90%;
 }
