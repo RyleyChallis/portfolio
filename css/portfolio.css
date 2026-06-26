@@ -122,13 +122,12 @@ p {
 }
 
 #gallery h2 {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
 }
 
 #gallery p {
     text-align: center;
-    padding-bottom: 75px;
-    padding-top: 0 !important;
+    padding: 0 !important;
     max-width: 950px;
     margin: 0 auto;
 }
@@ -138,34 +137,40 @@ p {
 }
 
 .gallery-container {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    max-width: 50%;
     margin: 0 auto !important;
+    gap: 25px;
 }
 
 .gallery-container .gallery-item {
-    max-width: 550px;
     width: 100%;
+    max-width: 550px;
     min-height: auto;
     aspect-ratio: 16 / 9;
+
     border-radius: 7px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-decoration: none;
+
     transition: all 0.3s ease;
     position: relative;
+
     display: block;
     line-height: 0;
 }
 
 .gallery-item img {
     display: block;
-    width: 550px !important;
-    height: 100% !important;
+
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+
     border-radius: 7px;
     object-fit: cover;
+
     position: relative;
     z-index: 1;
 }
@@ -173,7 +178,7 @@ p {
 .gallery-item:nth-child(odd):last-child {
     grid-column: 1 / -1;
     justify-self: center;
-    width: 100%;
+    width: calc(60% - 12.5px);
 }
 
 .gallery-item:nth-child(even):last-child {
@@ -184,15 +189,18 @@ p {
 .gallery-item .soon {
     display: flex;
     flex-direction: column;
+
     justify-content: center;
     align-items: center;
+
     height: 100%;
     width: 100%;
+    max-width: 550px;
 
-    border-radius: 7px;
     background-color: var(--main-white);
     font-size: 1.4rem;
     font-family: var(--ff-header);
+    border-radius: 7px;
 }
 
 .overlay {
@@ -201,7 +209,7 @@ p {
     left: 0;
     width: 100% !important;
     height: 100% !important;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(rgba(0, 0, 0, 0.6));
     border-radius: 7px;
     
     display: flex !important;
@@ -237,7 +245,7 @@ p {
     max-width: 850px;
     height: auto;
     border-radius: 7px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .project-info {

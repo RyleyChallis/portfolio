@@ -150,7 +150,7 @@ h3 {
     flex-direction: column;
     gap: 20px !important;
     margin: 0;
-    padding: 0 0 20px 20px;
+    padding: 0 0 40px 20px;
 }
 
 .package-card ul li {
@@ -325,7 +325,7 @@ h3 {
     gap: 0;
 }
 
-.faq-card {
+.faq-card, #packages-page .package-card {
   border-bottom: 1px solid #eee;
   border-radius: 7px;
   transition: all 0.3s ease;
@@ -333,11 +333,30 @@ h3 {
   width: 100%;
 }
 
+#packages-page .package-card {
+    background-color: var(--main-white);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.02);
+    padding-right: 20px;
+    margin-top: 50px;
+}
+
+#packages-page #business .package-card {
+    background-color: #efefef;
+}
+
+#packages-page .package-card p {
+    margin-bottom: 30px;
+}
+
+#packages-page .package-card .package-answer {
+    max-width: 90%;
+}
+
 .faq-card:hover {
     background-color: #e8e8e8 !important;
 }
 
-.faq-card:last-child {
+.faq-card:last-child, #packages-page .package-card:last-child {
     border: none;
 }
 
@@ -345,7 +364,7 @@ h3 {
     background-color: #efefef;
 }
 
-.faq-question {
+.faq-question, #packages-page .package-card .package-question {
     width: 100%;
     padding: 20px 0;
 
@@ -365,7 +384,7 @@ h3 {
     transition: 0.3s;
 }
 
-.faq-question::after {
+.faq-question::after, .package-question::after {
     content: '+';
     font-size: 1.5rem;
     background-color: var(--main-yellow);
@@ -383,21 +402,19 @@ h3 {
     transition: all 0.3s ease;
 }
 
-.faq-card.active .faq-question::after {
+.faq-card.active .faq-question::after, .package-card.active .package-question::after {
   transform: rotate(45deg);
 }
 
-.faq-answer {
+.faq-answer, #packages-page .package-card .package-answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
 }
 
 .faq-answer p {
-  padding-bottom: 20px;
-  color: var(--text-main);
-  line-height: 1.6;
-  max-width: 95%;
+    padding-bottom: 20px;
+    max-width: 95%;
 }
 
 #final {
@@ -502,6 +519,7 @@ footer .footer-container {
 
     margin: 0 0 10px 0;
     padding: 0;
+    text-align: center;
 }
 
 .footer-col ul {

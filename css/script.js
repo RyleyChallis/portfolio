@@ -75,6 +75,27 @@ const faqItems = document.querySelectorAll('.faq-card');
     });
 });
 
+const packageItems = document.querySelectorAll('#packages-page .package-card');
+
+  packageItems.forEach(item => {
+    const question = item.querySelector('.package-question');
+    const answer = item.querySelector('.package-answer');
+
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('active');
+
+      packageItems.forEach(otherItem => {
+        otherItem.classList.remove('active');
+        otherItem.querySelector('.package-answer').style.maxHeight = null;
+      });
+
+      if (!isOpen) {
+        item.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+});
+
 function toggleDropdown(event) {
     event.stopPropagation();
     
