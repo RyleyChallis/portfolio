@@ -8,7 +8,7 @@ html, body {
     box-sizing: border-box;
 }
 
-#hero, section {
+section {
     min-height: 100vh;
     width: 100%;
 
@@ -65,7 +65,6 @@ h1 {
     font-family: var(--ff-header);
     font-weight: bold;
     color: var(--header-main);
-    max-width: clamp(0, 90vw, 90%);
     margin: 0;
 }
 
@@ -95,9 +94,8 @@ h3 {
 }
 
 #hero p {
-    max-width: 80%;
+    max-width: none;
     text-align: left;
-    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -357,7 +355,7 @@ h3 {
 }
 
 .faq-card:hover {
-    background-color: #e8e8e8 !important;
+    background-color: #efefef;
 }
 
 .faq-card:last-child, #packages-page .package-card:last-child {
@@ -370,7 +368,7 @@ h3 {
 
 .faq-question, #packages-page .package-card .package-question {
     width: 100%;
-    padding: 20px 0;
+    padding: 20px;
 
     background: none;
     border: none;
@@ -407,18 +405,23 @@ h3 {
 }
 
 .faq-card.active .faq-question::after, .package-card.active .package-question::after {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .faq-answer, #packages-page .package-card .package-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 
 .faq-answer p {
-    padding-bottom: 20px;
+    padding: 0 0 20px 20px;
     max-width: 95%;
+}
+
+.faq-answer p a {
+    color: var(--main-yellow);
+    filter: brightness(80%);
 }
 
 #final {
