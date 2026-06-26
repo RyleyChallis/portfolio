@@ -92,14 +92,14 @@
 
 @media (max-width: 710px) {
     html body h2 {
-        max-width: 550px !important;
-        margin: 0 auto !important;
+        max-width: 550px;
+        margin: 0 auto;
     }
     .desktop-only {
         display: none;
     }
     .mobile-only {
-        display: block;
+        display: flex !important; /* Important flag must be kept, without it hero content is invisible */
     }
     #gallery .mobile-only {
         margin-bottom: 75px;
