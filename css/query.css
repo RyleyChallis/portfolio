@@ -91,15 +91,11 @@
 }
 
 @media (max-width: 710px) {
-    html body h2 {
-        max-width: 550px;
-        margin: 0 auto;
-    }
-    .desktop-only {
-        display: none;
+    html body .desktop-only {
+        display: none !important;
     }
     .mobile-only {
-        display: flex !important; /* Important flag must be kept, without it hero content is invisible */
+        display: block !important; /* Important flag must be kept, without it hero content is invisible */
     }
     #gallery .mobile-only {
         margin-bottom: 75px;
@@ -116,6 +112,10 @@
     }
     .footer-bottom p {
         margin-bottom: 0;
+    }
+    #packages-page section .container p.desktop-only,
+    #packages-page section .container p.mobile-only {
+        text-align: center;
     }
 }
 
