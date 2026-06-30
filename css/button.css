@@ -1,6 +1,5 @@
 .btn-primary {
     background-color: var(--main-yellow);
-    color: var(--header-main);
     padding: 16px 24px !important;
 
     border: 1.8px solid var(--header-main);
