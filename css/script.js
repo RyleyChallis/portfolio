@@ -78,22 +78,18 @@ const faqItems = document.querySelectorAll('.faq-card');
 const packageItems = document.querySelectorAll('#packages-page .package-card');
 
 packageItems.forEach(item => {
-    // 1. Target ALL matching questions inside this card
     const questions = item.querySelectorAll('.package-question');
     const answer = item.querySelector('.package-answer');
 
-    // 2. Loop through both the desktop and mobile buttons to apply the click event
     questions.forEach(question => {
         question.addEventListener('click', () => {
             const isOpen = item.classList.contains('active');
 
-            // Close all other cards
             packageItems.forEach(otherItem => {
                 otherItem.classList.remove('active');
                 otherItem.querySelector('.package-answer').style.maxHeight = null;
             });
 
-            // Open this card if it wasn't already open
             if (!isOpen) {
                 item.classList.add('active');
                 answer.style.maxHeight = answer.scrollHeight + "px";

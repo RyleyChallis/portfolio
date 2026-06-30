@@ -78,8 +78,12 @@ h2 {
     margin: 0 auto;
 }
 
-#packages-page h2:not(:last-child) {
+#packages-page h2 {
     padding-bottom: 20px;
+}
+
+#packages-page .final-header {
+    padding-bottom: 75px;
 }
 
 h3 {
@@ -98,7 +102,7 @@ h3 {
 }
 
 #hero p {
-    max-width: none;
+    max-width: 80%;
     text-align: left;
     margin-bottom: 50px;
 }
