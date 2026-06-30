@@ -43,11 +43,11 @@ section {
     margin: 0 auto;
 }
 
-section:nth-child(odd) {
-    background-color: var(--main-white);
-}
-section:nth-child(even) {
+section:not(#hero):nth-child(odd) {
     background-color: var(--off-white);
+}
+section:not(#hero):nth-child(even) {
+    background-color: var(--white-white);
 }
 
 p, li, li a {
@@ -235,7 +235,6 @@ h3 {
     align-items: center;
 
     min-height: 80vh;
-    background-color: var(--main-white);
 }
 
 #about .dev-profile {
@@ -282,7 +281,7 @@ h3 {
 
 #stats {
     min-height: 20vh;
-    background-color: var(--off-white);
+    background-color: var(--header-main) !important;
 
     display: flex;
     flex-direction: column;
@@ -316,11 +315,13 @@ h3 {
 
 .stats-row h3 {
     white-space: nowrap;
+    color: var(--main-white);
     margin: 0;
 }
 
 .stats-row i {
     font-size: 36px;
+    color: var(--main-yellow);
 }
 
 #faqs {

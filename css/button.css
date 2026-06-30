@@ -14,7 +14,8 @@
     display: inline-block;
     transition: all 0.2s ease;
     cursor: pointer;
-    white-space: nowrap !important;
+    white-space: nowrap;
+
     text-align: center;
 }
 
