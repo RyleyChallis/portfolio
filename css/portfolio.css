@@ -62,7 +62,11 @@ p {
     font-family: var(--ff-body);
     color: var(--text-main);
     margin: 0;
-    line-height: 1.6;
+}
+
+li {
+    margin: 0;
+    padding: 0;
 }
 
 #tipsy .container, #broadway .container, .footer-container, .container {
@@ -520,20 +524,24 @@ footer .footer-container {
 
     margin: 0 0 10px 0;
     padding: 0;
+    text-align: center;
 }
 
 .footer-col ul {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
 
-    gap: 8px;
+    gap: 12px !important;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+.footer-col ul li {
+    text-align: center;
+}
+
 .footer-col ul li a {
-    font-size: clamp(0.9rem, 4vw, 1rem);
     font-family: var(--ff-body);
     color: #aeaeae;
 

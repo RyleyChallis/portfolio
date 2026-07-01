@@ -44,20 +44,22 @@ section {
 }
 
 section:not(#hero):nth-child(odd) {
-    background-color: var(--off-white);
+    background-color: var(--main-white);
 }
 section:not(#hero):nth-child(even) {
-    background-color: var(--white-white);
+    background-color: var(--off-white);
 }
 
-p, li, li a {
-    font-size: var(--fs-p);
+p {
+    font-size: var(--ff-body);
     font-family: var(--ff-body);
     color: var(--text-main);
     margin: 0;
+}
+
+li {
+    margin: 0;
     padding: 0;
-    text-align: left;
-    line-height: 1.6;
 }
 
 h1 {
@@ -540,10 +542,10 @@ footer .footer-container {
 }
 
 .footer-col ul {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
 
-    gap: 8px;
+    gap: 12px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -554,7 +556,6 @@ footer .footer-container {
 }
 
 .footer-col ul li a {
-    font-size: clamp(0.9rem, 4vw, 1rem);
     font-family: var(--ff-body);
     color: #aeaeae;
 
