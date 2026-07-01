@@ -58,7 +58,7 @@ h3 {
 }
 
 p {
-    font-size: var(--ff-body);
+    font-size: var(--fs-p);
     font-family: var(--ff-body);
     color: var(--text-main);
     margin: 0;
