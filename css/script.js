@@ -39,7 +39,8 @@ function openNav() {
     overlay.style.opacity = "1";
     overlay.style.pointerEvents = "auto";
     
-    document.body.style.overflowY = "hidden"; 
+    document.documentElement.style.overflowY = "hidden"; // documentElement is <html>
+    document.body.style.overflowY = "hidden";
     document.body.style.userSelect = "none";
 }
 
@@ -53,6 +54,14 @@ function closeNav() {
     document.body.style.overflow = "auto";
     document.body.style.userSelect = "auto";
 }
+
+const sidebarLinks = document.querySelectorAll('.sidebar-links a');
+
+sidebarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        closeNav();
+    });
+});
 
 const faqItems = document.querySelectorAll('.faq-card');
 

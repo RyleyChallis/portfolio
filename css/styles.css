@@ -172,10 +172,6 @@ h3 {
     line-height: 1.5;
 }
 
-.package-card ul li:first-child {
-    list-style: none;
-}
-
 #packages .subtitle {
     margin: 75px auto;
     max-width: 70%;

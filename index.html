@@ -147,13 +147,13 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1 !important;
-            justify-content: flex-start !important;
+            justify-content: flex-start;
             align-items: flex-start;
 
             padding: 0 20px 0 32px;
             margin: 0;
 
-            overflow: hidden;
+            overflow-x: hidden;
             z-index: 1000;
             max-width: 90% !important;
         }
@@ -192,6 +192,7 @@
 
         .sidebar .dropdown-btn {
             display: flex;
+            border-radius: 7px;
             gap: 8px !important;
             justify-content: flex-start;
             color: var(--text-main);
@@ -272,7 +273,6 @@
         .dropdown-btn {
             text-decoration: none;
             display: block;
-            width: 100%;
 
             border: none;
             background: none;
@@ -289,6 +289,8 @@
             transition: transform 0.3s ease;
         }
         .dropdown-content {
+            display: flex;
+            flex-direction: column;
             max-height: 0;
             overflow: hidden;
             opacity: 0;
@@ -299,10 +301,12 @@
         }
         .dropdown-content a {
             font-style: italic;
+            font-family: var(--ff-body);
             color: var(--text-main);
             padding: 12px;
             margin-bottom: 5px;
             transition: all 0.3s ease;
+            text-decoration: none;
         }
         .dropdown-content a:hover {
             background-color: #efefef !important;
@@ -493,10 +497,10 @@
                     <span class="number">Basic</span>
                     <h3>Starter Pack</h3>
                     <ul>
-                        <li>Perfect for local freelancers or tradespeople who need a clean, professional landing page to jumpstart their online presence.</li>
-                        <li><b>1-2 Custom Designed Pages </b>(Home + simple Contact/Gallery page).</li>
-                        <li><b>Features: </b>1-2 Custom Designed Pages, 100% Mobile Responsiveness, Basic SEO Structure, Standard Client Onboarding Form (Google Sheets Integrated), Domain Connection & SSL Setup, GDPR-Compliant Cookie Banner, 14-Day Post-Launch Support.</li>
-                        <li><b>Starting at: </b>£450 + £35/month ongoing care</li>
+                        <li><b>Ideal For: </b>Local freelancers, tradespeople, or independent brands needing a highly focused, professional online presence.</li>
+                        <li><b>Scope: </b>1-2 Custom Pages (Home + Contact or Services).</li>
+                        <li><b>Key Highlights: </b>100% Mobile Responsive, Basic SEO Structure, Conversion-Ready Copy Framework, Contact Form (Google Sheets Integrated), and 14-Day Post-Launch Support.</li>
+                        <li><b>Starting at: </b>£1,250 + £50/month Growth & Security Plan</li>
                     </ul>
                     <a class="btn-primary" href="booking.html">Start Project</a>
                 </div>
@@ -505,10 +509,10 @@
                     <span class="number">Popular</span>
                     <h3>Business Suite</h3>
                     <ul>
-                        <li>Built for established service providers who want an automated assistant to filter out bad fits and capture high-value inquiries 24/7.</li>
-                        <li><b>3-5 Strategic Pages </b>(Home, About/Team, Services/Products, Contact + Extra)</li>
-                        <li><b>Features: </b>3-5 Strategic Pages, Google Maps Integration, Local SEO Schema Kit, Dynamic Client Onboarding Form (Google Sheets Integrated), Google Analytics Setup, Domain Connection & SSL Setup, GDPR-Compliant Cookie Banner, 30-Day Post-Launch Support.</li>
-                        <li><b>Starting at: </b>£700 + £55/month ongoing care</li>
+                        <li><b>Ideal For: </b>Established service providers looking to filter out bad fits and capture high-value inquiries 24/7./li>
+                        <li><b>Scope: </b>3-5 Strategic Pages (Full Client Intake Experience).</li>
+                        <li><b>Key Highlights: </b>Blazing-Fast Core Web Vitals Speed Optimization, Local SEO Kit (JSON Schema), Google Maps Integration, and a Custom CRM/Automation Handshake for instant lead routing.</li>
+                        <li><b>Starting at: </b>£2,450 + £95/month Growth & Security Plan</li>
                     </ul>
                     <a class="btn-primary" href="booking.html">Start Project</a>
                 </div>
@@ -517,10 +521,10 @@
                     <span class="number">Expert</span>
                     <h3>Bespoke Suite</h3>
                     <ul>
-                        <li>Designed for growing brands ready to dominate their market, showcase a massive portfolio, and deliver a premium user experience.</li>
-                        <li><b>6-10 Custom Pages </b>(Case studies, product showcases, or dynamic hubs).</li>
-                        <li><b>Features: </b>6-10 Custom Pages, Dynamic Client Onboarding Form (Google Sheets Integrated), Bespoke Layout Animations, Native JS Filtering Systems, Premium Media Optimization, 90+ PageSpeed Guarantee, Domain Connection & SSL Setup, GDPR-Compliant Cookie Banner, 30-Day Post-Launch Support, Custom Video Training Manual.</li>
-                        <li><b>Starting at: </b>Starting at £1200 + +95/month ongoing care</li>
+                        <li><b>Ideal For: </b>Growing brands ready to dominate their market, showcase a massive portfolio, and deliver a premium user experience.</li>
+                        <li><b>Scope: </b>6-10 Fully Tailored Custom Pages.</li>
+                        <li><b>Key Highlights: </b>Premium Layout Animations, Dynamic Filtering & Sorting Systems, Guaranteed 90+ PageSpeed Score, and fully custom-coded operational workflows.</li>
+                        <li><b>Starting at: </b>£4,500 + £195/month Growth & Security Plan</li>
                     </ul>
                     <a class="btn-primary" href="booking.html">Start Project</a>
                 </div>
