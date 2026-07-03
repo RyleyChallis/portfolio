@@ -712,3 +712,18 @@ input[type="email"] {
     min-height: auto;
     padding-bottom: 50px;
 }
+
+#packages-page #breakdown .container {
+    gap: 0;
+}
+
+#packages-page #breakdown .breakdown-item {
+    gap: 0 !important;
+}
+
+#packages-page #breakdown .process-divider {
+    margin: 50px 0;
+    height: 2px !important;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}

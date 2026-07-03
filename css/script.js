@@ -51,7 +51,8 @@ function closeNav() {
     overlay.style.opacity = "0";
     overlay.style.pointerEvents = "none";
     
-    document.body.style.overflow = "auto";
+    document.documentElement.style.overflowY = "auto"; // documentElement is <html>
+    document.body.style.overflowY = "auto";
     document.body.style.userSelect = "auto";
 }
 
