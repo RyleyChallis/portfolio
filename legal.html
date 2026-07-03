@@ -147,13 +147,13 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1 !important;
-            justify-content: flex-start !important;
+            justify-content: flex-start;
             align-items: flex-start;
 
             padding: 0 20px 0 32px;
             margin: 0;
 
-            overflow: hidden;
+            overflow-x: hidden;
             z-index: 1000;
             max-width: 90% !important;
         }
@@ -192,6 +192,7 @@
 
         .sidebar .dropdown-btn {
             display: flex;
+            border-radius: 7px;
             gap: 8px !important;
             justify-content: flex-start;
             color: var(--text-main);
@@ -272,7 +273,6 @@
         .dropdown-btn {
             text-decoration: none;
             display: block;
-            width: 100%;
 
             border: none;
             background: none;
@@ -289,6 +289,8 @@
             transition: transform 0.3s ease;
         }
         .dropdown-content {
+            display: flex;
+            flex-direction: column;
             max-height: 0;
             overflow: hidden;
             opacity: 0;
@@ -299,10 +301,12 @@
         }
         .dropdown-content a {
             font-style: italic;
+            font-family: var(--ff-body);
             color: var(--text-main);
             padding: 12px;
             margin-bottom: 5px;
             transition: all 0.3s ease;
+            text-decoration: none;
         }
         .dropdown-content a:hover {
             background-color: #efefef !important;
