@@ -132,12 +132,6 @@
     .desktop-only {
         display: none;
     }
-    #about .about-image {
-        max-width: 80% !important;
-        display: flex;
-        margin: 0 auto;
-        justify-content: center;
-    }
     html body main #about .about-container .about-image img {
         max-height: 200px !important;
         aspect-ratio: 16 / 9;

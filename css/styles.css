@@ -269,7 +269,7 @@ h3 {
 }
 
 .dev-profile .about-image img {
-    width: clamp(22vw, 240px, 36vw);
+    width: clamp(210px, 240px, 36vw);
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
