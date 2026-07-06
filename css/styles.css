@@ -71,6 +71,7 @@ h1 {
     font-family: var(--ff-header);
     font-weight: bold;
     color: var(--header-main);
+    max-width: clamp(0%, 70vw, 80%);
     margin: 0;
 }
 
@@ -374,7 +375,7 @@ h3 {
 }
 
 .faq-card.active {
-    background-color: #efefef;
+    background-color: #e6e6e6;
 }
 
 .faq-question, #packages-page .package-card .package-question {

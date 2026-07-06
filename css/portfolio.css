@@ -103,7 +103,7 @@ li {
     font-family: var(--ff-header);
     font-weight: bold;
     color: var(--header-main);
-    max-width: clamp(0, 90vw, 90%);
+    max-width: 90%;
     margin: 0;
 }
 
@@ -215,7 +215,7 @@ li {
     left: 0;
     width: 100% !important;
     height: 100% !important;
-    background: linear-gradient(rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(0, 0, 0, 0.8));
     border-radius: 7px;
     
     display: flex !important;

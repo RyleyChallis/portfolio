@@ -19,12 +19,11 @@
 }
 
 nav .btn-primary:hover {
-    background-color: var(--main-yellow);
     box-shadow: 0 5px 0 0 var(--header-main);
 }
 
 .btn-primary:hover {
-    filter: brightness(90%);
+    filter: brightness(90%) !important;
 }
 
 .package-actions .btn-primary {
