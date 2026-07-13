@@ -622,7 +622,7 @@
                 <div class="faq-card">
                     <button class="faq-question">Are there any hidden or recurring costs?</button>
                     <div class="faq-answer">
-                        <p>None from my side. The price we agree on is for the complete build. You will only need to cover your own domain and hosting (usually around £10-15/month), which I will help you set up so you have full control over the billing. I do offer <a href="packages.html">monthly retainers</a> for basic site updates.</p>
+                        <p>None from my side. The price we agree on is for the complete build. The Growth & Security Plan that comes with your package is mandatory for the first 12 months to maintain extreme optimisation, speed guarantees, and site setup, all of which I will help you set up so you have full control over your business. I do offer <a href="packages.html">monthly retainers</a> for basic site updates.</p>
                     </div>
                 </div>
 
@@ -735,6 +735,22 @@
             </form>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
     <script src="css/script.js" defer></script>
 </body>
 </html>
