@@ -238,6 +238,7 @@ h3 {
     align-items: center;
 
     min-height: 80vh;
+    scroll-margin-top: 40px;
 }
 
 #about .dev-profile {
@@ -254,7 +255,7 @@ h3 {
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 }
 
 .about-text p a {
