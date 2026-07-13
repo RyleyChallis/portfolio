@@ -18,7 +18,7 @@ section {
 }
 
 :root {
-    --main-yellow: #faef1a;
+    --main-yellow: #ffff10;
     --main-white: #faf8f8;
     --off-white: #f5f0f0;
     --header-main: #333;
@@ -109,7 +109,7 @@ h3 {
 }
 
 #hero p {
-    max-width: 80%;
+    max-width: none;
     text-align: left;
     margin-bottom: 50px;
 }
@@ -455,7 +455,7 @@ h3 {
     padding-bottom: 20px;
 }
 
-.legal-page p {
+.legal-page p:not(#hero p) {
     max-width: 80% !important;
 }
 

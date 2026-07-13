@@ -18,7 +18,7 @@ section {
 }
 
 :root {
-    --main-yellow: #faef1a;
+    --main-yellow: #ffff10;
     --main-white: #faf8f8;
     --off-white: #f5f0f0;
     --header-main: #333;
@@ -91,10 +91,9 @@ li {
     padding: 0 40px;
 }
 
-#hero .subtitle {
+#hero p {
     max-width: none;
     text-align: left;
-    margin-top: 20px;
     margin-bottom: 50px;
 }
 
