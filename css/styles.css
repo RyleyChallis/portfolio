@@ -286,7 +286,7 @@ h3 {
 
 #stats {
     min-height: 20vh;
-    background-color: var(--header-main) !important;
+    background-color: var(--header-main) !important; /* Important flag must be kept. Stats background defaults to pure white without important flag. */
 
     display: flex;
     flex-direction: column;
