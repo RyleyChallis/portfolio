@@ -27,6 +27,7 @@ section {
     --fs-h1: clamp(2.4rem, 6vw, 3.5rem);
     --fs-h2: clamp(2rem, 4vw, 2.4rem);
     --fs-h3: clamp(1.6rem, 4vw, 1.8rem);
+    --fs-h4: clamp(1.3rem, 4vw, 1.6rem);
     --fs-p: clamp(1rem, 2vw, 1.2rem);
 
     --ff-header: 'fraunces', serif;
