@@ -8,6 +8,29 @@ html, body {
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("assets/fraunces-700.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Fraunces-Two';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url("assets/fraunces-regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'inter';
+    font-style: normal;
+    font-display: swap;
+    src: url("assets/inter-regular.woff2") format('woff2');
+}
+
 section {
     min-height: 100vh;
     width: 100%;
@@ -18,7 +41,7 @@ section {
 }
 
 :root {
-    --main-yellow: #ffff10;
+    --main-yellow: #F2FF00;
     --main-white: #faf8f8;
     --off-white: #f5f0f0;
     --header-main: #333;
@@ -30,8 +53,9 @@ section {
     --fs-h4: clamp(1.3rem, 4vw, 1.6rem);
     --fs-p: clamp(1rem, 2vw, 1.2rem);
 
-    --ff-header: 'fraunces', serif;
-    --ff-body: 'inter', sans-serif;
+    --ff-header: 'Fraunces', serif;
+    --ff-header-two: 'Fraunces-Two', serif;
+    --ff-body: 'Inter', sans-serif;
 }
 
 #tipsy .container, #broadway .container, .footer-container, .container, .process-container, .faq-container, .featured-image {
