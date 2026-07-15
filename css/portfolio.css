@@ -84,29 +84,6 @@ li {
     margin: 0 auto;
 }
 
-#hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 40px;
-}
-
-#hero p {
-    max-width: none;
-    text-align: left;
-    margin-bottom: 50px;
-}
-
-#hero h1 {
-    font-size: var(--fs-h1);
-    font-family: var(--ff-header);
-    font-weight: bold;
-    color: var(--header-main);
-    max-width: 90%;
-    margin: 0;
-}
-
 #hero p {
     font-size: var(--fs-p);
     font-family: var(--ff-body);

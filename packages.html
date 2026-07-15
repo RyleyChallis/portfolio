@@ -27,6 +27,29 @@
 
     <link rel="stylesheet" href="css/styles.css">
 
+    <style> /* hero section css */
+        h1 {
+            font-size: var(--fs-h1);
+            font-family: var(--ff-header);
+            font-weight: bold;
+            color: var(--header-main);
+            max-width: clamp(0%, 70vw, 80%);
+            margin: 0;
+        }
+        #hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        #hero p {
+            max-width: none;
+            text-align: left;
+            margin-bottom: 50px;
+        }
+    </style>
     <style>
         nav {
             position: absolute;
