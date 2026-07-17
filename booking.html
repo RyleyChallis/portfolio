@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start Your Project | Hand-Coded Web Design - Sterling Web Development</title>
+    <title>Start Your Project | Hand-Coded Web Design - Tectonic Web Development</title>
     
     <meta name="description" content="Ready to elevate your online presence? Book a discovery call to discuss bespoke, high-performance web development tailored to your business goals.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,13 +13,13 @@
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ryleychallis.github.io/Portfolio/">
-    <meta property="og:title" content="Start Your Project | Hand-Coded Web Design - Sterling Web Development">
+    <meta property="og:title" content="Start Your Project | Hand-Coded Web Design - Tectonic Web Development">
     <meta property="og:description" content="Ready to elevate your online presence? Book a discovery call to discuss bespoke, high-performance web development tailored to your business goals.">
     <meta property="og:image" content="https://ryleychallis.github.io/Portfolio/css/assets/opengraph.webp">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ryleychallis.github.io/Portfolio/">
-    <meta property="twitter:title" content="Start Your Project | Hand-Coded Web Design - Sterling Web Development">
+    <meta property="twitter:title" content="Start Your Project | Hand-Coded Web Design - Tectonic Web Development">
     <meta property="twitter:description" content="Ready to elevate your online presence? Book a discovery call to discuss bespoke, high-performance web development tailored to your business goals.">
     <meta property="twitter:image" content="https://ryleychallis.github.io/css/Portfolio/assets/opengraph.webp">
 
@@ -46,303 +46,6 @@
             max-width: none;
             text-align: left;
             margin-bottom: 50px;
-        }
-    </style>
-    <style>
-        nav {
-            position: absolute;
-            background-color: transparent;
-            min-height: 14vh;
-            height: 20vh;
-
-            padding: 20px 40px 20px 10px;
-            margin: 0 auto;
-            justify-content: center !important;
-
-            display: flex;
-            align-items: center !important;
-            box-sizing: border-box;
-            width: 100%;
-
-            z-index: 9999;
-        }
-
-        nav .logo img {
-            max-width: 200px;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-links {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center !important;
-            width: 100%;
-            margin: 0;
-        }
-
-        .nav-links li {
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--header-main);
-            font-weight: 500;
-
-            font-size: var(--fs-p);
-            font-family: var(--ff-body);
-            padding: 14px 16px;
-            border-radius: 50px;
-
-            position: relative;
-            transition: all 0.3s ease;
-            line-height: 1 !important;
-            display: flex;
-            align-items: center !important;
-        }
-
-        .nav-links a:hover {
-            background-color: #e6e6e6;
-        }
-
-        .nav-links a.active {
-            background-color: #e6e6e6;
-        }
-
-        .nav-links-first {
-            display: flex;
-            gap: 1rem;
-            margin: 0;
-        }
-
-        .nav-links-second {
-            display: flex;
-            gap: 1rem;
-            margin-left: auto;
-            margin-right: 60px;
-            align-items: center;
-        }
-        .openbtn {
-            font-size: var(--fs-p);
-            cursor: pointer;
-
-            background-color: var(--main-white) !important;
-            border: 1.8px solid var(--text-main);
-            padding: 8px 18px;
-            margin: 0 !important;
-            position: fixed;
-            right: 20px;
-            z-index: 1000;
-            border-radius: 15px;
-
-            transition: all 0.3s ease;
-            display: inline-flex !important;
-            align-items: center !important;
-        }
-
-        .openbtn:hover {
-            box-shadow: 0 5px 0 0 var(--text-main);
-            filter: brightness(90%);
-        }
-        #mySidebar {
-            display: flex !important;
-            flex-direction: column !important;
-            justify-content: space-between !important;
-
-            height: 100% !important;
-            width: 0;
-            position: fixed;
-            z-index: 10000;
-            top: 0;
-            right: 0;
-            background-color: var(--main-white);
-            border-left: 3px solid var(--text-main);
-            overflow: hidden;
-            transition: all 0.6s;
-            padding: 60px 0 30px 0;
-        }
-
-        .sidebar-links {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1 !important;
-            justify-content: flex-start;
-            align-items: flex-start;
-
-            padding: 0 20px 0 32px;
-            margin: 0;
-
-            overflow-x: hidden;
-            z-index: 1000;
-            max-width: 90% !important;
-        }
-
-        .sidebar-links a:nth-child(5) {
-            margin-bottom: 75px;
-        }
-
-        .sidebar-links h3 {
-            color: #888;
-            padding: 20px 8px 0 0;
-            margin: 0;
-            font-family: var(--ff-body);
-            font-size: var(--fs-h4);
-            letter-spacing: 2px;
-        }
-
-        .sidebar a:not(.dropdown-content a, .sidebar .btn-primary) {
-            font-family: var(--ff-header);
-            font-size: var(--fs-h4);
-            font-weight: 500;
-
-            color: var(--text-main);
-            text-decoration: none;
-            padding: 8px 4px !important;
-            text-align: left; 
-            
-            display: block;
-            transition: all 0.3s ease;
-            border-radius: 7px;
-        }
-
-        .sidebar a:not(.dropdown-btn .odd-link) {
-            width: 100%;
-        }
-
-        .sidebar .dropdown-btn {
-            display: flex;
-            border-radius: 7px;
-            gap: 8px !important;
-            justify-content: flex-start;
-            color: var(--text-main);
-        }
-        .sidebar a:hover, .dropdown-btn:hover {
-            background-color: #efefef;
-            
-        }
-        .sidebar .odd-link {
-            padding: 0;
-            text-decoration: none;
-            color: inherit;
-        }
-        .sidebar span i {
-            border-radius: 7px;
-            padding: 0;
-            transition: all 0.3s ease;
-            background-color: transparent;
-        }
-        .sidebar .closebtn {
-            display: flex;
-            padding: 12px !important;
-            cursor: pointer;
-            border: none;
-            background: transparent;
-
-            font-size: var(--fs-h3);
-            color: var(--text-main);
-            
-            margin-left: auto;
-            right: 5%;
-            top: 5%;
-        }
-        .sidebar-footer {
-            display: flex;
-            flex-direction: column;
-            flex-shrink: 0 !important;
-            padding: 20px 40px 0;
-
-            justify-content: center;
-            margin: 0 auto;
-            gap: 15px;
-            width: 100% !important;
-        }
-        .footer-logo {
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-            width: 100%;
-        }
-        .footer-logo img {
-            display: block;
-            max-width: 200px;
-            margin: 0 auto;
-            padding: 0;
-        }
-        .sidebar-footer p {
-            font-family: var(--ff-header);
-            font-size: var(--fs-p);
-            color: #666;
-            margin: 0;
-            white-space: nowrap;
-        }
-        #sidebarOverlay {
-            position: fixed;
-            opacity: 0;
-            width: 100vw;
-            height: 100vh;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0,0,0,0.7);
-            pointer-events: none;
-            z-index: 10000;
-            border-radius: 0 !important;
-        }
-        .dropdown-btn {
-            text-decoration: none;
-            display: block;
-
-            border: none;
-            background: none;
-            cursor: pointer;
-            font-family: var(--ff-body);
-            transition: 0.3s;
-        }
-        .sidebar .arrow-trigger {
-            display: inline-flex;
-            align-items: center;
-            cursor: pointer;
-        }
-        .arrow-trigger i {
-            transition: transform 0.3s ease;
-        }
-        .dropdown-content {
-            display: flex;
-            flex-direction: column;
-            max-height: 0;
-            overflow: hidden;
-            opacity: 0;
-            visibility: hidden;
-            transition: max-height 0.4s ease, opacity 0.3s ease, visibility 0.3s;
-            
-            padding-left: 32px;
-        }
-        .dropdown-content a {
-            font-style: italic;
-            font-family: var(--ff-body);
-            color: var(--text-main);
-            padding: 12px;
-            margin-bottom: 5px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-        .dropdown-content a:hover {
-            background-color: #efefef !important;
-            transform: translateX(5px);
-        }
-        .dropdown-content a:last-child {
-            font-style: normal;
-            font-weight: 600 !important;
-            margin-top: 10px;
-        }
-        .dropdown-content.show {
-            max-height: 300px;
-            opacity: 1;
-            visibility: visible;
-            padding-bottom: 20px;
         }
     </style>
     <style>
@@ -438,6 +141,7 @@
         }
     </style>
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/query.css" media="screen and (max-width: 1323px)">
 </head>
 <body>
@@ -457,8 +161,8 @@
         <div class="sidebar-footer">
             <div class="footer-logo">
                 <picture>
-                    <source srcset="css/assets/sterling.webp" type="image/webp">
-                    <img src="css/assets/sterling.png" alt="Sterling web development logo" loading="lazy">
+                    <source srcset="css/assets/nav-logo.png" type="image/webp">
+                    <img src="css/assets/nav-logo.png" alt="Tectonic Logo" loading="lazy">
                 </picture>
             </div>
                 <a class="btn-primary" href="/booking">Start Project</a>
@@ -469,8 +173,8 @@
             <button class="openbtn" onclick="openNav()">&#9776;</button>
             <a class="logo" href="/">
                 <picture>
-                    <source srcset="css/assets/sterling.webp" type="image/webp">
-                    <img src="css/assets/sterling.png" alt="Sterling web development logo">
+                    <source srcset="css/assets/nav-logo.png" type="image/webp">
+                    <img src="css/assets/nav.png" alt="Tectonic Logo">
                 </picture>
             </a>
             <div class="nav-links">
@@ -597,8 +301,8 @@
                 <div class="intro">
                     <h2>
                         <picture>
-                            <source srcset="css/assets/sterling-footer.webp" type="image/webp">
-                            <img src="css/assets/sterling-footer.png" alt="Sterling web development logo" loading="lazy">
+                            <source srcset="css/assets/footer-logo.png" type="image/webp">
+                            <img src="css/assets/Tectonic-footer.png" alt="Tectonic Logo" loading="lazy">
                         </picture>
                     </h2>
                     <p>Bespoke web development for British businesses and beyond. I specialise in hand-coded solutions that cut out the bloat of traditional site builders, focusing on speed, performance, and modern design.</p>

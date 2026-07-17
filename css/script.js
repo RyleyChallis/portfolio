@@ -45,7 +45,6 @@ function openNav() {
 }
 
 function closeNav() {
-    // Translate back to 100% (hidden off-screen to the right)
     document.getElementById("mySidebar").style.transform = "translateX(100%)";
 
     const overlay = document.getElementById('sidebarOverlay');

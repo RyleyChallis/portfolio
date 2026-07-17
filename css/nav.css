@@ -172,7 +172,7 @@ nav .logo img {
 }
 
 .sidebar-links a {
-    font-size: var(--fs-p);
+    font-size: var(--fs-h4);
     font-family: var(--ff-header-two);
     color: var(--text-main);
 
