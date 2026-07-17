@@ -25,13 +25,13 @@
 
     <link rel="icon" type="image/x-icon" href="css/assets/favicon.svg">
 
-    <style> /* hero section css */
+    <style> /* hero */
         h1 {
             font-size: var(--fs-h1);
             font-family: var(--ff-header);
             font-weight: 700;
             color: var(--header-main);
-            max-width: clamp(0%, 70vw, 80%);
+            max-width: clamp(0%, 60vw, 60%);
             margin: 0;
         }
         #hero {
@@ -43,321 +43,28 @@
         }
 
         #hero p {
-            max-width: none;
+            max-width: 80%;
             text-align: left;
             margin-bottom: 50px;
         }
-    </style>
-    <style>
-        nav {
-            position: absolute;
-            background-color: transparent;
-            min-height: 14vh;
-            height: 20vh;
 
-            padding: 20px 40px 20px 10px;
-            margin: 0 auto;
-            justify-content: center !important;
-
-            display: flex;
-            align-items: center !important;
-            box-sizing: border-box;
-            width: 100%;
-
-            z-index: 9999;
-        }
-
-        nav .logo img {
-            max-width: 200px;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-links {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center !important;
-            width: 100%;
-            margin: 0;
-        }
-
-        .nav-links li {
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--header-main);
-            font-weight: 500;
-
-            font-size: var(--fs-p);
-            font-family: var(--ff-body);
-            padding: 14px 16px;
-            border-radius: 50px;
-
-            position: relative;
-            transition: all 0.3s ease;
-            line-height: 1 !important;
-            display: flex;
-            align-items: center !important;
-        }
-
-        .nav-links a:hover {
-            background-color: #e6e6e6;
-        }
-
-        .nav-links a.active {
-            background-color: #e6e6e6;
-        }
-
-        .nav-links-first {
-            display: flex;
-            gap: 1rem;
-            margin: 0;
-        }
-
-        .nav-links-second {
-            display: flex;
-            gap: 1rem;
-            margin-left: auto;
-            margin-right: 60px;
-            align-items: center;
-        }
-        .openbtn {
-            font-size: var(--fs-p);
-            cursor: pointer;
-
-            background-color: var(--main-white) !important;
-            border: 1.8px solid var(--text-main);
-            padding: 8px 18px;
-            margin: 0 !important;
-            position: fixed;
-            right: 20px;
-            z-index: 1000;
-            border-radius: 15px;
-
-            transition: all 0.3s ease;
-            display: inline-flex !important;
-            align-items: center !important;
-        }
-
-        .openbtn:hover {
-            box-shadow: 0 5px 0 0 var(--text-main);
-            filter: brightness(90%);
-        }
-        #mySidebar {
-            display: flex !important;
-            flex-direction: column !important;
-            justify-content: space-between !important;
-
-            height: 100% !important;
-            width: 0;
-            position: fixed;
-            z-index: 10000;
-            top: 0;
-            right: 0;
-            background-color: var(--main-white);
-            border-left: 3px solid var(--text-main);
-            overflow: hidden;
-            transition: all 0.6s;
-            padding: 60px 0 30px 0;
-        }
-
-        .sidebar-links {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1 !important;
-            justify-content: flex-start;
-            align-items: flex-start;
-
-            padding: 0 20px 0 32px;
-            margin: 0;
-
-            overflow-x: hidden;
-            z-index: 1000;
-            max-width: 90% !important;
-        }
-
-        .sidebar-links a:nth-child(5) {
-            margin-bottom: 75px;
-        }
-
-        .sidebar-links h3 {
-            color: #888;
-            padding: 20px 8px 0 0;
-            margin: 0;
-            font-family: var(--ff-body);
-            font-size: var(--fs-h4);
-            letter-spacing: 2px;
-        }
-
-        .sidebar a:not(.dropdown-content a, .sidebar .btn-primary) {
-            font-family: var(--ff-header);
-            font-size: var(--fs-h4);
-            font-weight: 500;
-
-            color: var(--text-main);
-            text-decoration: none;
-            padding: 8px 4px !important;
-            text-align: left; 
-            
-            display: block;
-            transition: all 0.3s ease;
-            border-radius: 7px;
-        }
-
-        .sidebar a:not(.dropdown-btn .odd-link) {
-            width: 100%;
-        }
-
-        .sidebar .dropdown-btn {
-            display: flex;
-            border-radius: 7px;
-            gap: 8px !important;
-            justify-content: flex-start;
-            color: var(--text-main);
-        }
-        .sidebar a:hover, .dropdown-btn:hover {
-            background-color: #efefef;
-            
-        }
-        .sidebar .odd-link {
-            padding: 0;
-            text-decoration: none;
-            color: inherit;
-        }
-        .sidebar span i {
-            border-radius: 7px;
-            padding: 0;
-            transition: all 0.3s ease;
-            background-color: transparent;
-        }
-        .sidebar .closebtn {
-            display: flex;
-            padding: 12px !important;
-            cursor: pointer;
-            border: none;
-            background: transparent;
-
-            font-size: var(--fs-h3);
-            color: var(--text-main);
-            
-            margin-left: auto;
-            right: 5%;
-            top: 5%;
-        }
-        .sidebar-footer {
-            display: flex;
-            flex-direction: column;
-            flex-shrink: 0 !important;
-            padding: 20px 40px 0;
-
-            justify-content: center;
-            margin: 0 auto;
-            gap: 15px;
-            width: 100% !important;
-        }
-        .footer-logo {
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
-            width: 100%;
-        }
-        .footer-logo img {
-            display: block;
-            max-width: 200px;
-            margin: 0 auto;
-            padding: 0;
-        }
-        .sidebar-footer p {
-            font-family: var(--ff-header);
-            font-size: var(--fs-p);
-            color: #666;
-            margin: 0;
-            white-space: nowrap;
-        }
-        #sidebarOverlay {
-            position: fixed;
-            opacity: 0;
-            width: 100vw;
-            height: 100vh;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0,0,0,0.7);
-            pointer-events: none;
-            z-index: 10000;
-            border-radius: 0 !important;
-        }
-        .dropdown-btn {
-            text-decoration: none;
-            display: block;
-
-            border: none;
-            background: none;
-            cursor: pointer;
-            font-family: var(--ff-body);
-            transition: 0.3s;
-        }
-        .sidebar .arrow-trigger {
-            display: inline-flex;
-            align-items: center;
-            cursor: pointer;
-        }
-        .arrow-trigger i {
-            transition: transform 0.3s ease;
-        }
-        .dropdown-content {
-            display: flex;
-            flex-direction: column;
-            max-height: 0;
-            overflow: hidden;
-            opacity: 0;
-            visibility: hidden;
-            transition: max-height 0.4s ease, opacity 0.3s ease, visibility 0.3s;
-            
-            padding-left: 32px;
-        }
-        .dropdown-content a {
-            font-style: italic;
-            font-family: var(--ff-body);
-            color: var(--text-main);
-            padding: 12px;
-            margin-bottom: 5px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-        .dropdown-content a:hover {
-            background-color: #efefef !important;
-            transform: translateX(5px);
-        }
-        .dropdown-content a:last-child {
-            font-style: normal;
-            font-weight: 600 !important;
-            margin-top: 10px;
-        }
-        .dropdown-content.show {
-            max-height: 300px;
-            opacity: 1;
-            visibility: visible;
-            padding-bottom: 20px;
+        #hero .mobile-only {
+            display: none;
         }
     </style>
-    <style>
+
+    <style> /* button */
         .btn-primary {
             background-color: var(--main-yellow);
-            color: var(--text-main);
+            color: var(--header-main);
             padding: 16px 24px !important;
 
-            border: 1.8px solid var(--text-main);
+            border: 1.8px solid var(--header-main);
             border-radius: 50px;
             text-decoration: none;
 
             font-size: var(--fs-p);
             font-family: var(--ff-body);
-            font-weight: 500;
 
             transition: all 0.2s ease;
             cursor: pointer;
@@ -366,7 +73,8 @@
         }
 
         nav .btn-primary:hover {
-            box-shadow: 0 5px 0 0 var(--text-main);
+            background-color: var(--main-yellow);
+            box-shadow: 0 5px 0 0 var(--header-main);
         }
 
         .btn-primary:hover {
@@ -403,27 +111,26 @@
             align-items: flex-start;
         
             background-color: var(--main-white);
-            color: var(--text-main);
+            color: var(--header-main);
             
             padding: 16px 24px !important;
-            border: 1.8px solid var(--text-main);
+            border: 1.8px solid var(--header-main);
             border-radius: 50px;
             font-size: var(--fs-p);
             
             text-decoration: none;
-            font-weight: 500;
             transition: all 0.3s ease;
             margin: 0 !important;
         }
 
         .nav-links-second .cta-two:hover {
-            box-shadow: 0 5px 0 0 var(--text-main);
+            box-shadow: 0 5px 0 0 var(--header-main);
             filter: brightness(95%) !important;
         }
 
         .btn-secondary {
             background: transparent;
-            color: var(--text-main);
+            color: var(--header-main);
             font-size: var(--fs-p);
             font-family: var(--ff-body);
 
@@ -438,10 +145,11 @@
     </style>
 
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/query.css" media="screen and (max-width: 1323px)">
 </head>
 <body>
-    <div id="sidebarOverlay" class="overlay" onclick="closeNav()"></div>
+    <div id="sidebarOverlay"  onclick="closeNav()"></div>
     <header>
         <div id="mySidebar" class="sidebar">
         <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
@@ -485,46 +193,13 @@
     
     <main class="portfolio-page">
         <section id="hero">
-            <div class="header-content">
-                <h1 class="desktop-only">Hand-Picked Projects: Turning British Visions into Digital Reality</h1>
+            <div class="hero-content">
+                <h1 class="desktop-only">Turning British Visions into Digital Reality</h1>
                 <h1 class="mobile-only">Visions to Reality</h1>
-                <p class="desktop-only">My philosophy is simple: results over fluff. Below is a selection of my recent work, where I partner with local, ambitious brands to create fast, bespoke websites that capture their unique identity and—most importantly—drive real business growth. Dive in and see what we can build.</p>
+                <p class="desktop-only">Below is a selection of my recent work, where I partner with ambitious brands to create bespoke websites that capture their unique identity and drive real business growth. Dive in and see what we can build.</p>
                 <p class="mobile-only">Every project represents a unique collaboration focused on aesthetics and functional performance. These sites are built to turn visitors into customers.</p>
                 
-                <a href="/booking" class="btn-primary" target="_blank">Start a Conversation</a>
-            </div>
-        </section>
-
-        <section id="gallery">
-            <div class="container">
-                <h2>Case Studies & Recent Work</h2>
-                <p class="lead desktop-only">Every project in this gallery represents a unique collaboration aimed at solving a specific business challenge. I don't believe in one-size-fits-all solutions; instead, I focus on the intersection of clean aesthetics and functional performance. From custom photography and optimised code to seamless user journeys, these sites are built to turn local visitors into lifelong customers.</p>
-                <p class="mobile-only">Every project in this gallery represents a unique collaboration aimed at solving a specific business challenge. I don't believe in one-size-fits-all solutions; instead, I focus on the intersection of clean aesthetics and functional performance.</p>
-                <div class="gallery-container">
-                    <a class="gallery-item" href="#tipsy">
-                        <picture>
-                        <source srcset="css/assets/tipsy-mobile.webp" media="(max-width: 768px)">
-                        
-                        <img src="css/assets/tipsy-mobile.webp" alt="Tipsy Kisses Mobile Bar" class="hero-img" fetchpriority="high" loading="lazy">
-                    </picture>
-                        <div class="overlay">
-                            <h3>Jump to Section</h3>
-                        </div>
-                    </a>
-                    <a class="gallery-item" href="#broadway">
-                        <picture>
-                        <source srcset="css/assets/broadway.webp" media="(max-width: 768px)">
-                        
-                        <img src="css/assets/broadway.webp" alt="Broadway Roofing LTD" class="hero-img" fetchpriority="high" loading="lazy">
-                    </picture>
-                        <div class="overlay">
-                            <h3>Jump to Section</h3>
-                        </div>
-                    </a>
-                    <a class="gallery-item">
-                        <div class="soon">More In Development</div>
-                    </a>
-                </div>
+                <a href="/booking" class="btn-primary" target="_blank">Ready to Build?</a>
             </div>
         </section>
 
@@ -538,11 +213,7 @@
                         <img src="css/assets/tipsy-mobile.webp" alt="Tipsy Kisses Mobile Bar" class="hero-img" fetchpriority="high" loading="lazy">
                     </picture>
                 </div>
-                <a class="btn-secondary" href="https://ryleychallis.github.io/tipsy-kisses/" target="_blank">View Live Site<i class="fa-solid fa-arrow-right"></i></a>
-                <div class="project-info">
-                    <p>For Tipsy Kisses, the goal was to capture the sophisticated yet vibrant energy of a high-end mobile mixology service. The brand specialises in curated cocktail experiences, so the website needed to feel like a digital extension of their physical presence—polished, professional, and visually enticing. I focused on a "clean luxury" aesthetic, utilising high-quality lifestyle photography paired with a minimalist layout to ensure the cocktails themselves remained the focal point of the user journey.</p>
-                    <p>The site architecture was intentionally designed to streamline the booking process for corporate events and private parties. By implementing smooth scroll transitions and a bespoke navigation system, I ensured that potential clients could glide from viewing the drink gallery to checking package details without friction. The final result is a high-performance digital storefront that doesn’t just show off their skills, but actively converts local Sussex visitors into lifelong customers through a seamless, premium user experience.</p>
-                </div>
+                <a class="btn-secondary" href="project.html?id=tipsy">View Project Breakdown<i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </section>
 
@@ -552,11 +223,7 @@
                 <div class="project-image">
                     <img src="css/assets/broadway.webp" alt="Professional Web Development Services" class="hero-img" fetchpriority="high" loading="lazy">
                 </div>
-                <a class="btn-secondary" href="https://ryleychallis.github.io/broadway-roofing-ltd/" target="_blank">View Live Site<i class="fa-solid fa-arrow-right"></i></a>
-                <div class="project-info">
-                    <p>For this spec site, I took Broadway Roofing's poorly-designed website and transform it into a premium, efficient web app designed to convert browsers to clients.</p>
-                    <p>The site's layout and design were meticulously crafted for brilliance. With an interactive, dynamic contact form with alternating input forms based on previous answers, I ensured all queries were tailored to a prospective client's exact needs. The services and former projects showcases were simple, frictionless and made to entice the user. This project's experience is unmatched in the industry, and is highly sought after.</p>
-                </div>
+                <a class="btn-secondary" href="project.html?id=broadway">View Project Breakdown<i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </section>
 

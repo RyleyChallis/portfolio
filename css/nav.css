@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("assets/fraunces-700.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Fraunces-Two';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url("assets/fraunces-regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'inter';
+    font-style: normal;
+    font-display: swap;
+    src: url("assets/inter-regular.woff2") format('woff2');
+}
+
 nav {
     position: absolute;
     background-color: transparent;
@@ -9,7 +32,7 @@ nav {
     justify-content: center !important;
 
     display: flex;
-    align-items: center;
+    align-items: center !important;
     box-sizing: border-box;
     width: 100%;
 
@@ -26,7 +49,7 @@ nav .logo img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center !important;
     width: 100%;
     margin: 0;
 }
@@ -38,11 +61,9 @@ nav .logo img {
 .nav-links a {
     text-decoration: none;
     color: var(--header-main);
-    font-weight: 500;
 
     font-size: var(--fs-p);
     font-family: var(--ff-body);
-    
     padding: 14px 16px;
     border-radius: 50px;
 
@@ -53,7 +74,7 @@ nav .logo img {
     align-items: center !important;
 }
 
-.nav-links a:hover {
+.nav-links a:not(.btn-primary):hover {
     background-color: #e6e6e6;
 }
 
@@ -74,128 +95,6 @@ nav .logo img {
     margin-right: 60px;
     align-items: center;
 }
-
-#mySidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    height: 100% !important;
-    width: 0;
-    position: fixed;
-    z-index: 10000;
-    top: 0;
-    right: 0;
-    background-color: var(--main-white);
-    border-left: 3px solid var(--text-main);
-    overflow: hidden;
-    transition: all 0.6s;
-    padding: 60px 0 30px 0;
-}
-
-.sidebar-links {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    padding: 0 20px 0 32px;
-    margin: 0;
-
-    overflow: hidden;
-    z-index: 1000;
-    max-width: 90%;
-}
-
-.sidebar-links a:nth-child(5) {
-    margin-bottom: 75px;
-}
-
-.sidebar-links h3 {
-    color: #888;
-    padding: 20px 8px 0 0;
-    margin: 0;
-    font-family: var(--ff-body);
-    font-size: var(--fs-p);
-    letter-spacing: 2px;
-}
-
-.sidebar a {
-    font-family: var(--ff-header);
-    font-size: var(--fs-h4);
-    font-weight: 500;
-
-    color: var(--text-main);
-    text-decoration: none;
-    padding: 16px 0 !important;
-    text-align: left; 
-    
-    width: 100%;
-    display: block;
-    transition: all 0.3s ease;
-    border-radius: 7px;
-}
-
-.sidebar .dropdown-btn {
-    font-family: var(--ff-header);
-    font-size: var(--fs-h4);
-    font-weight: 500;
-    width: 100%;
-    color: var(--text-main);
-    text-decoration: none;
-    
-    padding: 16px 20px; 
-    
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-    gap: 12px; 
-    
-    border-radius: 7px;
-    transition: all 0.3s ease;
-    box-sizing: border-box; /* Crucial to keep width at 100% with padding */
-}
-
-.dropdown-btn:hover {
-    background-color: #efefef;
-}
-
-.sidebar a:hover {
-    background-color: #efefef;
-    
-}
-
-.sidebar .odd-link {
-    padding: 0;
-    text-decoration: none;
-    color: inherit;
-}
-
-.sidebar span i {
-    border-radius: 7px;
-    margin: 0;
-    padding: 0;
-    transition: all 0.3s ease;
-    background-color: transparent;
-}
-
-.sidebar .closebtn {
-    display: flex;
-    padding: 12px 20px !important;
-    cursor: pointer;
-    border: none;
-    background: transparent;
-
-    font-size: var(--fs-h3);
-
-    margin-left: auto !important;
-    margin-bottom: auto;
-    margin-right: 20px;
-    width: fit-content !important;
-}
-
 .openbtn {
     font-size: var(--fs-p);
     cursor: pointer;
@@ -218,130 +117,103 @@ nav .logo img {
     box-shadow: 0 5px 0 0 var(--text-main);
     filter: brightness(90%);
 }
+#mySidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100% !important;
+    width: 350px;
+    position: fixed;
+    transform: translateX(100%);
+
+    z-index: 10000;
+    top: 0;
+    right: 0;
+
+    background-color: var(--main-white);
+    border-left: 3px solid var(--text-main);
+
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    padding: 60px 0 30px 0;
+}
+
+#mySidebar .closebtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1.8px solid var(--header-main);
+
+    margin-left: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.closebtn:hover {
+    background-color: #efefef;
+    transform: scale(1.15) rotate(12deg);
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.sidebar-links h3 {
+    font-size: var(--fs-p);
+    font-family: var(--ff-body);
+    color: #888;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.sidebar-links a {
+    font-size: var(--fs-p);
+    font-family: var(--ff-header-two);
+    color: var(--text-main);
+
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    padding: 10px 0 10px 20px;
+}
+
+.sidebar-links a:hover {
+    background-color: #efefef;
+}
 
 .sidebar-footer {
     display: flex;
     flex-direction: column;
-    flex-shrink: 0 !important;
-    padding: 20px 40px 0;
-
-    justify-content: center;
-    margin: 0 auto;
-    gap: 15px;
-    width: 100% !important;
+    align-items: center;
 }
 
-.footer-logo {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    width: 100%;
-}
-
-.footer-logo img {
-    display: block;
-    max-width: 200px;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.sidebar-footer p {
-    font-family: var(--ff-header);
-    font-size: var(--fs-p);
-    color: #666;
-    margin: 0;
-    white-space: nowrap;
+.sidebar-footer .footer-logo img {
+    max-width: 250px;
 }
 
 #sidebarOverlay {
     position: fixed;
     opacity: 0;
+
     width: 100vw;
     height: 100vh;
+
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.7);
+
+    background-color: rgba(0, 0, 0, 0.6);
     pointer-events: none;
+
     z-index: 10000;
-    border-radius: 0 !important;
 }
 
-.dropdown-btn {
-    padding: 0 !important;
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: var(--text-main);
-    display: flex;
-    align-items: center !important;
-    justify-content: space-between !important;
-    width: 100%;
-
-    border: none;
-    background: none;
-    width: fit-content;
-    text-align: left;
-    cursor: pointer;
-    font-family: var(--ff-body);
-    transition: 0.3s;
-}
-
-.sidebar .arrow-trigger {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.arrow-trigger i {
-    transition: transform 0.3s ease;
-}
-
-.dropdown-content {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-    transition: max-height 0.4s ease, opacity 0.3s ease, visibility 0.3s;
-    
-    padding-left: 32px;
-}
-
-.dropdown-content a {
-    font-family: var(--ff-body) !important;
-    font-size: 1.1rem !important;
-    font-style: italic;
-    font-weight: 400 !important;
-    color: #666 !important;
-    padding: 12px !important;
-    margin-bottom: 5px !important;
-    transition: all 0.3s ease;
-}
-
-.dropdown-content a:hover {
-    background-color: #efefef !important;
-    transform: translateX(5px);
-}
-
-.dropdown-content a:last-child {
-    font-style: normal;
-    font-weight: 600 !important;
-    margin-top: 10px;
-}
-
-.dropdown-content.show {
-    max-height: 300px;
-    opacity: 1;
-    visibility: visible;
-    padding-bottom: 20px;
-}
-
-.sidebar .btn-primary {
-    width: 100%;
-    display: flex;
+#mySidebar .btn-primary {
+    width: 90%;
     margin: 0 auto;
-    justify-content: center;
-    border-radius: 50px;
-    font-size: 22px;
-    font-family: var(--ff-body);
 }

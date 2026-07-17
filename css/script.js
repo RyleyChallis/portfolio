@@ -33,26 +33,26 @@ window.onclick = function(event) {
 }
 
 function openNav() {
-    document.getElementById("mySidebar").style.width = "350px";
-    
-    const overlay = document.getElementById("sidebarOverlay");
+    // Instead of width, we translate to 0 (fully visible)
+    document.getElementById("mySidebar").style.transform = "translateX(0)";
+
+    const overlay = document.getElementById('sidebarOverlay');
     overlay.style.opacity = "1";
     overlay.style.pointerEvents = "auto";
-    
-    document.documentElement.style.overflowY = "hidden"; // documentElement is <html>
-    document.body.style.overflowY = "hidden";
+
+    document.documentElement.style.overflowY = "hidden";
     document.body.style.userSelect = "none";
 }
 
 function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    
-    const overlay = document.getElementById("sidebarOverlay");
+    // Translate back to 100% (hidden off-screen to the right)
+    document.getElementById("mySidebar").style.transform = "translateX(100%)";
+
+    const overlay = document.getElementById('sidebarOverlay');
     overlay.style.opacity = "0";
     overlay.style.pointerEvents = "none";
-    
-    document.documentElement.style.overflowY = "auto"; // documentElement is <html>
-    document.body.style.overflowY = "auto";
+
+    document.documentElement.style.overflowY = "auto";
     document.body.style.userSelect = "auto";
 }
 
@@ -179,3 +179,33 @@ form.addEventListener('submit', e => {
         });
     });
 };
+
+async function loadProjectPage() {
+  // Only run this on project.html
+  const titleEl = document.getElementById('project-title');
+  if (!titleEl) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const projectId = params.get('id');
+
+  const response = await fetch('css/projects.json');
+  const projects = await response.json();
+
+  const project = projects.find(p => p.id === projectId);
+
+  if (!project) {
+    titleEl.textContent = 'Project not found';
+    return;
+  }
+
+  document.getElementById('project-image').src = project.image;
+  document.getElementById('project-image').alt = project.title;
+  titleEl.textContent = project.title;
+  document.getElementById('project-description').textContent = project.description;
+  document.getElementById('project-live-link').href = project.liveUrl;
+
+  const techList = document.getElementById('project-tech');
+  techList.innerHTML = project.tech.map(t => `<li>${t}</li>`).join('');
+}
+
+loadProjectPage();

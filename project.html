@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryley Challis | Building Premium Online Experiences for British Businesses</title>
+    
+    <meta name="description" content="Bespoke, hand-coded web development for British businesses. High-performance digital experiences designed to elevate your brand and drive results.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ryleychallis.github.io/Portfolio/">
+    <meta property="og:title" content="Ryley Challis | Building Premium Online Experiences for British Businesses">
+    <meta property="og:description" content="Bespoke, hand-coded web development for British businesses. High-performance digital experiences designed to elevate your brand and drive results.">
+    <meta property="og:image" content="https://ryleychallis.github.io/Portfolio/css/assets/opengraph.webp">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ryleychallis.github.io/Portfolio/">
+    <meta property="twitter:title" content="Ryley Challis | Building Premium Online Experiences for British Businesses">
+    <meta property="twitter:description" content="Bespoke, hand-coded web development for British businesses. High-performance digital experiences designed to elevate your brand and drive results.">
+    <meta property="twitter:image" content="https://ryleychallis.github.io/css/Portfolio/assets/opengraph.webp">
+
+    <link rel="icon" type="image/x-icon" href="css/assets/favicon.svg">
+
+    <style> /* hero section css */
+        h1 {
+            font-size: var(--fs-h1);
+            font-family: var(--ff-header);
+            font-weight: 700;
+            color: var(--header-main);
+            max-width: clamp(0%, 80vw, 80%);
+            margin: 0;
+        }
+        #hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 40px;
+        }
+        #hero p {
+            max-width: 80%;
+            text-align: left;
+            margin-bottom: 50px;
+        }
+    </style>
+
+    <style> /* button css */
+        .btn-primary {
+            background-color: var(--main-yellow);
+            color: var(--header-main);
+            padding: 16px 24px !important;
+
+            border: 1.8px solid var(--header-main);
+            border-radius: 50px;
+            text-decoration: none;
+
+            font-size: var(--fs-p);
+            font-family: var(--ff-body);
+            font-weight: 500;
+
+            transition: all 0.2s ease;
+            cursor: pointer;
+            white-space: nowrap !important;
+            text-align: center;
+        }
+
+        nav .btn-primary:hover {
+            background-color: var(--main-yellow);
+            box-shadow: 0 5px 0 0 var(--header-main);
+        }
+
+        .btn-primary:hover {
+            filter: brightness(90%);
+        }
+
+        .package-actions .btn-primary {
+            width: 100%;
+        }
+
+        .package-card .btn-primary {
+            display: inline-block;
+            margin-top: auto;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .package-card .btn-primary:hover {
+            filter: brightness(90%);
+        }
+
+        #packages .learn-more-btn {
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        #about .btn-primary {
+            margin: 75px 0;
+        }
+
+        .nav-links-second .cta-two {
+            position: relative;
+            overflow: hidden;
+            align-items: flex-start;
+        
+            background-color: var(--main-white);
+            color: var(--header-main);
+            
+            padding: 16px 24px !important;
+            border: 1.8px solid var(--header-main);
+            border-radius: 50px;
+            font-size: var(--fs-p);
+            
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin: 0 !important;
+        }
+
+        .nav-links-second .cta-two:hover {
+            box-shadow: 0 5px 0 0 var(--header-main);
+            filter: brightness(95%) !important;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--header-main);
+            font-size: var(--fs-p);
+            font-family: var(--ff-body);
+
+            text-decoration: none;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn-secondary i {
+            margin-left: 10px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/query.css" media="screen and (max-width: 1323px)">
+</head>
+<body>
+    <div id="sidebarOverlay" class="overlay" onclick="closeNav()"></div>
+    <header>
+        <div id="mySidebar" class="sidebar">
+        <button class="closebtn" onclick="closeNav()" aria-label="Close Navigation">&times;</button>
+        
+        <div class="sidebar-links">
+            <h3>Navigation</h3>
+                <a href="/">Home</a>
+                <a href="/#packages">Pricing</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="/#about">About</a>
+            </div>    
+            <div class="sidebar-footer">
+                <div class="footer-logo">
+                    <picture>
+                        <source srcset="css/assets/sterling.webp" type="image/webp">
+                        <img src="css/assets/sterling.png" alt="Sterling web development logo">
+                    </picture>
+                </div>
+                <a class="btn-primary" href="/booking">Start Project</a>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <a class="logo" href="/#hero">
+                <picture>
+                    <source srcset="css/assets/sterling.webp" type="image/webp">
+                    <img src="css/assets/sterling.png" alt="Sterling web development logo">
+                </picture>
+            </a>
+            <div class="nav-links">
+                <ul class="nav-links-first">
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#packages">Pricing</a></li>
+                </ul>
+                <ul class="nav-links-second">
+                    <li><a href="mailto:ryley.challis@outlook.com?subject=General Inquiry - Let's Work Together" class="btn-primary target="_blank">Start a Conversation</a></li>
+                    <li><a class="cta-two desktop-only" href="/portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="project-page">
+        <section id="herotop">
+            <div class="row-container">
+                <img id="project-image" src="" alt="">
+                <div class="project-info container">
+                    <h1 id="project-title"></h1>
+                    <p id="project-description"></p>
+                    <a class="btn-secondary" href="" target="_blank">View Live Site<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="css/script.js"></script>
+</body>
+</html>

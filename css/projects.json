@@ -1,0 +1,18 @@
+[
+  {
+    "id": "tipsy",
+    "title": "Tipsy Kisses",
+    "description": "A sleek, high-end website for a luxury mobile bar service, designed to showcase premium mixology and elevate event bookings.",
+    "image": "css/assets/tipsy-mobile.webp",
+    "liveUrl": "https://example.com",
+    "tech": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": "broadway",
+    "title": "Broadway Roofing",
+    "description": "A clean, professional website for a trusted roofing contractor, engineered to highlight reliable craftsmanship and capture local service leads.",
+    "image": "css/assets/broadway.webp",
+    "liveUrl": "https://example.com",
+    "tech": ["HTML", "CSS"]
+  }
+]

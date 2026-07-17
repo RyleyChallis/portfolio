@@ -85,3 +85,8 @@ nav .btn-primary:hover {
     max-width: fit-content;
     margin: 0 auto !important;
 }
+
+#mySidebar .btn-primary {
+    width: 90% !important;
+    margin: 0 auto;
+}
