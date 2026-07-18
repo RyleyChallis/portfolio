@@ -91,8 +91,8 @@
 }
 
 @media (max-width: 710px) {
-    html body .desktop-only {
-        display: none;
+    .desktop-only {
+        display: none !important;
     }
     .mobile-only {
         display: block !important; /* Important flag must be kept, without it hero content is invisible */

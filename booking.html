@@ -47,11 +47,15 @@
             text-align: left;
             margin-bottom: 50px;
         }
+
+        .mobile-only {
+            display: none;
+        }
     </style>
     <style>
         .btn-primary {
             background-color: var(--main-yellow);
-            color: var(--text-main);
+            color: var(--header-main);
             padding: 16px 24px !important;
 
             border: 1.8px solid var(--text-main);
@@ -60,7 +64,6 @@
 
             font-size: var(--fs-p);
             font-family: var(--ff-body);
-            font-weight: 500;
 
             transition: all 0.2s ease;
             cursor: pointer;
@@ -115,7 +118,6 @@
             font-size: var(--fs-p);
             
             text-decoration: none;
-            font-weight: 500;
             transition: all 0.3s ease;
             margin: 0 !important;
         }
@@ -189,20 +191,20 @@
             </div>
         </nav>
     </header>
-    
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Let's Build Something Exceptional</h1>
-            <p class="desktop-only">A great website isn't just about code—it's about strategy and storytelling. This form is designed to help us peel back the layers of your business so we can build a digital experience that actually moves the needle.</p>
-            <p class="mobile-only">A great website is about strategy and storytelling. Let's peel back the layers of your business and build a digital experience that actually moves the needle.</p>
-            <a href="/booking" class="btn-primary">Start a Conversation</a>
-        </div>
-    </section>
 
     <main class="booking-page">
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Let's Build Something Exceptional</h1>
+                <p class="desktop-only">A great website isn't just about code—it's about strategy and storytelling. This form is designed to help us peel back the layers of your business so we can build a digital experience that actually moves the needle.</p>
+                <p class="mobile-only">A great website is about strategy and storytelling. Let's peel back the layers of your business and build a digital experience that actually moves the needle.</p>
+                <a href="/booking" class="btn-primary">Start a Conversation</a>
+            </div>
+        </section>
+
         <form id="booking-form">
         <section class="vision" id="vision" style="padding-bottom: 75px;">
-            <h2 style="margin: 0; padding: 0;">The Vision & Identity</h2>
+            <h2>The Vision & Identity</h2>
             <div class="container">
                 <p class="lead">To build a digital presence that feels authentic, I need to understand the heart of what you do. This isn’t about picking a template; it’s about translating your brand’s "soul" into a high-performance experience.</p>
                 
@@ -217,14 +219,14 @@
                 </div>
 
                 <div class="field-group">
-                    <label for="vibe">If your brand were a physical space—like a boutique in the Lanes—what would the atmosphere be like?</label>
+                    <label for="vibe">If your brand were a physical space—like a boutique in the Brighton Lanes—what would the atmosphere be like?</label>
                     <textarea id="vibe" name="vision_vibe" placeholder="e.g. Industrial & Bold, Warm & Rustic..." rows="4"></textarea>
                 </div>
             </div>
         </section>
 
         <section class="booking-section" id="booking" style="background-color: var(--off-white);">
-            <h2 style="margin: 75px 0 0 0; padding: 75px 0 20px 0;">Project Details & Timeline</h2>
+            <h2>Project Details & Timeline</h2>
             <p class="lead">Let’s define the scope. These details help me understand the technical requirements and the pace of the project.</p>
             <div class="container">
                 <div class="field-group">
@@ -251,21 +253,22 @@
                 <label for="budget">What is your budget?</label>
                 <select id="budget" name="client_budget" required>
                     <option value="" disabled selected>Select a budget...</option>
-                    <option value="450-700">£450-£700</option>
-                    <option value="700-1200">£700-£1200</option>
-                    <option value="1200+">£1200+</option>
+                    <option value="below">Below £1,250</option>
+                    <option value="1250-2450">£1,250-£2,450</option>
+                    <option value="2450-4500">£2,450-£4,500</option>
+                    <option value="4500+">£4,500+</option>
                 </select>
                 </div>
 
-                <div class="field-group" style="margin-top: 30px;">
-                    <label for="must-haves">Are there any specific "Must-Haves"?</label>
+                <div class="field-group">
+                    <label for="must-haves">Are there any specific "must-haves"?</label>
                     <textarea id="must-haves" name="technical_needs" placeholder="e.g. Booking system, Instagram integration, a specific camera lens gallery..." rows="3"></textarea>
                 </div>
             </div>
         </section>
 
         <section class="booking-section" id="booking-final">
-            <h2 style="margin: 0 !important; padding: 75px 0 20px 0 !important;">Finalise & Connect</h2>
+            <h2>Finalise & Connect</h2>
             <p class="lead">I personally review every inquiry to ensure we're a good fit. Expect a response within 48 hours to schedule our discussion.</p>
             
             <div class="container">

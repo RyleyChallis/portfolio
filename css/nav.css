@@ -132,7 +132,7 @@ nav .logo img {
     right: 0;
 
     background-color: var(--main-white);
-    border-left: 3px solid var(--text-main);
+    border-left: 1px solid var(--text-main);
 
     overflow: hidden;
     transition: transform 0.6s ease;

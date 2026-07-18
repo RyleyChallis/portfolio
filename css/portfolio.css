@@ -73,6 +73,10 @@ h2 {
     margin: 0 auto !important;
 }
 
+.booking-page h2 {
+    padding-bottom: 20px;
+}
+
 h3 {
     font-size: var(--fs-h3);
     font-family: var(--ff-header);
@@ -137,7 +141,6 @@ li {
 .lead {
     text-align: center;
     margin: 0 auto;
-    padding-top: 20px !important;
     padding-bottom: 75px;
 }
 
