@@ -3,7 +3,8 @@
     "id": "tipsy",
     "title": "Tipsy Kisses",
     "description": "A sleek, high-end website for a luxury mobile bar service, designed to showcase premium mixology and elevate event bookings.",
-    "image": "css/assets/tipsy-mobile.webp",
+    "image": "css/assets/assets/tipsy-mobile.webp",
+    "images": ["css/assets/tipsy-mobile.webp", "css/assets/tipsy2.webp", "css/assets/tipsy3.webp", "css/assets/tipsy4.webp", "css/assets/tipsy5.webp", "css/assets/tipsy6.webp"],
     "liveUrl": "https://example.com",
     "tech": ["HTML", "CSS", "JavaScript"]
   },
@@ -11,7 +12,8 @@
     "id": "broadway",
     "title": "Broadway Roofing",
     "description": "A clean, professional website for a trusted roofing contractor, engineered to highlight reliable craftsmanship and capture local service leads.",
-    "image": "css/assets/broadway.webp",
+    "image": "css/assets/assets/broadway.webp",
+    "images": ["css/assets/broadway.webp", "css/assets/broadway2.webp", "css/assets/broadway3.webp", "css/assets/broadway4.webp", "css/assets/broadway5.webp", "css/assets/broadway6.webp", "css/assets/broadway7.webp"],
     "liveUrl": "https://example.com",
     "tech": ["HTML", "CSS"]
   }

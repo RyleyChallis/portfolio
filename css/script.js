@@ -198,6 +198,7 @@ async function loadProjectPage() {
   }
 
   document.getElementById('project-image').src = project.image;
+  setupSlider(project);
   document.getElementById('project-image').alt = project.title;
   titleEl.textContent = project.title;
   document.getElementById('project-description').textContent = project.description;

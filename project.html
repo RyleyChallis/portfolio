@@ -6,7 +6,6 @@
     <title>Ryley Challis | Building Premium Online Experiences for British Businesses</title>
     
     <meta name="description" content="Bespoke, hand-coded web development for British businesses. High-performance digital experiences designed to elevate your brand and drive results.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ryleychallis.github.io/Portfolio/">
@@ -20,6 +19,7 @@
     <meta property="twitter:description" content="Bespoke, hand-coded web development for British businesses. High-performance digital experiences designed to elevate your brand and drive results.">
     <meta property="twitter:image" content="https://ryleychallis.github.io/css/Portfolio/assets/opengraph.webp">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="css/assets/favicon.svg">
 
     <style> /* hero section css */
@@ -191,8 +191,8 @@
                 <div class="project-image-wrapper">
                     <img id="project-image" src="" alt="">
                     <div class="project-image-arrows"> 
-                        <i class="fa-solid fa-chevron-left"></i>
-                        <i class="fa-solid fa-chevron-right"></i> 
+                        <button class="image-arrow" data-dir="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="image-arrow" data-dir="next"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div>
                 <div class="project-info container">
@@ -244,5 +244,6 @@
         </div>
     </footer>
     <script src="css/script.js"></script>
+    <script src="css/projects.js"></script>
 </body>
 </html>

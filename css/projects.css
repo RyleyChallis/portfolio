@@ -123,10 +123,52 @@ li {
     text-align: left;
 }
 
+.project-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .project-page img#project-image {
     max-width: 700px;
     border-radius: 7px;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+#project-image.fade-out {
+    opacity: 0;
+}
+
+.project-image-arrows {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.project-image-arrows button {
+    background-color: transparent;
+    border: none;
+}
+
+.project-image-arrows i {
+    width: 40px;
+    height: 40px;
+    color: var(--text-main);
+    border: 1.8px solid var(--header-main);
+
+    border-radius: 50px;
+    text-align: center;
+    
+    padding: 8px;
+    transition: color 0.3s ease, background-color 0.4s ease;
+    cursor: pointer;
+}
+
+.project-image-arrows i:hover {
+    color: var(--main-white);
+    background-color: var(--header-main);
 }
 
 .project-page .container {
