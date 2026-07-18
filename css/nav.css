@@ -21,6 +21,12 @@
     src: url("assets/inter-regular.woff2") format('woff2');
 }
 
+.nav-spacer {
+    display: none;
+    padding: 80px 0;
+    pointer-events: none;
+}
+
 nav {
     position: absolute;
     background-color: transparent;

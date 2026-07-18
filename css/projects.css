@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: var(--main-white);
 }
 
 * {
@@ -73,12 +74,12 @@ section:nth-child(even) {
     margin: 0 auto;
 }
 
-.row-container, .footer-container {
+.row-container {
     display: flex;
     gap: 50px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -159,16 +160,18 @@ li {
     border: 1.8px solid var(--header-main);
 
     border-radius: 50px;
+    display: flex;
     text-align: center;
-    
+    justify-content: center;
+    align-items: center;
+
     padding: 8px;
     transition: color 0.3s ease, background-color 0.4s ease;
     cursor: pointer;
 }
 
 .project-image-arrows i:hover {
-    color: var(--main-white);
-    background-color: var(--header-main);
+    background-color: var(--main-yellow);
 }
 
 .project-page .container {
@@ -224,6 +227,11 @@ footer .intro p {
     color: var(--main-white);
     margin: -50px 0 0 0;
     padding: 0;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
 }
 
 .footer-container .footer-links {

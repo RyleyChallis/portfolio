@@ -178,34 +178,3 @@ form.addEventListener('submit', e => {
         });
     });
 };
-
-async function loadProjectPage() {
-  // Only run this on project.html
-  const titleEl = document.getElementById('project-title');
-  if (!titleEl) return;
-
-  const params = new URLSearchParams(window.location.search);
-  const projectId = params.get('id');
-
-  const response = await fetch('css/projects.json');
-  const projects = await response.json();
-
-  const project = projects.find(p => p.id === projectId);
-
-  if (!project) {
-    titleEl.textContent = 'Project not found';
-    return;
-  }
-
-  document.getElementById('project-image').src = project.image;
-  setupSlider(project);
-  document.getElementById('project-image').alt = project.title;
-  titleEl.textContent = project.title;
-  document.getElementById('project-description').textContent = project.description;
-  document.getElementById('project-live-link').href = project.liveUrl;
-
-  const techList = document.getElementById('project-tech');
-  techList.innerHTML = project.tech.map(t => `<li>${t}</li>`).join('');
-}
-
-loadProjectPage();

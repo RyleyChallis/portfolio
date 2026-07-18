@@ -1,3 +1,27 @@
+@media (max-width: 1180px) {
+    .nav-spacer {
+        display: block;
+    }
+    #herotop {
+        align-items: flex-end;
+        padding-bottom: 75px;
+    }
+    .project-page .row-container {
+        flex-direction: column;
+        align-items: center; /* keeps herotop content centered, must stay */
+    }
+    .project-page h1 {
+        max-width: none;
+        margin: 0 auto;
+    }
+    .project-page #project-description {
+        text-align: center;
+    }
+    .project-page .btn-secondary {
+        margin: 30px auto 0 auto;
+    }
+}
+
 @media (max-width: 1078px) {
     .nav-links-first {
         display: none;
