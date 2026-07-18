@@ -156,8 +156,8 @@
             <div class="sidebar-footer">
                 <div class="footer-logo">
                     <picture>
-                        <source srcset="css/assets/Tectonic.webp" type="image/webp">
-                        <img src="css/assets/Tectonic.png" alt="Tectonic Logo">
+                        <source srcset="css/assets/nav-logo.png" type="image/webp">
+                        <img src="css/assets/nav-logo.png" alt="Tectonic Logo">
                     </picture>
                 </div>
                 <a class="btn-primary" href="/booking">Start Project</a>
@@ -168,8 +168,8 @@
             <button class="openbtn" onclick="openNav()">&#9776;</button>
             <a class="logo" href="/">
                 <picture>
-                    <source srcset="css/assets/Tectonic.webp" type="image/webp">
-                    <img src="css/assets/Tectonic.png" alt="Tectonic Logo">
+                    <source srcset="css/assets/nav-logo.png" type="image/webp">
+                    <img src="css/assets/nav-logo.png" alt="Tectonic Logo">
                 </picture>
             </a>
             <div class="nav-links">
@@ -188,7 +188,13 @@
     <main class="project-page">
         <section id="herotop">
             <div class="row-container">
-                <img id="project-image" src="" alt="">
+                <div class="project-image-wrapper">
+                    <img id="project-image" src="" alt="">
+                    <div class="project-image-arrows"> 
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i> 
+                    </div>
+                </div>
                 <div class="project-info container">
                     <h1 id="project-title"></h1>
                     <p id="project-description"></p>
@@ -196,7 +202,49 @@
                 </div>
             </div>
         </section>
+
+        <section 
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="intro">
+                    <h2>
+                        <picture>
+                            <source srcset="css/assets/footer-logo.png" type="image/webp">
+                            <img src="css/assets/footer-logo.png" alt="Tectonic Logo" loading="lazy">
+                        </picture>
+                    </h2>
+                    <p class="desktop-only">Bespoke web development for British businesses and beyond. I specialise in hand-coded solutions that cut out the bloat of traditional site builders, focusing on speed, performance, and modern design.</p>
+                    <p class="mobile-only">Hand-coded solutions that cut out bloat and focus on speed, performance and modern design.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="/booking">Start a Project</a></li>
+                            <li><a href="/portfolio">Portfolio</a></li>
+                            <li><a href="#packages">Packages</a></li>
+                            <li><a href="https://instagram.com/ryley.challis" target="_blank" rel="noopener">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="/legal#privacy">Privacy Policy</a></li>
+                            <li><a href="/legal#cookies">Cookie Policy</a></li>
+                            <li><a href="/legal#terms">Terms & Conditions</a></li>
+                            <li><a href="mailto:ryley.challis@outlook.com">Offer Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ryley Challis</p>
+                <p>All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
     <script src="css/script.js"></script>
 </body>
 </html>

@@ -73,7 +73,7 @@ section:nth-child(even) {
     margin: 0 auto;
 }
 
-.row-container {
+.row-container, .footer-container {
     display: flex;
     gap: 50px;
     align-items: center;
@@ -140,4 +140,113 @@ li {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+footer {
+    min-height: 400px;
+    background-color: #1a1919;
+    padding: 60px 0 10px 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .intro {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 550px;
+    gap: 10px;
+    margin-top: -75px;
+}
+
+footer .intro h2 {
+    padding-bottom: 0;
+    display: flex;
+    margin-right: auto;
+    width: 100%;
+}
+
+footer .intro h2 img {
+    max-width: 260px;
+    margin-left: -50px;
+}
+
+footer .intro p {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-family: var(--ff-body);
+    color: var(--main-white);
+    margin: -50px 0 0 0;
+    padding: 0;
+}
+
+.footer-container .footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.footer-links .footer-col {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.footer-col h3 {
+    font-size: clamp(1.2rem, 2vw, 1.4rem) !important;
+    font-family: var(--ff-header);
+    color: var(--main-yellow);
+
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-col ul {
+    display: flex !important;
+    flex-direction: column;
+
+    gap: 12px !important;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-col ul li {
+    text-align: center;
+}
+
+.footer-col ul li a {
+    font-family: var(--ff-body);
+    color: #aeaeae;
+
+    margin: 0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.footer-col ul li a:hover {
+    color: var(--main-white);
+}
+
+footer .footer-bottom {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #4e4e4e;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    font-family: var(--ff-body);
+    color: #676767;
 }

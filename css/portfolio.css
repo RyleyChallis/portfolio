@@ -63,6 +63,10 @@ section:nth-child(even) {
     background-color: var(--off-white);
 }
 
+.booking-page section:not(#hero):nth-child(even) {
+    background-color: var(--off-white);
+}
+
 h2 {
     font-size: var(--fs-h2);
     font-family: var(--ff-header);
@@ -141,6 +145,10 @@ li {
 .lead {
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 75px;
+}
+
+#vision {
     padding-bottom: 75px;
 }
 
