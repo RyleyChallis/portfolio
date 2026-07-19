@@ -187,6 +187,16 @@ li {
     gap: 20px;
 }
 
+#philosophy {
+    min-height: 40vh;
+    padding-bottom: 75px;
+}
+
+#final {
+    min-height: 30vh;
+    padding-bottom: 75px;
+}
+
 footer {
     min-height: 400px;
     background-color: #1a1919;

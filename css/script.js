@@ -15,22 +15,6 @@ window.onclick = function(event) {
   }
 }
 
-function openQuotePopup() {
-    const popup = document.getElementById('quote-popup');
-    popup.classList.add('active');
-}
-
-function closeQuotePopup() {
-    const popup = document.getElementById('quote-popup');
-    popup.classList.remove('active');
-}
-
-window.onclick = function(event) {
-  let modal = document.getElementById('quote-popup');
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 function openNav() {
     // Instead of width, we translate to 0 (fully visible)

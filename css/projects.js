@@ -23,10 +23,8 @@ async function loadProjectPage() {
     titleEl.textContent = project.title;
     document.getElementById('project-description').textContent = project.description;
     document.getElementById('philosophy-caption').textContent = project.caption;
+    document.getElementById('philosophy-caption-two').textContent = project.captionTwo;
     document.getElementById('project-live-link').href = project.liveUrl;
-
-    const techList = document.getElementById('project-tech');
-    techList.innerHTML = project.tech.map(t => `<li>${t}</li>`).join('');
 }
 
 loadProjectPage();
