@@ -25,6 +25,8 @@ async function loadProjectPage() {
     document.getElementById('philosophy-caption').textContent = project.caption;
     document.getElementById('philosophy-caption-two').textContent = project.captionTwo;
     document.getElementById('project-live-link').href = project.liveUrl;
+
+    document.getElementById('tech-stack').textContent = project.techStack;
 }
 
 loadProjectPage();
@@ -59,7 +61,7 @@ function setupSlider(project) {
             
             // The actual fade
             imgEl.style.opacity = 1;
-        }, 200); 
+        }, 400); 
     });
     });
 }
