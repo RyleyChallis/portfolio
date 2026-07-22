@@ -6,8 +6,7 @@
     "caption": "Tipsy Kisses is a luxury mobile-bar service covering all of East Sussex. They cater weddings, birthdays, celebrations, and more with a variety of drinks, stations, and a loving, bubbly team of staff.",
     "image": "css/assets/assets/tipsy-mobile.webp",
     "images": ["css/assets/tipsy-mobile.webp", "css/assets/tipsy2.webp", "css/assets/tipsy3.webp", "css/assets/tipsy4.webp", "css/assets/tipsy5.webp", "css/assets/tipsy6.webp"],
-    "liveUrl": "ryleychallis,github.io/tipsy-kisses",
-    "techStack": ["HTML", "CSS"]
+    "liveUrl": "ryleychallis,github.io/tipsy-kisses"
   },
   {
     "id": "broadway",
@@ -17,7 +16,6 @@
     "captionTwo": "The design goal for the Broadway Roofing website was something clean, modern, and spacious while cultivating an immediate sense of trust between the business owners and their clients. By focusing on a professional aesthetic, this design aims to reassure homeowners that they are dealing with reliable, heritage-conscious contractors.",
     "image": "css/assets/assets/broadway.webp",
     "images": ["css/assets/broadway.webp", "css/assets/broadway2.webp", "css/assets/broadway3.webp", "css/assets/broadway4.webp", "css/assets/broadway5.webp", "css/assets/broadway6.webp", "css/assets/broadway7.webp"],
-    "liveUrl": "ryleychallis,github.io/broadway-roofing-ltd",
-    "techStack": ["HTML", "CSS"]
+    "liveUrl": "ryleychallis,github.io/broadway-roofing-ltd"
   }
 ]

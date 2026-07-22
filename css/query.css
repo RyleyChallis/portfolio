@@ -121,6 +121,9 @@
     .mobile-only {
         display: block !important; /* Important flag must be kept, without it hero content is invisible */
     }
+    nav .nav-links-second .btn-primary {
+        display: none;
+    }
     #gallery .mobile-only {
         margin-bottom: 75px;
     }
@@ -140,12 +143,6 @@
     #packages-page section .container p.desktop-only,
     #packages-page section .container p.mobile-only {
         text-align: center;
-    }
-}
-
-@media (max-width: 572px) {
-    nav .nav-links-second .btn-primary {
-        display: none;
     }
 }
 
