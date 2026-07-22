@@ -16,13 +16,14 @@ async function loadProjectPage() {
     }
 
     document.getElementById('project-image').src = project.images[0];
-
     setupSlider(project);
 
     document.getElementById('project-image').alt = project.title;
     titleEl.textContent = project.title;
+    document.getElementById('project-description').textContent = project.description;
     document.getElementById('philosophy-caption').textContent = project.caption;
     document.getElementById('philosophy-caption-two').textContent = project.captionTwo;
+
     const liveLink = document.getElementById('project-live-link');
     if (liveLink) {
         liveLink.href = project.liveUrl;
