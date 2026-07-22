@@ -52,93 +52,102 @@
 
     <style> /* button css */
         .btn-primary {
-            background-color: var(--main-yellow);
-            color: var(--header-main);
-            padding: 16px 24px !important;
+    background-color: var(--main-yellow);
+    color: var(--header-main);
+    padding: 16px 24px !important;
 
-            border: 1.8px solid var(--header-main);
-            border-radius: 50px;
-            text-decoration: none;
+    border: 1.8px solid var(--header-main);
+    border-radius: 50px;
+    text-decoration: none;
 
-            font-size: var(--fs-p);
-            font-family: var(--ff-body);
+    font-size: var(--fs-p);
+    font-family: var(--ff-body);
+    font-weight: 500;
 
-            transition: all 0.2s ease;
-            cursor: pointer;
-            white-space: nowrap !important;
-            text-align: center;
-        }
+    display: inline-block;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    white-space: nowrap;
 
-        nav .btn-primary:hover {
-            background-color: var(--main-yellow);
-            box-shadow: 0 5px 0 0 var(--header-main);
-        }
+    text-align: center;
+}
 
-        .btn-primary:hover {
-            filter: brightness(90%);
-        }
+nav .btn-primary:hover {
+    box-shadow: 0 5px 0 0 var(--header-main);
+}
 
-        .package-actions .btn-primary {
-            width: 100%;
-        }
+.btn-primary:hover {
+    filter: brightness(90%) !important;
+}
 
-        .package-card .btn-primary {
-            display: inline-block;
-            margin-top: auto;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
+.package-actions .btn-primary {
+    width: 100%;
+}
 
-        .package-card .btn-primary:hover {
-            filter: brightness(90%);
-        }
+.package-card .btn-primary {
+    display: inline-block;
+    margin-top: auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
 
-        #packages .learn-more-btn {
-            width: fit-content;
-            margin: 0 auto;
-        }
+.package-card .btn-primary:hover {
+    filter: brightness(90%);
+}
 
-        #about .btn-primary {
-            margin: 75px 0;
-        }
+#tech .btn-primary {
+    margin: 0 auto;
+}
 
-        .nav-links-second .cta-two {
-            position: relative;
-            overflow: hidden;
-            align-items: flex-start;
-        
-            background-color: var(--main-white);
-            color: var(--header-main);
-            
-            padding: 16px 24px !important;
-            border: 1.8px solid var(--header-main);
-            border-radius: 50px;
-            font-size: var(--fs-p);
-            
-            text-decoration: none;
-            transition: all 0.3s ease;
-            margin: 0 !important;
-        }
+.nav-links-second .cta-two {
+    position: relative;
+    overflow: hidden;
+    align-items: flex-start;
+  
+    background-color: var(--main-white);
+    color: var(--header-main);
+    
+    padding: 16px 24px !important;
+    border: 1.8px solid var(--header-main);
+    border-radius: 50px;
+    font-size: var(--fs-p);
+    
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 0 !important;
+}
 
-        .nav-links-second .cta-two:hover {
-            box-shadow: 0 5px 0 0 var(--header-main);
-            filter: brightness(95%) !important;
-        }
+.nav-links-second .cta-two:hover {
+    box-shadow: 0 5px 0 0 var(--header-main);
+    filter: brightness(95%);
+}
 
-        .btn-secondary {
-            background: transparent;
-            color: var(--header-main);
-            font-size: var(--fs-p);
-            font-family: var(--ff-body);
+.btn-secondary {
+    background: transparent;
+    color: var(--header-main);
+    font-size: var(--fs-p);
+    font-family: var(--ff-body);
 
-            text-decoration: none;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-        }
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
 
-        .btn-secondary i {
-            margin-left: 10px;
-        }
+.btn-secondary i {
+    margin-left: 10px;
+}
+
+#final .btn-primary {
+    display: flex !important;
+    max-width: fit-content;
+    margin: 0 auto !important;
+}
+
+#mySidebar .btn-primary {
+    width: 90% !important;
+    margin: 0 auto;
+}
     </style>
 
     <link rel="stylesheet" href="css/projects.css">
@@ -221,7 +230,8 @@
         <section id="tech">
             <div class="container">
                 <h2>Project Tech Stack</h2>
-                <p id="tech-stack"></p>
+                <ul id="tech-stack"></ul>
+                <a class="btn-primary" href="/booking">Start a Project</a>
             </div>
         </section>
     </main>

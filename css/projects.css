@@ -57,6 +57,10 @@ section {
     --ff-body: 'inter', sans-serif;
 }
 
+.mobile-only {
+    display: none;
+}
+
 section:nth-child(odd) {
     background-color: var(--main-white);
 }
@@ -89,7 +93,7 @@ h2 {
     font-weight: 700;
     color: var(--header-main);
     text-align: center;
-    padding: 75px 0;
+    padding: 75px 0 0 0;
     margin: 0 auto !important;
 }
 
@@ -127,7 +131,7 @@ li {
 .project-image-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 24px;
 }
 
 .project-page img#project-image {
@@ -192,9 +196,26 @@ li {
     padding-bottom: 75px;
 }
 
-#final {
-    min-height: 30vh;
+#tech {
+    min-height: auto;
     padding-bottom: 75px;
+}
+
+#tech ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#tech-stack li:not(:last-child)::after {
+  content: "•";
+  margin: 0 14px;
+  color: #8c827b; /* Softer tone for the dot */
 }
 
 footer {
