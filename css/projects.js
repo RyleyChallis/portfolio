@@ -69,7 +69,7 @@ function setupSlider(project) {
 
                 // The actual fade
                 imgEl.style.opacity = 1;
-            }, 200);
+            }, 400);
         });
     });
 }
