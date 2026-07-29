@@ -46,7 +46,7 @@ nav {
 }
 
 nav .logo img {
-    max-width: 200px;
+    max-width: 140px;
     margin: 0;
     padding: 0;
 }
@@ -198,7 +198,7 @@ nav .logo img {
 }
 
 .sidebar-footer .footer-logo img {
-    max-width: 250px;
+    max-width: 140px;
 }
 
 #sidebarOverlay {
