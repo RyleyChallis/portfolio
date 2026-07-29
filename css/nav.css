@@ -81,11 +81,7 @@ nav .logo img {
 }
 
 .nav-links a:not(.btn-primary):hover {
-    background-color: #e6e6e6;
-}
-
-.nav-links a.active {
-    background-color: #e6e6e6;
+    background-color: #ececec;
 }
 
 .nav-links-first {
