@@ -61,10 +61,10 @@ section {
     display: none;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: var(--main-white);
 }
-section:nth-child(even) {
+section:nth-child(odd) {
     background-color: var(--off-white);
 }
 
