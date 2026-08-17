@@ -64,7 +64,15 @@ section:nth-child(even) {
 }
 
 .booking-page section:not(#hero):nth-child(even) {
+    background-color: var(--main-white);
+}
+.booking-page section:not(#hero):nth-child(odd) {
     background-color: var(--off-white);
+}
+
+::placeholder {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: var(--text-main);
 }
 
 h2 {
@@ -156,6 +164,7 @@ li {
     text-align: center;
     margin: 0 auto;
     padding-bottom: 75px;
+    max-width: 70%;
 }
 
 #vision {
