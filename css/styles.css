@@ -287,7 +287,6 @@ h3 {
     transform: translateY(-10px) !important;
 }
 
-
 #stats {
     min-height: 20vh;
     background-color: var(--header-main) !important; /* Important flag must be kept. Stats background defaults to pure white without important flag. */
@@ -318,7 +317,7 @@ h3 {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* Snaps back seamlessly exactly halfway */
+        transform: translateX(-50%);
     }
 }
 
@@ -393,11 +392,12 @@ h3 {
     outline: none;
     
     text-align: left;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: var(--fs-h4);
+    font-weight: 700;
+    color: var(--header-main);
     
     cursor: pointer;
-    display: flex !important;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     
@@ -407,7 +407,7 @@ h3 {
 
 .faq-question::after, .package-question::after {
     content: '+';
-    font-size: 1.5rem;
+    font-size: var(--fs-h4);
     background-color: var(--main-yellow);
     border-radius: 50px;
     
@@ -420,7 +420,7 @@ h3 {
     align-items: center;
 
     color: var(--header-main);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .faq-card.active .faq-question::after, .package-card.active .package-question::after {
@@ -448,15 +448,11 @@ h3 {
     padding-bottom: 75px;
 }
 
-#final h2 {
-    padding-bottom: 20px;
-}
-
 #final .container {
     max-width: none;
 }
 
-.legal-page h2 {
+.legal-page h2, #final h2 {
     padding-bottom: 20px;
 }
 
