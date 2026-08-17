@@ -124,8 +124,13 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    text-align: left;
+    min-height: 135vh;
+    padding-top: 25vh;
+}
+
+#herotop .container {
+    align-items: center;
+    text-align: center;
 }
 
 .project-image-wrapper {
@@ -135,7 +140,7 @@ li {
 }
 
 .project-page img#project-image {
-    max-width: 700px;
+    width: 900px;
     border-radius: 7px;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
     transition: opacity 0.5s ease-in-out;
