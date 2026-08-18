@@ -269,6 +269,12 @@ h3 {
     text-decoration: none;
 }
 
+.about-text i {
+    font-size: var(--fs-h3);
+    color: var(--text-main);
+    text-decoration: none;
+}
+
 .dev-profile .about-image {
     display: flex;
     justify-content: center;
