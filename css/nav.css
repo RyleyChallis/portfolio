@@ -30,10 +30,9 @@
 nav {
     position: absolute;
     background-color: transparent;
-    min-height: 14vh;
     height: 20vh;
 
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px;
     margin: 0 auto;
     justify-content: center !important;
 
@@ -47,7 +46,7 @@ nav {
 
 nav .logo img {
     max-width: 140px;
-    margin: 0;
+    margin: 0 1rem 0 0;
     padding: 0;
 }
 
