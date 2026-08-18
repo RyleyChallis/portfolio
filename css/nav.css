@@ -88,15 +88,17 @@ nav .logo img {
     display: flex;
     gap: 1rem;
     margin: 0;
+    padding: 0;
 }
 
 .nav-links-second {
     display: flex;
     gap: 1rem;
     margin-left: auto;
-    margin-right: 60px;
+    margin-right: 3.25rem;
     align-items: center;
 }
+
 .openbtn {
     font-size: var(--fs-p);
     cursor: pointer;
