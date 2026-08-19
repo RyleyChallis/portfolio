@@ -496,27 +496,25 @@ footer .intro {
     flex-direction: column;
 
     max-width: 550px;
-    gap: 10px;
-    margin-top: -75px;
 }
 
 footer .intro h2 {
-    padding-bottom: 0;
     display: flex;
     margin-right: auto;
     width: 100%;
+    padding: 0;
+
+    color: var(--main-white);
 }
 
-footer .intro h2 img {
-    max-width: 260px;
-    margin-left: -50px;
+.intro h2 span {
+    color: var(--main-yellow);
 }
 
 footer .intro p {
     font-size: clamp(0.9rem, 2vw, 1.1rem);
     font-family: var(--ff-body);
     color: var(--main-white);
-    margin: -50px 0 0 0;
     padding: 0;
 }
 

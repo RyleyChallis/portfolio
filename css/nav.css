@@ -44,10 +44,10 @@ nav {
     z-index: 9999;
 }
 
-nav .logo img {
-    max-width: 140px;
-    margin: 0 1rem 0 0;
-    padding: 0;
+nav .logo {
+    text-decoration: none;
+    height: 7vh;
+    padding-right: 1rem;
 }
 
 .nav-links {
