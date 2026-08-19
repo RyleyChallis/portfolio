@@ -7,8 +7,7 @@
     "captionTwo": "The design philosophy focused on bringing the vibrant, celebration-first energy of an event into a sleek, boutique digital space. We utilized a warm, elegant color palette, refined typography, and rich visual media to reflect the high-end nature of their service. Interactive package breakdowns and frictionless booking journeys ensure that the transition from initial discovery to event reservation feels effortless.",
     "image": "css/assets/assets/tipsy-mobile.webp",
     "images": ["css/assets/tipsy-mobile.webp", "css/assets/tipsy2.webp", "css/assets/tipsy3.webp", "css/assets/tipsy4.webp", "css/assets/tipsy5.webp", "css/assets/tipsy6.webp"],
-    "liveUrl": "https://ryleychallis.github.io/tipsy-kisses",
-    "techStack": ["HTML", "CSS", "JavaScript"]
+    "liveUrl": "https://ryleychallis.github.io/tipsy-kisses"
   },
   {
     "id": "broadway",
@@ -18,7 +17,6 @@
     "captionTwo": "The design goal for the Broadway Roofing website was something clean, modern, and spacious while cultivating an immediate sense of trust between the business owners and their clients. By focusing on a professional aesthetic, this design aims to reassure homeowners that they are dealing with reliable, heritage-conscious contractors.",
     "image": "css/assets/assets/broadway.webp",
     "images": ["css/assets/broadway.webp", "css/assets/broadway2.webp", "css/assets/broadway3.webp", "css/assets/broadway4.webp", "css/assets/broadway5.webp", "css/assets/broadway6.webp", "css/assets/broadway7.webp"],
-    "liveUrl": "https://ryleychallis.github.io/broadway-roofing-ltd",
-    "techStack": ["HTML", "CSS", "JavaScript", "Google Apps Script"]
+    "liveUrl": "https://ryleychallis.github.io/broadway-roofing-ltd"
   }
 ]

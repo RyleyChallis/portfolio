@@ -58,7 +58,7 @@ section {
     --ff-body: 'Inter', sans-serif;
 }
 
-#tipsy .container, #broadway .container, .footer-container, .container, .process-container, .faq-container, .featured-image {
+#tipsy .container, #broadway .container, .row-container, .container, .process-container, .faq-container, .featured-image {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -66,6 +66,24 @@ section {
     justify-content: center;
     max-width: 80%;
     margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.row-container {
+    display: flex;
+    max-width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 0;
 }
 
 section:not(#hero):nth-child(odd) {
@@ -246,7 +264,7 @@ h3 {
     scroll-margin-top: 40px;
 }
 
-#about .dev-profile {
+#about .row-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
@@ -256,7 +274,7 @@ h3 {
     gap: 30px;
 }
 
-.dev-profile .about-text {                 
+.row-container .about-text {                 
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -275,12 +293,12 @@ h3 {
     text-decoration: none;
 }
 
-.dev-profile .about-image {
+.row-container .about-image {
     display: flex;
     justify-content: center;
 }
 
-.dev-profile .about-image img {
+.row-container .about-image img {
     width: clamp(210px, 240px, 36vw);
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -310,7 +328,7 @@ h3 {
     overflow: hidden;
 }
 
-.stats-group {
+#stats .stats-group {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -518,15 +536,7 @@ footer .intro p {
     padding: 0;
 }
 
-footer .footer-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-width: 90% !important;
-}
-
-.footer-container .footer-links {
+.row-container .footer-links {
     display: flex;
     flex-direction: row;
     gap: 50px;
