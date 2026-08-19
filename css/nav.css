@@ -194,10 +194,6 @@ nav .logo img {
     align-items: center;
 }
 
-.sidebar-footer .footer-logo img {
-    max-width: 200px;
-}
-
 #sidebarOverlay {
     position: fixed;
     opacity: 0;
