@@ -204,7 +204,7 @@ h3 {
 
 #final .subtitle {
     max-width: 70%;
-    margin: 0 auto 50px auto;
+    margin: 0 auto;
     text-align: center;   
 }
 
@@ -473,7 +473,8 @@ h3 {
 }
 
 #final .container {
-    max-width: none;
+    align-items: center;
+    gap: 24px;
 }
 
 .legal-page h2, #final h2 {
@@ -514,6 +515,7 @@ footer .intro {
     flex-direction: column;
 
     max-width: 550px;
+    padding-bottom: 50px;
 }
 
 footer .intro h2 {

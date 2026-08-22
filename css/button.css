@@ -80,10 +80,10 @@ nav .btn-primary:hover {
     margin-left: 10px;
 }
 
-#final .btn-primary {
-    display: flex !important;
+#final a.btn-primary {
+    display: flex;
     max-width: fit-content;
-    margin: 0 auto !important;
+    margin: 0 auto;
 }
 
 #mySidebar .btn-primary {
