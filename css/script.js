@@ -17,7 +17,6 @@ window.onclick = function(event) {
 
 
 function openNav() {
-    // Instead of width, we translate to 0 (fully visible)
     document.getElementById("mySidebar").style.transform = "translateX(0)";
 
     const overlay = document.getElementById('sidebarOverlay');
