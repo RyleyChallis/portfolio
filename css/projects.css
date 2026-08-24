@@ -130,6 +130,10 @@ li {
     padding-bottom: 75px;
 }
 
+.project-info {
+    text-align: center;
+}
+
 .project-image-wrapper {
     display: flex;
     flex-direction: column;
@@ -188,6 +192,10 @@ li {
 #tech {
     min-height: 20vh;
     padding-bottom: 75px;
+}
+
+#tech .container {
+    gap: 24px;
 }
 
 #tech p {
