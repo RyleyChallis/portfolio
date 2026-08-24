@@ -130,10 +130,6 @@ li {
     padding-bottom: 75px;
 }
 
-.project-info {
-    text-align: center;
-}
-
 .project-image-wrapper {
     display: flex;
     flex-direction: column;
