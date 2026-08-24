@@ -112,14 +112,22 @@ li {
     padding: 0;
 }
 
-#tipsy .container, #broadway .container, .footer-container, .container {
+.container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
     max-width: 80%;
+    justify-content: center;
+    align-items: flex-start;
     margin: 0 auto;
+}
+
+.row-container {
+    display: flex;
+    max-width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 0;
 }
 
 #tipsy a, #broadway a {
@@ -358,13 +366,6 @@ footer {
     padding: 60px 0 10px 0;
 }
 
-footer .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 footer .intro {
     display: flex;
     flex-direction: column;
@@ -392,15 +393,7 @@ footer .intro p {
     padding: 0;
 }
 
-footer .footer-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    max-width: 90% !important;
-}
-
-.footer-container .footer-links {
+.footer-links {
     display: flex;
     flex-direction: row;
     gap: 50px;

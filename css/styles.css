@@ -58,23 +58,14 @@ section {
     --ff-body: 'Inter', sans-serif;
 }
 
-#tipsy .container, #broadway .container, .row-container, .container, .process-container, .faq-container, .featured-image {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
 .container {
     display: flex;
     flex-direction: column;
     max-width: 80%;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: 0 auto;
+    gap: 0;
 }
 
 .row-container {
@@ -138,7 +129,7 @@ h3 {
 }
 
 .mobile-only {
-    display: none !important;
+    display: none;
 }
 
 #packages {
@@ -210,11 +201,6 @@ h3 {
 
 #process {
     background-color: var(--main-white);
-    padding-bottom: 75px;
-}
-
-.process-container {
-    gap: 90px !important;
 }
 
 .process-card {
@@ -234,6 +220,10 @@ h3 {
 .process-card:nth-child(2) {
     margin-left: auto !important;
     justify-content: flex-end !important;
+}
+
+.process-card:not(:last-child) {
+    margin-bottom: 48px;
 }
 
 .process-card p {
@@ -358,10 +348,6 @@ h3 {
 
 #faqs {
     padding-bottom: 50px;
-}
-
-.faq-container {
-    gap: 0;
 }
 
 .faq-card, #packages-page .package-card {
@@ -709,22 +695,6 @@ input[type="email"] {
     outline: none;
     border-color: #f1f10e;
     background-color: #fff;
-}
-
-.popup-content button.close-btn {
-    background-color: var(--main-yellow);
-    box-shadow: 5px 10px 20px rgba(0,0,0,0.1);
-    border-radius: 50px;
-    border: none;
-    font-size: 24px;
-    padding: 8px 16px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.popup-content button.close-btn:hover {
-    transform: scale(1.15) rotate(-32deg);
-    filter: brightness(90%);
 }
 
 .packages-page section:not(#hero) {

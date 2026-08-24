@@ -68,25 +68,6 @@ section:nth-child(odd) {
     background-color: var(--off-white);
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.row-container {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    max-width: 90%;
-    margin: 0 auto;
-}
-
 h2 {
     font-size: var(--fs-h2);
     font-family: var(--ff-header);
@@ -253,12 +234,7 @@ footer .intro p {
     padding: 0;
 }
 
-.footer-container {
-    display: flex;
-    align-items: center;
-}
-
-.footer-container .footer-links {
+.footer-links {
     display: flex;
     flex-direction: row;
     gap: 50px;
