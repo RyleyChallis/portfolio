@@ -1,6 +1,6 @@
 .btn-primary {
     background-color: var(--main-yellow);
-    padding: 16px 24px !important;
+    padding: 16px 24px;
 
     border: 1.8px solid var(--header-main);
     border-radius: 50px;
@@ -23,7 +23,7 @@ nav .btn-primary:hover {
 }
 
 .btn-primary:hover {
-    filter: brightness(90%) !important;
+    filter: brightness(90%);
 }
 
 .package-actions .btn-primary {
@@ -41,7 +41,7 @@ nav .btn-primary:hover {
     filter: brightness(90%);
 }
 
-.nav-links-second .cta-two {
+.nav-links-second .btn-secondary {
     position: relative;
     overflow: hidden;
     align-items: flex-start;
@@ -49,7 +49,7 @@ nav .btn-primary:hover {
     background-color: var(--main-white);
     color: var(--header-main);
     
-    padding: 16px 24px !important;
+    padding: 16px 24px;
     border: 1.8px solid var(--header-main);
     border-radius: 50px;
     font-size: var(--fs-p);
@@ -60,12 +60,12 @@ nav .btn-primary:hover {
     margin: 0 !important;
 }
 
-.nav-links-second .cta-two:hover {
+.nav-links-second .btn-secondary:hover {
     box-shadow: 0 5px 0 0 var(--header-main);
     filter: brightness(95%);
 }
 
-.btn-secondary {
+.btn-tertiary {
     background: transparent;
     color: var(--header-main);
     font-size: var(--fs-p);
@@ -76,8 +76,12 @@ nav .btn-primary:hover {
     white-space: nowrap;
 }
 
-.btn-secondary i {
+.btn-tertiary i {
     margin-left: 10px;
+}
+
+#process .container a.btn-primary {
+    margin: 75px 0;
 }
 
 #final a.btn-primary {

@@ -222,8 +222,8 @@ h3 {
     justify-content: flex-end !important;
 }
 
-.process-card:not(:last-child) {
-    margin-bottom: 48px;
+.process-card:last-child {
+    margin-bottom: 0;
 }
 
 .process-card p {
