@@ -123,14 +123,11 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+
     min-height: 135vh;
     padding-top: 25vh;
     padding-bottom: 75px;
-}
-
-#hero .container {
-    align-items: center;
-    text-align: center;
 }
 
 .project-image-wrapper {
@@ -181,19 +178,6 @@ li {
 
 .project-image-arrows i:hover {
     background-color: var(--main-yellow);
-}
-
-.project-page .container {
-    display: flex;
-    flex-direction: column; 
-    margin-right: auto;
-    align-items: flex-start;
-}
-
-.project-page .project-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 #philosophy {
