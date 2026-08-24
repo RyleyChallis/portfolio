@@ -135,6 +135,12 @@ li {
     margin: 0 auto;
 }
 
+.project-info {
+    text-align: center;
+}
+
+.project-info
+
 .project-image {
     display: flex;
     justify-content: center;
