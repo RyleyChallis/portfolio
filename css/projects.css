@@ -214,6 +214,7 @@ footer .intro {
     flex-direction: column;
 
     max-width: 550px;
+    padding-bottom: 50px;
 }
 
 footer .intro h2 {
@@ -221,7 +222,6 @@ footer .intro h2 {
     margin-right: auto;
     width: 100%;
     padding: 0;
-
     color: var(--main-white);
 }
 
@@ -236,7 +236,7 @@ footer .intro p {
     padding: 0;
 }
 
-.footer-links {
+.row-container .footer-links {
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -262,7 +262,7 @@ footer .intro p {
     display: flex !important;
     flex-direction: column;
 
-    gap: 12px !important;
+    gap: 12px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -287,11 +287,11 @@ footer .intro p {
 }
 
 footer .footer-bottom {
-    margin: 0 auto;
+    margin: 0;
     padding: 30px 0;
     width: 80%;
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: space-between !important;
     align-items: center;
 
     border-top: 1px solid #4e4e4e;
