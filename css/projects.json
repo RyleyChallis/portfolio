@@ -18,5 +18,15 @@
     "image": "css/assets/assets/broadway.webp",
     "images": ["css/assets/broadway.webp", "css/assets/broadway2.webp", "css/assets/broadway3.webp", "css/assets/broadway4.webp", "css/assets/broadway5.webp", "css/assets/broadway6.webp", "css/assets/broadway7.webp"],
     "liveUrl": "https://ryleychallis.github.io/broadway-roofing-ltd"
+  },
+  {
+    "id": "cortile",
+    "title": "Il Cortile",
+    "description": "A clean, professional website for a trusted roofing contractor, engineered to highlight reliable craftsmanship and capture local service leads.",
+    "caption": "Broadway Roofing is a professional roofing company covering all of London, Kent, Essex, and surrounding areas. They use a variety of materials, such as concrete and clay tiles for pitched roofs, slate for heritage roofs, and membranes for flat roofing.",
+    "captionTwo": "The design goal for the Broadway Roofing website was something clean, modern, and spacious while cultivating an immediate sense of trust between the business owners and their clients. By focusing on a professional aesthetic, this design aims to reassure homeowners that they are dealing with reliable, heritage-conscious contractors.",
+    "image": "css/assets/assets/broadway.webp",
+    "images": ["css/assets/cortile1", "css/assets/cortile2.webp", "css/assets/cortile3.webp", "css/assets/cortile4.webp", "css/assets/cortile5.webp"],
+    "liveUrl": "https://ryleychallis.github.io/il-cortile"
   }
 ]
