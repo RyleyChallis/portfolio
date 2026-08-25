@@ -1,11 +1,12 @@
-function openPopup() {
-    const popup = document.getElementById('project-popup');
-    popup.classList.add('active');
-}
+function toggleNav(isOpen) {
+  document.getElementById("mySidebar").style.transform = isOpen ? "translateX(0)" : "translateX(100%)";
+  
+  const overlay = document.getElementById('sidebarOverlay');
+  overlay.style.opacity = isOpen ? "1" : "0";
+  overlay.style.pointerEvents = isOpen ? "auto" : "none";
 
-function closePopup() {
-    const popup = document.getElementById('project-popup');
-    popup.classList.remove('active');
+  document.documentElement.style.overflowY = isOpen ? "hidden" : "auto";
+  document.body.style.userSelect = isOpen ? "none" : "auto";
 }
 
 window.onclick = function(event) {
