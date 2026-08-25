@@ -3,7 +3,7 @@ async function loadProjectPage() {
     if (!titleEl) return;
 
     const params = new URLSearchParams(window.location.search);
-    const projectId = params.get('id');
+    const projectId = window.location.hash.replace('#', '') || new URLSearchParams(window.location.search).get('id');
 
     const response = await fetch('css/projects.json');
     const projects = await response.json();
@@ -15,7 +15,7 @@ async function loadProjectPage() {
         return;
     }
 
-    const cleanUrl = `${window.location.pathname.replace(/\/$/, '')}/${projectId}`;
+    const cleanUrl = `${window.location.origin}${window.location.pathname}#${projectId}`;
     window.history.replaceState({ id: projectId }, document.title, cleanUrl);
 
     document.getElementById('project-image').src = project.images[0];
