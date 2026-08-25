@@ -185,6 +185,10 @@ li {
     padding-bottom: 75px;
 }
 
+#philosophy .container {
+    gap: 24px;
+}
+
 #tech {
     min-height: 20vh;
     padding-bottom: 75px;
