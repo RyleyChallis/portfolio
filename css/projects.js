@@ -19,6 +19,7 @@ async function loadProjectPage() {
     setupSlider(project);
 
     document.getElementById('project-image').alt = project.title;
+    document.getElementById('page-title').alt = project.PageTitle;
     titleEl.textContent = project.title;
     document.getElementById('project-description').textContent = project.description;
     document.getElementById('philosophy-caption').textContent = project.caption;
