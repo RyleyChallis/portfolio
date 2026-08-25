@@ -28,6 +28,13 @@ async function loadProjectPage() {
     if (liveLink) {
         liveLink.href = project.liveUrl;
     }
+
+    const techStackEl = document.getElementById('tech-stack');
+    if (techStackEl && project.techStack) {
+        techStackEl.innerHTML = project.techStack
+            .map(tech => `<li>${tech}</li>`)
+            .join('');
+    }
 }
 
 loadProjectPage();
