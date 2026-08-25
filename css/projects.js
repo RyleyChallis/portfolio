@@ -3,7 +3,7 @@ async function loadProjectPage() {
     if (!titleEl) return;
 
     const params = new URLSearchParams(window.location.search);
-    const projectId = window.location.hash.replace('#', '') || new URLSearchParams(window.location.search).get('id');
+    const projectId = params.get('id');
 
     const response = await fetch('css/projects.json');
     const projects = await response.json();
@@ -14,9 +14,6 @@ async function loadProjectPage() {
         titleEl.textContent = 'Project not found';
         return;
     }
-
-    const cleanUrl = `${window.location.origin}${window.location.pathname}#${projectId}`;
-    window.history.replaceState({ id: projectId }, document.title, cleanUrl);
 
     document.getElementById('project-image').src = project.images[0];
     setupSlider(project);
