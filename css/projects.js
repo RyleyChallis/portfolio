@@ -15,6 +15,9 @@ async function loadProjectPage() {
         return;
     }
 
+    const cleanUrl = `${window.location.pathname.replace(/\/$/, '')}/${projectId}`;
+    window.history.replaceState({ id: projectId }, document.title, cleanUrl);
+
     document.getElementById('project-image').src = project.images[0];
     setupSlider(project);
 
@@ -27,13 +30,6 @@ async function loadProjectPage() {
     const liveLink = document.getElementById('project-live-link');
     if (liveLink) {
         liveLink.href = project.liveUrl;
-    }
-
-    const techStackEl = document.getElementById('tech-stack');
-    if (techStackEl && project.techStack) {
-        techStackEl.innerHTML = project.techStack
-            .map(tech => `<li>${tech}</li>`)
-            .join('');
     }
 }
 
