@@ -131,7 +131,7 @@ li {
     gap: 0;
 }
 
-#tipsy a, #broadway a, #il-cortile a {
+#first a, #second a, #third a {
     padding: 75px 0;
     margin: 0 auto;
 }
@@ -154,6 +154,7 @@ li {
 }
 
 #final {
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
