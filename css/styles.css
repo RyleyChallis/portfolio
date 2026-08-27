@@ -4,6 +4,33 @@ html, body {
     overflow-x: hidden;
 }
 
+/* body.active {
+    nav .logo h3 {
+        color: var(--off-white);
+    }
+    .nav-links a {
+        font-size: var(--off-white);
+    }
+    .btn-secondary {
+        background-color: rgb(237, 237, 237);
+    }
+    section:nth-child(odd) {
+        background-color: var(--header-main);
+    }
+    section:nth-child(even) {
+        background-color: var(--text-main);
+    }
+    h1 {
+        color: var(--main-white);
+    }
+    h2 {
+        color: var(--off-white);
+    }
+    p {
+        color: rgb(237, 237, 237);
+    }
+} */
+
 * {
     box-sizing: border-box;
 }
