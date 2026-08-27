@@ -144,8 +144,6 @@ form.addEventListener('submit', e => {
             submitBtn.innerText = "Success!";
             submitBtn.style.backgroundColor = "#28a745";
 
-            openPopup();
-
             setTimeout(() => {
                 closePopup();
                 form.reset();

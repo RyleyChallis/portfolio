@@ -119,6 +119,7 @@ li {
     justify-content: center;
     align-items: flex-start;
     margin: 0 auto;
+    gap: 48px;
 }
 
 .row-container {
@@ -186,12 +187,6 @@ li {
 
 #booking {
     padding-bottom: 75px;
-}
-
-#booking .container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 .field-group {
