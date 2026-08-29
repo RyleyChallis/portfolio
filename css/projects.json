@@ -26,7 +26,7 @@
     "caption": "Il Cortile is a concept Italian restaurant designed for guests across East and West Sussex. The proposed menu spans from morning artisan espresso and freshly baked cornetti for quick breakfasts to hand-rolled pasta and wood-fired specialities for evening dining.",
     "captionTwo": "The design goal for this speculative Il Cortile website was to create a clean, elegant, and inviting digital space that captures the warmth of traditional Italian hospitality. By pairing refined typography with warm, earthy tones, the concept aims to reassure diners that they are exploring an exceptional culinary experience tailored for any time of day.",
     "image": "css/assets/assets/broadway.webp",
-    "images": ["css/assets/cortile1", "css/assets/cortile2.webp", "css/assets/cortile3.webp", "css/assets/cortile4.webp", "css/assets/cortile5.webp"],
+    "images": ["css/assets/cortile1.webp", "css/assets/cortile2.webp", "css/assets/cortile3.webp", "css/assets/cortile4.webp", "css/assets/cortile5.webp"],
     "liveUrl": "https://ryleychallis.github.io/il-cortile"
   }
 ]
