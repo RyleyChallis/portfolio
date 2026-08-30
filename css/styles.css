@@ -140,14 +140,6 @@ h2 {
     margin: 0 auto;
 }
 
-#packages-page h2 {
-    padding-bottom: 20px;
-}
-
-#packages-page .final-header {
-    padding-bottom: 75px;
-}
-
 h3 {
     font-size: var(--fs-h3);
     font-family: var(--ff-header);
@@ -722,22 +714,28 @@ input[type="email"] {
     background-color: #fff;
 }
 
-.packages-page section:not(#hero) {
-    min-height: auto;
-    padding-bottom: 50px;
-}
+#packages-page {
+    section:not(#hero) {
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+    #breakdown {
+        .container {
+            gap: 0;
 
-#packages-page #breakdown .container {
-    gap: 0;
-}
+            .breakdown-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
 
-#packages-page #breakdown .breakdown-item {
-    gap: 0 !important;
-}
-
-#packages-page #breakdown .process-divider {
-    margin: 50px 0;
-    height: 2px !important;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+                min-height: 400px;
+                padding: 24px 0;
+                gap: 12px;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            }
+            .breakdown-item:last-child {
+                border: none;
+            }
+        }
+    }
 }
