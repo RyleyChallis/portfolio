@@ -185,8 +185,6 @@ h3 {
     margin: 0 auto;
 }
 
-.package-container
-
 .package-container .package-card {
     display: flex;
     flex-direction: column;
