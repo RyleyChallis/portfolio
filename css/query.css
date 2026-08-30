@@ -47,6 +47,9 @@
         display: block;
         margin: 0 auto;
     }
+    footer  .row-container {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 992px) {
@@ -97,14 +100,6 @@
     .popup-content .btn-primary {
         padding: 16px 28px;
     }
-    footer .desktop-only {
-        display: none;
-    }
-    footer.footer .container .footer-container {
-        max-width: none !important;
-        display: flex !important;
-        flex-direction: column !important;
-    }
     #summary {
         padding-bottom: 50px;
     }
@@ -133,19 +128,12 @@
     .faq-answer {
         max-width: 95% !important;
     }
-    .footer-bottom {
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center;
-        gap: 5px;
-        padding-bottom: 40px;
-    }
-    .footer-bottom p {
-        margin-bottom: 0;
-    }
     #packages-page section .container p.desktop-only,
     #packages-page section .container p.mobile-only {
         text-align: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
     }
 }
 
@@ -157,12 +145,6 @@
         max-height: 200px !important;
         aspect-ratio: 16 / 9;
         object-fit: cover;
-    }
-    footer.footer .intro {
-        max-width: 80%;
-    }
-    footer.footer .container .footer-container .footer-links {
-        display: flex;
     }
     .sidebar {
         max-width: 80% !important;
@@ -177,18 +159,14 @@
     .summary-item i:active {
         transform: scale(1.15) rotate(-30deg);
     }
+    footer .row-container .footer-links {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 451px) {
     .nav-links-second {
         display: none;
-    }
-    html body footer.footer .container .footer-container .footer-links {
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center;
-        text-align: center;
-        gap: 75px;
     }
 }
 
@@ -214,11 +192,5 @@
     }
     .faq-card:active {
         background-color: #efefef;
-    }
-    .footer-col ul li a:hover {
-        color: var(--main-white);
-    }
-    .footer-col ul li a:active {
-        color: var(--main-white);
     }
 }

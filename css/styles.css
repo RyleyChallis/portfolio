@@ -199,27 +199,26 @@ h3 {
     border: 3px solid var(--text-main);
     box-shadow: 5px 10px 24px rgba(0, 0, 0, 0.2);
     background-color: var(--main-white) !important;
-}
 
-.package-card .number {
-    font-size: 0.8rem;
-    font-family: var(--ff-body);
-    opacity: 0.6;
-}
+    .number {
+        font-size: 0.8rem;
+        font-family: var(--ff-body);
+        opacity: 0.6;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px !important;
+        margin: 0;
+        padding: 0 0 40px 20px;
 
-.package-card ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px !important;
-    margin: 0;
-    padding: 0 0 40px 20px;
-}
-
-.package-card ul li {
-    margin: 0;
-    padding: 0;
-    list-style-type: disc;
-    line-height: 1.5;
+        li {
+            margin: 0;
+            padding: 0;
+            list-style-type: disc;
+            line-height: 1.5;
+        }
+    }
 }
 
 #packages .subtitle {
