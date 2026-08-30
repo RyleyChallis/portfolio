@@ -41,6 +41,10 @@ nav .btn-primary:hover {
     filter: brightness(90%);
 }
 
+#process .btn-primary {
+    margin: 50px auto;
+}
+
 .nav-links-second .btn-secondary {
     position: relative;
     overflow: hidden;

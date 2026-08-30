@@ -82,7 +82,10 @@
 
 @media (max-width: 768px) {
     .nav-links-second {
-        gap: 10px !important;
+        gap: 10px;
+    }
+    #about .row-container {
+        flex-direction: column;
     }
     .gallery-container {
         display: flex;
