@@ -118,6 +118,9 @@
     .desktop-only {
         display: none !important;
     }
+    #hero h1 span {
+        display: none;
+    }
     .mobile-only {
         display: block !important; /* Important flag must be kept, without it hero content is invisible */
     }
@@ -149,9 +152,6 @@
 @media (max-width: 526px) {
     #hero {
         padding-bottom: 75px;
-    }
-    .desktop-only {
-        display: none;
     }
     html body main #about .about-container .about-image img {
         max-height: 200px !important;

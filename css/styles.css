@@ -167,6 +167,14 @@ h3 {
     background-color: var(--off-white);
 }
 
+#packages-page {
+    .container .container ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
 .package-container {
     display: flex;
     flex-direction: column;
@@ -176,6 +184,8 @@ h3 {
     max-width: 90%;
     margin: 0 auto;
 }
+
+.package-container
 
 .package-container .package-card {
     display: flex;
@@ -380,7 +390,7 @@ h3 {
 .faq-card, #packages-page .package-card {
   border-bottom: 1px solid #eee;
   border-radius: 7px;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   padding: 10px 0 10px 20px;
   width: 100%;
 }
@@ -388,8 +398,10 @@ h3 {
 #packages-page .package-card {
     background-color: var(--main-white);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.02);
-    padding-right: 20px;
-    margin-top: 50px;
+    
+    width: 100%;
+    padding: 10px 0 10px 20px;
+    margin: 50px 0;
 }
 
 #packages-page #business .package-card {
