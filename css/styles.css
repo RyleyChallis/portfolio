@@ -573,7 +573,7 @@ footer .intro p {
 .footer-col h3 {
     font-size: clamp(1.2rem, 2vw, 1.4rem) !important;
     font-family: var(--ff-header);
-    color: var(--main-yellow);
+    color: var(--main-white);
 
     margin: 0 0 10px 0;
     padding: 0;

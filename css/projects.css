@@ -7,7 +7,7 @@ html, body {
 
 body.active {
     .nav-links a:not(.btn-primary, .cta-two) {
-        color: #e3e3e3;
+        color: var(--dark-ow);
     }
     .btn-secondary {
         background-color: var(--dark-text) !important;
@@ -17,7 +17,7 @@ body.active {
         background-color: var(--dark-text);
     }
     #mySidebar {
-        background-color: #1f1f1f;
+        background-color: var(--dark-header);
     }
     .sidebar-links a {
         color: var(--main-white);
@@ -48,6 +48,16 @@ body.active {
     }
     .btn-primary:hover {
         filter: brightness(80%);
+    }
+    .btn-tertiary {
+        color: var(--dark-ow);
+    }
+    .image-arrow i {
+        color: var(--dark-ow);
+    }
+    .image-arrow i:hover {
+        background-color: var(--main-white);
+        color: var(--dark-header);
     }
 }
 
@@ -160,6 +170,7 @@ li {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    gap: 0;
 }
 
 .row-container {
@@ -229,7 +240,8 @@ li {
 }
 
 .project-image-arrows i:hover {
-    background-color: var(--main-yellow);
+    background-color: var(--text-main);
+    color: var(--main-white);
 }
 
 #philosophy {
@@ -257,16 +269,8 @@ li {
 }
 
 footer {
-    min-height: 400px;
     background-color: #1a1919;
     padding: 60px 0 10px 0;
-}
-
-footer .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 footer .intro {
@@ -282,6 +286,7 @@ footer .intro h2 {
     margin-right: auto;
     width: 100%;
     padding: 0;
+
     color: var(--main-white);
 }
 
@@ -311,7 +316,7 @@ footer .intro p {
 .footer-col h3 {
     font-size: clamp(1.2rem, 2vw, 1.4rem) !important;
     font-family: var(--ff-header);
-    color: var(--main-yellow);
+    color: var(--main-white);
 
     margin: 0 0 10px 0;
     padding: 0;
@@ -347,7 +352,7 @@ footer .intro p {
 }
 
 footer .footer-bottom {
-    margin: 0;
+    margin: 50px 0 0 0;
     padding: 30px 0;
     width: 80%;
     display: flex !important;

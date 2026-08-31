@@ -6,6 +6,10 @@ body {
 }
 
 body.active {
+    ::selection {
+        background-color: var(--dark-ow);
+        color: var(--dark-header);
+    }
     .nav-links a:not(.btn-primary, .cta-two) {
         color: #e3e3e3;
     }
@@ -49,6 +53,9 @@ body.active {
     .btn-primary:hover {
         filter: brightness(80%);
     }
+    .btn-tertiary {
+        color: var(--dark-ow);
+    }
 }
 
 * {
@@ -74,6 +81,11 @@ body.active {
     font-style: normal;
     font-display: swap;
     src: url("assets/inter-regular.woff2") format('woff2');
+}
+
+::selection {
+    background-color: var(--dark-header);
+    color: var(--dark-ow);
 }
 
 section {
@@ -187,8 +199,7 @@ li {
 }
 
 #project a {
-    padding: 75px 0;
-    margin: 0 auto;
+    margin: 75px auto;
 }
 
 .project-info {
@@ -464,7 +475,7 @@ footer .intro p {
 .footer-col h3 {
     font-size: clamp(1.2rem, 2vw, 1.4rem) !important;
     font-family: var(--ff-header);
-    color: var(--main-yellow);
+    color: var(--main-white);
 
     margin: 0 0 10px 0;
     padding: 0;

@@ -76,7 +76,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             padding: 0 40px;
         }
 
@@ -104,6 +104,7 @@
             font-size: var(--fs-p);
             font-family: var(--ff-body);
 
+            user-select: none;
             transition: all 0.2s ease;
             cursor: pointer;
             white-space: nowrap !important;
@@ -135,6 +136,7 @@
         }
 
         #packages .learn-more-btn {
+            user-select: none;
             width: fit-content;
             margin: 0 auto;
         }
@@ -143,7 +145,7 @@
             margin: 75px 0;
         }
 
-        .nav-links-second .cta-two {
+        .nav-links-second a.btn-secondary {
             position: relative;
             overflow: hidden;
             align-items: flex-start;
@@ -156,12 +158,13 @@
             border-radius: 50px;
             font-size: var(--fs-p);
             
+            user-select: none;
             text-decoration: none;
             transition: all 0.3s ease;
             margin: 0 !important;
         }
 
-        .nav-links-second .cta-two:hover {
+        .nav-links-second .btn-secondary:hover {
             box-shadow: 0 5px 0 0 var(--header-main);
             filter: brightness(95%) !important;
         }
@@ -172,6 +175,7 @@
             font-size: var(--fs-p);
             font-family: var(--ff-body);
 
+            user-select: none;
             text-decoration: none;
             transition: all 0.3s ease;
             white-space: nowrap;
@@ -199,6 +203,7 @@
             z-index: 1000;
             border-radius: 15px;
 
+            user-select: none;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
@@ -247,7 +252,7 @@
                 </ul>
                 <ul class="nav-links-second">
                     <li><a href="mailto:ryley.challis@outlook.com?subject=General Inquiry - Let's Work Together" class="btn-primary target="_blank">Start a Conversation</a></li>
-                    <li><a class="cta-two desktop-only" href="/portfolio">Portfolio</a></li>
+                    <li><a class="btn-secondary desktop-only" href="/portfolio">Portfolio</a></li>
                 </ul>
             </div>
         </nav>
