@@ -181,6 +181,29 @@
         .btn-tertiary i {
             margin-left: 10px;
         }
+        button.togglebtn {
+            font-size: var(--fs-p);
+            cursor: pointer;
+
+            background-color: var(--main-white);
+            border: 1.8px solid var(--text-main);
+
+            width: 60px;
+            height: 60px;
+            padding: 8px 8px;
+            margin: 0;
+            position: fixed;
+
+            right: 20px;
+            bottom: 5%;
+            z-index: 1000;
+            border-radius: 15px;
+
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 
     <link rel="stylesheet" href="css/portfolio.css">
@@ -188,6 +211,9 @@
     <link rel="stylesheet" href="css/query.css" media="screen and (max-width: 1323px)">
 </head>
 <body>
+    <button class="togglebtn" id="toggle-btn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
     <div id="sidebarOverlay"  onclick="toggleNav(false)"></div>
     <header>
         <div id="mySidebar" class="sidebar">
@@ -303,20 +329,6 @@
             </div>
         </div>
     </footer>
-    <div id="project-popup" class="popup-overlay">
-        <div class="popup-content">
-            <h3>Project Start-Up</h3>
-            <p><span>Please note:</span> To secure your slot, a <strong>50% non-refundable booking deposit</strong> is required before work commences.</p>
-            
-            <div class="popup-buttons">
-                <button onclick="closePopup()" class="cta-two">Cancel</button>
-            
-                <a class="btn-primary" href="/booking">
-                I Understand - Proceed
-            </a>
-            </div>
-        </div>
-    </div>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {

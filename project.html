@@ -29,6 +29,11 @@
         crossorigin
     >
 
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -187,6 +192,29 @@ nav .btn-primary:hover {
     width: 90% !important;
     margin: 0 auto;
 }
+button.togglebtn {
+            font-size: var(--fs-p);
+            cursor: pointer;
+
+            background-color: var(--main-white);
+            border: 1.8px solid var(--text-main);
+
+            width: 60px;
+            height: 60px;
+            padding: 8px 8px;
+            margin: 0;
+            position: fixed;
+
+            right: 20px;
+            bottom: 5%;
+            z-index: 1000;
+            border-radius: 15px;
+
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 
     <link rel="stylesheet" href="css/projects.css">
@@ -194,6 +222,9 @@ nav .btn-primary:hover {
     <link rel="stylesheet" href="css/query.css" media="screen and (max-width: 1323px)">
 </head>
 <body>
+    <button class="togglebtn" id="toggle-btn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
     <div id="sidebarOverlay" onclick="toggleNav(false)"></div>
     <header>
         <div id="mySidebar" class="sidebar">
@@ -226,7 +257,7 @@ nav .btn-primary:hover {
                 </ul>
                 <ul class="nav-links-second">
                     <li><a href="mailto:ryley.challis@outlook.com?subject=General Inquiry - Let's Work Together" class="btn-primary target="_blank">Start a Conversation</a></li>
-                    <li><a class="cta-two desktop-only" href="/portfolio">Portfolio</a></li>
+                    <li><a class="btn-secondary desktop-only" href="/portfolio">Portfolio</a></li>
                 </ul>
             </div>
         </nav>

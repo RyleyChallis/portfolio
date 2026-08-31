@@ -5,6 +5,52 @@ body {
     overflow-x: hidden;
 }
 
+body.active {
+    .nav-links a:not(.btn-primary, .cta-two) {
+        color: #e3e3e3;
+    }
+    .btn-secondary {
+        background-color: var(--dark-text) !important;
+        color: var(--main-white);
+    }
+    .nav-links a:hover:not(.btn-primary) {
+        background-color: var(--dark-text);
+    }
+    #mySidebar {
+        background-color: #1f1f1f;
+    }
+    .sidebar-links a {
+        color: var(--main-white);
+    }
+    .sidebar-links a:hover, button.openbtn {
+        background-color: var(--dark-text) !important;
+    }
+    .togglebtn {
+        background-color: var(--dark-text);
+    }
+    section:nth-child(odd) {
+        background-color: var(--dark-header);
+    }
+    section:nth-child(even) {
+        background-color: var(--dark-text) !important;
+    }
+    h1, h2, h3, button {
+        color: var(--main-white);
+    }
+    p, li, span {
+        color: var(--dark-ow) !important;
+    }
+    li b {
+        color: var(--main-white);
+    }
+    .btn-primary {
+        background-color: var(--dark-yellow);
+    }
+    .btn-primary:hover {
+        filter: brightness(80%);
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -41,20 +87,26 @@ section {
 
 :root {
     --main-yellow: #f6f604;
+    --dark-yellow: #d7d706;
+    
     --main-white: #faf8f8;
     --off-white: #f5f0f0;
+    --dark-ow: #e3e3e3;
+
     --header-main: #333;
+    --dark-header: #1f1f1f;
     --text-main: #535353;
+    --dark-text: #2d2d2d;
 
     --fs-h1: clamp(2.4rem, 6vw, 3.5rem);
     --fs-h2: clamp(2rem, 4vw, 2.4rem);
     --fs-h3: clamp(1.6rem, 4vw, 1.8rem);
-    --fs-h4: clamp(1.3rem, 4vw, 1.6rem);
+    --fs-h4: clamp(1.2rem, 3vw, 1.3rem);
     --fs-p: clamp(1rem, 2vw, 1.2rem);
 
-    --ff-header: 'fraunces', serif;
+    --ff-header: 'Fraunces', serif;
     --ff-header-two: 'Fraunces-Two', serif;
-    --ff-body: 'inter', sans-serif;
+    --ff-body: 'Inter', sans-serif;
 }
 
 section:nth-child(odd) {

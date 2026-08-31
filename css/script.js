@@ -161,8 +161,26 @@ form.addEventListener('submit', e => {
     });
 };
 
-const toggleBtn = document.getElementById('toggle-btn');
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('toggle-btn');
+  const icon = toggleBtn ? toggleBtn.querySelector('i') : null;
 
-function toggleTheme() {
-    document.body.classList.toggle('active');
-}
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('active');
+    if (icon) icon.classList.replace('fa-moon', 'fa-sun');
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('active');
+
+      if (document.body.classList.contains('active')) {
+        localStorage.setItem('darkMode', 'enabled');
+        if (icon) icon.classList.replace('fa-moon', 'fa-sun');
+      } else {
+        localStorage.removeItem('darkMode');
+        if (icon) icon.classList.replace('fa-sun', 'fa-moon');
+      }
+    });
+  }
+});

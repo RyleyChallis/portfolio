@@ -8,12 +8,12 @@ body.active {
     .nav-links a:not(.btn-primary, .cta-two) {
         color: #e3e3e3;
     }
-    .cta-two {
-        background-color: #2d2d2d;
+    .btn-secondary {
+        background-color: var(--dark-text) !important;
         color: var(--main-white);
     }
     .nav-links a:hover:not(.btn-primary) {
-        background-color: #2d2d2d;
+        background-color: var(--dark-text);
     }
     #mySidebar {
         background-color: #1f1f1f;
@@ -22,19 +22,22 @@ body.active {
         color: var(--main-white);
     }
     .sidebar-links a:hover, button.openbtn {
-        background-color: #2d2d2d !important;
+        background-color: var(--dark-text) !important;
     }
     .togglebtn {
-        background-color: #2d2d2d;
+        background-color: var(--dark-text);
+    }
+    section:nth-child(odd) {
+        background-color: var(--dark-header);
     }
     section:nth-child(even) {
-        background-color: #2d2d2d !important;
+        background-color: var(--dark-text) !important;
     }
     h1, h2, h3, button {
         color: var(--main-white);
     }
     p, li, span {
-        color: var(--dark-off-white) !important;
+        color: var(--dark-ow) !important;
     }
     li b {
         color: var(--main-white);
@@ -46,7 +49,7 @@ body.active {
         border-bottom: 1px solid #1f1f1f;
     }
     .btn-primary {
-        background-color: var(--dark-mode-yellow);
+        background-color: var(--dark-yellow);
     }
     .btn-primary:hover {
         filter: brightness(80%);
@@ -91,16 +94,16 @@ section {
 
 :root {
     --main-yellow: #f6f604;
-    --dark-mode-yellow: #d7d706;
+    --dark-yellow: #d7d706;
     
     --main-white: #faf8f8;
     --off-white: #f5f0f0;
-    --dark-off-white: #e3e3e3;
+    --dark-ow: #e3e3e3;
 
     --header-main: #333;
-    --dark-header-main: #1f1f1f;
+    --dark-header: #1f1f1f;
     --text-main: #535353;
-    --dark-text-main: #2d2d2d;
+    --dark-text: #2d2d2d;
 
     --fs-h1: clamp(2.4rem, 6vw, 3.5rem);
     --fs-h2: clamp(2rem, 4vw, 2.4rem);
@@ -418,22 +421,6 @@ h3 {
     width: 100%;
     padding: 10px 0 10px 20px;
     margin: 50px 0;
-}
-
-#packages-page #business .package-card {
-    background-color: #efefef;
-}
-
-#packages-page .package-card p {
-    padding: 0 0 30px 20px;
-}
-
-#packages-page .package-card li {
-    list-style: disc;
-}
-
-#packages-page .package-card .package-answer {
-    max-width: 90%;
 }
 
 .faq-card:hover {
@@ -767,5 +754,20 @@ input[type="email"] {
                 border: none;
             }
         }
+    }
+    #business .package-card {
+        background-color: #efefef;
+    }
+
+    .package-card p {
+        padding: 0 0 30px 20px;
+    }
+
+    .package-card li {
+        list-style: disc;
+    }
+
+    .package-card .package-answer {
+        max-width: 90%;
     }
 }
