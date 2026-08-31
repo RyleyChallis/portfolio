@@ -4,32 +4,54 @@ html, body {
     overflow-x: hidden;
 }
 
-/* body.active {
-    nav .logo h3 {
-        color: var(--off-white);
+body.active {
+    .nav-links a:not(.btn-primary, .cta-two) {
+        color: #e3e3e3;
     }
-    .nav-links a {
-        font-size: var(--off-white);
-    }
-    .btn-secondary {
-        background-color: rgb(237, 237, 237);
-    }
-    section:nth-child(odd) {
-        background-color: var(--header-main);
-    }
-    section:nth-child(even) {
-        background-color: var(--text-main);
-    }
-    h1 {
+    .cta-two {
+        background-color: #2d2d2d;
         color: var(--main-white);
     }
-    h2 {
-        color: var(--off-white);
+    .nav-links a:hover:not(.btn-primary) {
+        background-color: #2d2d2d;
     }
-    p {
-        color: rgb(237, 237, 237);
+    #mySidebar {
+        background-color: #1f1f1f;
     }
-} */
+    .sidebar-links a {
+        color: var(--main-white);
+    }
+    .sidebar-links a:hover, button.openbtn {
+        background-color: #2d2d2d !important;
+    }
+    .togglebtn {
+        background-color: #2d2d2d;
+    }
+    section:nth-child(even) {
+        background-color: #2d2d2d !important;
+    }
+    h1, h2, h3, button {
+        color: var(--main-white);
+    }
+    p, li, span {
+        color: var(--dark-off-white) !important;
+    }
+    li b {
+        color: var(--main-white);
+    }
+    #packages .container .package-card, #stats, .faq-card:hover, section:nth-child(odd) {
+        background-color: #1f1f1f !important;
+    }
+    .faq-card {
+        border-bottom: 1px solid #1f1f1f;
+    }
+    .btn-primary {
+        background-color: var(--dark-mode-yellow);
+    }
+    .btn-primary:hover {
+        filter: brightness(80%);
+    }
+}
 
 * {
     box-sizing: border-box;
@@ -69,10 +91,16 @@ section {
 
 :root {
     --main-yellow: #f6f604;
+    --dark-mode-yellow: #d7d706;
+    
     --main-white: #faf8f8;
     --off-white: #f5f0f0;
+    --dark-off-white: #e3e3e3;
+
     --header-main: #333;
+    --dark-header-main: #1f1f1f;
     --text-main: #535353;
+    --dark-text-main: #2d2d2d;
 
     --fs-h1: clamp(2.4rem, 6vw, 3.5rem);
     --fs-h2: clamp(2rem, 4vw, 2.4rem);
@@ -161,6 +189,7 @@ h3 {
     .container {
         max-width: 80%;
         gap: 24px;
+
         .package-card {
             display: flex;
             flex-direction: column;
@@ -246,6 +275,7 @@ h3 {
 
     .process-card:last-child {
         margin-bottom: 0;
+        margin-left: auto;
     }
 
     .process-card p {

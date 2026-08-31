@@ -11,7 +11,7 @@
     font-weight: 500;
 
     display: inline-block;
-    transition: all 0.2s ease;
+    transition: filter 0.3s ease, border 0.3s ease;
     cursor: pointer;
     white-space: nowrap;
 
@@ -97,4 +97,25 @@ nav .btn-primary:hover {
 #mySidebar .btn-primary {
     width: 90% !important;
     margin: 0 auto;
+}
+
+button.togglebtn {
+    font-size: var(--fs-p);
+    cursor: pointer;
+
+    background-color: var(--main-white);
+    border: 1.8px solid var(--text-main);
+
+    padding: 8px 8px;
+    margin: 0;
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    border-radius: 15px;
+
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
 }

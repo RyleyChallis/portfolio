@@ -120,6 +120,7 @@ nav .logo {
     box-shadow: 0 5px 0 0 var(--text-main);
     filter: brightness(90%);
 }
+
 #mySidebar {
     display: flex;
     flex-direction: column;
@@ -167,9 +168,9 @@ nav .logo {
 }
 
 .sidebar-links h3 {
-    font-size: var(--fs-p);
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
     font-family: var(--ff-body);
-    color: #888;
+    color: var(--dark-text-main);
     padding-left: 20px;
     margin: 0;
 }

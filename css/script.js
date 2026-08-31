@@ -160,3 +160,9 @@ form.addEventListener('submit', e => {
         });
     });
 };
+
+const toggleBtn = document.getElementById('toggle-btn');
+
+function toggleTheme() {
+    document.body.classList.toggle('active');
+}
