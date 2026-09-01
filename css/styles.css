@@ -34,7 +34,7 @@ body.active {
         background-color: var(--dark-text) !important;
     }
     h1, h2, h3, button {
-        color: var(--main-white);
+        color: var(--main-white) !important;
     }
     p, li, span {
         color: var(--dark-ow) !important;
@@ -53,6 +53,12 @@ body.active {
     }
     .btn-primary:hover {
         filter: brightness(80%);
+    }
+    #starter .package-card, #bespoke .package-card {
+        background-color: var(--dark-header);
+    }
+    #business .package-card {
+        background-color: var(--dark-text) !important;
     }
 }
 
@@ -732,11 +738,12 @@ input[type="email"] {
 }
 
 #packages-page {
-    section:not(#hero) {
+    section:not(#hero, #breakdown) {
         min-height: auto;
         padding-bottom: 50px;
     }
     #breakdown {
+        padding-bottom: 75px;
         .container {
             gap: 0;
 
@@ -745,14 +752,20 @@ input[type="email"] {
                 flex-direction: column;
                 justify-content: center;
 
-                min-height: 400px;
+                min-height: auto;
                 padding: 24px 0;
                 gap: 12px;
                 border-bottom: 2px solid rgba(0, 0, 0, 0.1);
             }
             .breakdown-item:last-child {
                 border: none;
+                padding-bottom: 0;
             }
+        }
+        .btn-primary {
+            display: flex;
+            margin: 75px auto 0 auto;
+            max-width: fit-content;
         }
     }
     #business .package-card {

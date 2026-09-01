@@ -175,12 +175,38 @@
         .btn-secondary i {
             margin-left: 10px;
         }
+        button.togglebtn {
+            font-size: var(--fs-p);
+            cursor: pointer;
+
+            background-color: var(--main-white);
+            border: 1.8px solid var(--text-main);
+
+            width: 60px;
+            height: 60px;
+            padding: 8px 8px;
+            margin: 0;
+            position: fixed;
+
+            right: 20px;
+            bottom: 5%;
+            z-index: 1000;
+            border-radius: 15px;
+
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/query.css" media="screen and (max-width: 1323px)">
 </head>
+<button class="togglebtn" id="toggle-btn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
 <body id="packages-page">
     <div id="sidebarOverlay" onclick="toggleNav(false)"></div>
     <header>
@@ -224,7 +250,7 @@
         <section id="hero">
             <div class="hero-content">
                 <h1>Tailored Web Solutions</h1>
-                <p>Are you a freelancer or established CEO looking to scale? Your website should work as hard as you do.</p>
+                <p>Are you a freelancer or established CEO looking to scale a complex brand identity? Your website should work as hard as you do.</p>
                 
                 <a class="btn-primary" href="/booking">Choose Your Path</a>
             </div>
@@ -394,7 +420,7 @@
                     <p>As stated, all packages come with free maintenance, with the Starter Pack allowing up to 14 days, and the Business and Bespoke Suites offering 30 days support.</p>
                 </div>
             </div>
-            <a class="btn-primary" href="/booking" style="display: flex; margin: 75px auto 0 auto; max-width: fit-content;">Let's Get Started</a>
+            <a class="btn-primary" href="/booking">Let's Get Started</a>
         </section>
     </main>
     <footer class="footer">
