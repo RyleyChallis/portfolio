@@ -251,7 +251,7 @@ h3 {
 }
 
 #final .subtitle {
-    max-width: 70%;
+    max-width: clamp(95%, 85vw, 100%);
     margin: 0 auto;
     text-align: center;   
 }

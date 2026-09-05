@@ -165,11 +165,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('toggle-btn');
   const icon = toggleBtn ? toggleBtn.querySelector('i') : null;
 
-  if (localStorage.getItem('darkMode') === 'enabled') {
+  // 1. Check local time (between 6 PM / 18:00 and 6 AM / 06:00)
+  const currentHour = new Date().getHours();
+  const isNightTime = currentHour >= 18 || currentHour < 6;
+
+  // 2. Determine initial state on page load
+  const savedTheme = localStorage.getItem('darkMode');
+  let enableDarkMode;
+
+  if (savedTheme === 'enabled') {
+    enableDarkMode = true;
+  } else if (savedTheme === 'disabled') {
+    enableDarkMode = false;
+  } else {
+    // If user hasn't manually clicked yet, fall back to time
+    enableDarkMode = isNightTime;
+  }
+
+  // Apply active class & icon on load
+  if (enableDarkMode) {
     document.body.classList.add('active');
     if (icon) icon.classList.replace('fa-moon', 'fa-sun');
   }
 
+  // 3. Toggle listener
   if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
       document.body.classList.toggle('active');
@@ -178,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('darkMode', 'enabled');
         if (icon) icon.classList.replace('fa-moon', 'fa-sun');
       } else {
-        localStorage.removeItem('darkMode');
+        localStorage.setItem('darkMode', 'disabled'); // Explicitly save 'disabled' so night mode doesn't override manual light selection
         if (icon) icon.classList.replace('fa-sun', 'fa-moon');
       }
     });
