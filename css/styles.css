@@ -33,8 +33,11 @@ body.active {
     section:nth-child(even) {
         background-color: var(--dark-text) !important;
     }
-    h1, h2, h3, button {
+    h1, h2, h3, button:not(.faq-card) {
         color: var(--main-white) !important;
+    }
+    .faq-card.active {
+        background-color: var(--dark-header);
     }
     p, li, span {
         color: var(--dark-ow) !important;
@@ -437,7 +440,7 @@ h3 {
 }
 
 .faq-card.active {
-    background-color: var(--dark-header);
+    background-color: #e6e6e6;
 }
 
 .faq-question, #packages-page .package-card .package-question {
