@@ -437,7 +437,7 @@ h3 {
 }
 
 .faq-card.active {
-    background-color: #e6e6e6;
+    background-color: var(--dark-header);
 }
 
 .faq-question, #packages-page .package-card .package-question {
