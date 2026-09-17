@@ -273,17 +273,18 @@ h3 {
         border-bottom: 1.8px solid var(--text-main);
     }
 
-    .process-card:nth-child(odd) {
-        margin-right: auto;
+    .process-card:nth-of-type(odd) {
+        margin-left: auto;
     }
 
-    .process-card:nth-child(2) {
-        margin-left: auto !important;
-        justify-content: flex-end !important;
+    .process-card:nth-of-type(2) {
+        margin-right: auto;
+        justify-content: flex-end;
     }
 
     .process-card:last-child {
-        margin-bottom: 0;
+        max-width: none;
+        justify-content: flex-end;
         margin-left: auto;
     }
 
@@ -377,12 +378,10 @@ h3 {
     display: flex;
     width: max-content;
     animation: marquee-slide 20s linear infinite;
-    overflow: hidden;
 }
 
 #stats .stats-group {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     gap: 100px;
     padding-right: 100px;
