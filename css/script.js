@@ -9,14 +9,6 @@ function toggleNav(isOpen) {
   document.body.style.userSelect = isOpen ? "none" : "auto";
 }
 
-window.onclick = function(event) {
-  let modal = document.getElementById('project-popup');
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
 function openNav() {
     document.getElementById("mySidebar").style.transform = "translateX(0)";
 
