@@ -4,7 +4,7 @@
     "title": "Tipsy Kisses",
     "description": "A sleek, high-end website for a luxury mobile bar service, designed to showcase premium mixology and elevate event bookings.",
     "caption": "Tipsy Kisses is a luxury mobile-bar service covering all of East Sussex. They cater weddings, birthdays, celebrations, and more with a variety of drinks, stations, and a loving, bubbly team of staff.",
-    "captionTwo": "The design philosophy focused on bringing the vibrant, celebration-first energy of an event into a sleek, boutique digital space. We utilized a warm, elegant color palette, refined typography, and rich visual media to reflect the high-end nature of their service. Interactive package breakdowns and frictionless booking journeys ensure that the transition from initial discovery to event reservation feels effortless.",
+    "captionTwo": "The design philosophy focused on bringing the vibrant, celebration-first energy of an event into a sleek, boutique digital space. We utilised a warm, elegant color palette, refined typography, and rich visual media to reflect the high-end nature of their service. Interactive package breakdowns and frictionless booking journeys ensure that the transition from initial discovery to event reservation feels effortless.",
     "image": "css/assets/assets/tipsy-mobile.webp",
     "images": ["css/assets/tipsy-mobile.webp", "css/assets/tipsy2.webp", "css/assets/tipsy3.webp", "css/assets/tipsy4.webp", "css/assets/tipsy5.webp", "css/assets/tipsy6.webp"],
     "liveUrl": "https://ryleychallis.github.io/tipsy-kisses"
