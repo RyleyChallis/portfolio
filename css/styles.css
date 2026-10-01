@@ -15,6 +15,9 @@ body.active {
     .nav-links a:hover:not(.btn-primary) {
         background-color: var(--dark-text);
     }
+    .openbtn, .togglebtn {
+        border-color: var(--header-main);
+    }
     #mySidebar {
         background-color: #1f1f1f;
     }
@@ -107,7 +110,7 @@ section {
     
     --main-white: #faf8f8;
     --off-white: #f5f0f0;
-    --dark-ow: #e3e3e3;
+    --dark-ow: #cccccc;
 
     --header-main: #333;
     --dark-header: #1f1f1f;
