@@ -88,7 +88,7 @@
         }
 
         #hero p {
-            max-width: none;
+            max-width: 70%;
             text-align: left;
             margin-bottom: 50px;
         }
@@ -99,7 +99,7 @@
             color: var(--header-main);
             padding: 16px 24px !important;
 
-            border: 1.8px solid var(--text-main);
+            border: 1.8px solid #8c7d0c;
             border-radius: 50px;
             text-decoration: none;
 
@@ -110,11 +110,11 @@
             cursor: pointer;
             white-space: nowrap !important;
             text-align: center;
+            user-select: none;
         }
 
         nav .btn-primary:hover {
-            background-color: var(--main-yellow);
-            box-shadow: 0 5px 0 0 var(--text-main);
+            box-shadow: 0 5px 0 0 #775702;
         }
 
         .btn-primary:hover {
@@ -153,7 +153,7 @@
             background-color: var(--main-white);
             color: var(--text-main);
             
-            padding: 16px 24px !important;
+            padding: 16px 24px;
             border: 1.8px solid var(--text-main);
             border-radius: 50px;
             font-size: var(--fs-p);
@@ -164,7 +164,7 @@
         }
 
         .nav-links-second .btn-secondary:hover {
-            box-shadow: 0 5px 0 0 var(--text-main);
+            box-shadow: 0 5px 0 0 #555;
             filter: brightness(95%) !important;
         }
 
@@ -182,6 +182,29 @@
         .btn-secondary i {
             margin-left: 10px;
         }
+        button.togglebtn {
+            font-size: var(--fs-p);
+            cursor: pointer;
+
+            background-color: var(--main-white);
+            border: 1.8px solid var(--text-main);
+
+            width: 60px;
+            height: 60px;
+            padding: 8px 8px;
+            margin: 0;
+            position: fixed;
+
+            right: 20px;
+            bottom: 5%;
+            z-index: 1000;
+            border-radius: 15px;
+
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 
     <link rel="stylesheet" href="css/styles.css">
@@ -189,6 +212,9 @@
     <link rel="stylesheet" href="css/query.css" media="screen and (max-width: 1323px)">
 </head>
 <body>
+    <button class="togglebtn" id="toggle-btn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
     <div id="sidebarOverlay" onclick="toggleNav(false)"></div>
     <header>
         <div id="mySidebar" class="sidebar">
@@ -231,7 +257,7 @@
         <section id="hero">
             <div class="hero-content">
                 <h1>Legal Information & Policies</h1>
-                <p class="desktop-only">Trust is the foundation of my development process. This page outlines the legal frameworks and privacy commitments that protect your business and your users. I believe in clear communication—from the first line of code to the final project milestone.</p>
+                <p class="desktop-only">Trust is the foundation of my development process. This page outlines the legal frameworks and privacy commitments that protect your business and your users.</p>
                 <p class="mobile-only">I believe in clear communication from the first line of code to the final project milestone. This page outlines my legal frameworks and privacy commitments.</p>
                 <a href="/portfolio" class="btn-primary">Return to Portfolio</a>
             </div>

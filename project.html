@@ -93,106 +93,104 @@
     </style>
 
     <style> /* button css */
-        .btn-primary {
-    background-color: var(--main-yellow);
-    color: var(--header-main);
-    padding: 16px 24px !important;
+    .btn-primary {
+        background-color: var(--main-yellow);
+        color: var(--header-main);
+        padding: 16px 24px !important;
 
-    border: 1.8px solid var(--header-main);
-    border-radius: 50px;
-    text-decoration: none;
+        border: 1.8px solid #8c7d0c;
+        border-radius: 50px;
+        text-decoration: none;
 
-    font-size: var(--fs-p);
-    font-family: var(--ff-body);
-    font-weight: 500;
+        font-size: var(--fs-p);
+        font-family: var(--ff-body);
 
-    display: inline-block;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    white-space: nowrap;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        white-space: nowrap !important;
+        text-align: center;
+        user-select: none;
+        }
 
-    text-align: center;
-}
+        nav .btn-primary:hover {
+            box-shadow: 0 5px 0 0 #775702;
+        }
 
-nav .btn-primary:hover {
-    box-shadow: 0 5px 0 0 var(--header-main);
-}
+        .btn-primary:hover {
+            filter: brightness(90%) !important;
+        }
 
-.btn-primary:hover {
-    filter: brightness(90%) !important;
-}
+        .package-actions .btn-primary {
+            width: 100%;
+        }
 
-.package-actions .btn-primary {
-    width: 100%;
-}
+        .package-card .btn-primary {
+            display: inline-block;
+            margin-top: auto;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
 
-.package-card .btn-primary {
-    display: inline-block;
-    margin-top: auto;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
+        .package-card .btn-primary:hover {
+            filter: brightness(90%);
+        }
 
-.package-card .btn-primary:hover {
-    filter: brightness(90%);
-}
+        #tech .btn-primary {
+            margin: 0 auto;
+        }
 
-#tech .btn-primary {
-    margin: 0 auto;
-}
+        .nav-links-second .btn-secondary {
+            position: relative;
+            overflow: hidden;
+            align-items: flex-start;
+        
+            background-color: var(--main-white);
+            color: var(--text-main);
+            
+            padding: 16px 24px !important;
+            border: 1.8px solid var(--text-main);
+            border-radius: 50px;
+            font-size: var(--fs-p);
+            
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin: 0 !important;
+        }
 
-.nav-links-second .btn-secondary {
-    position: relative;
-    overflow: hidden;
-    align-items: flex-start;
-  
-    background-color: var(--main-white);
-    color: var(--header-main);
-    
-    padding: 16px 24px !important;
-    border: 1.8px solid var(--header-main);
-    border-radius: 50px;
-    font-size: var(--fs-p);
-    
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    margin: 0 !important;
-}
+        .nav-links-second .btn-secondary:hover {
+            box-shadow: 0 5px 0 0 #555;
+            filter: brightness(95%);
+        }
 
-.nav-links-second .btn-secondary:hover {
-    box-shadow: 0 5px 0 0 var(--header-main);
-    filter: brightness(95%);
-}
+        .btn-tertiary {
+            background: transparent;
+            color: var(--header-main);
+            font-size: var(--fs-p);
+            font-family: var(--ff-body);
 
-.btn-tertiary {
-    background: transparent;
-    color: var(--header-main);
-    font-size: var(--fs-p);
-    font-family: var(--ff-body);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-    text-decoration: none;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-    text-align: center;
-    margin-bottom: 50px;
-}
+        .btn-tertiary i {
+            margin-left: 10px;
+        }
 
-.btn-tertiary i {
-    margin-left: 10px;
-}
+        #final .btn-primary {
+            display: flex;
+            max-width: fit-content;
+            margin: 0 auto;
+        }
 
-#final .btn-primary {
-    display: flex;
-    max-width: fit-content;
-    margin: 0 auto;
-}
-
-#mySidebar .btn-primary {
-    width: 90% !important;
-    margin: 0 auto;
-}
-button.togglebtn {
+        #mySidebar .btn-primary {
+            width: 90% !important;
+            margin: 0 auto;
+        }
+        button.togglebtn {
             font-size: var(--fs-p);
             cursor: pointer;
 

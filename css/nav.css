@@ -65,7 +65,7 @@ nav .logo {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--header-main);
+    color: var(--text-main);
 
     font-size: var(--fs-p);
     font-family: var(--ff-body);
@@ -103,7 +103,9 @@ nav .logo {
     cursor: pointer;
 
     background-color: var(--main-white) !important;
+    color: var(--text-main);
     border: 1.8px solid var(--text-main);
+    
     padding: 8px 18px;
     margin: 0 !important;
     position: fixed;
