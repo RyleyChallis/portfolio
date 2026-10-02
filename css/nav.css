@@ -73,14 +73,13 @@ nav .logo {
     border-radius: 50px;
 
     position: relative;
-    transition: all 0.3s ease;
-    line-height: 1 !important;
+    transition: all 0.4s ease;
     display: flex;
-    align-items: center !important;
+    align-items: center;
 }
 
 .nav-links a:not(.btn-primary):hover {
-    background-color: #ececec;
+    background-color: #e7e7e7;
 }
 
 .nav-links-first {

@@ -15,8 +15,8 @@ body.active {
     .nav-links a:hover:not(.btn-primary) {
         background-color: var(--dark-text);
     }
-    .openbtn, .togglebtn {
-        border-color: var(--header-main);
+    .openbtn, .togglebtn, .btn-secondary {
+        border: 1.8px solid rgba(255, 255, 255, 0.05);
     }
     #mySidebar {
         background-color: #1f1f1f;
@@ -56,6 +56,8 @@ body.active {
     }
     .btn-primary {
         background-color: var(--dark-yellow);
+        color: var(--dark-header);
+        border: none;
     }
     .btn-primary:hover {
         filter: brightness(80%);
@@ -110,7 +112,7 @@ section {
     
     --main-white: #faf8f8;
     --off-white: #f5f0f0;
-    --dark-ow: #cccccc;
+    --dark-ow: #d3d3d3;
 
     --header-main: #333;
     --dark-header: #1f1f1f;
