@@ -17,6 +17,9 @@ body.active {
         background-color: var(--dark-text) !important;
         color: var(--main-white);
     }
+    .btn-secondary:hover {
+        filter: none;
+    }
     .nav-links a:hover:not(.btn-primary) {
         background-color: var(--dark-text);
     }

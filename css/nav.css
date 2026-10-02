@@ -47,7 +47,6 @@ nav {
 nav .logo {
     text-decoration: none;
     height: 7vh;
-    padding-right: 1rem;
 }
 
 .nav-links {
@@ -101,12 +100,12 @@ nav .logo {
     font-size: var(--fs-p);
     cursor: pointer;
 
-    background-color: var(--main-white) !important;
+    background-color: var(--main-white);
     color: var(--text-main);
     border: 1.8px solid var(--text-main);
     
     padding: 8px 18px;
-    margin: 0 !important;
+    margin: 0;
     position: fixed;
     right: 20px;
     z-index: 1000;
@@ -114,8 +113,9 @@ nav .logo {
 
     user-select: none;
     transition: all 0.3s ease;
-    display: inline-flex !important;
-    align-items: center !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .openbtn:hover {
