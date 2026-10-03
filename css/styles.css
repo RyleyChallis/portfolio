@@ -71,6 +71,9 @@ body.active {
     #business .package-card {
         background-color: var(--dark-text) !important;
     }
+    .calculator-card {
+        background-color: var(--dark-text) !important;
+    }
 }
 
 * {
@@ -127,6 +130,7 @@ section {
     --fs-h3: clamp(1.6rem, 4vw, 1.8rem);
     --fs-h4: clamp(1.2rem, 3vw, 1.3rem);
     --fs-p: clamp(1rem, 2vw, 1.2rem);
+    --fs-btn: clamp(0.8rem, 2vw, 1rem);
 
     --ff-header: 'Fraunces', serif;
     --ff-header-two: 'Fraunces-Two', serif;

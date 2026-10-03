@@ -1,25 +1,24 @@
 .btn-primary {
     background-color: var(--main-yellow);
-    padding: 16px 24px;
+    color: var(--header-main);
+    padding: 16px 24px !important;
 
-    border: 1.8px solid var(--header-main);
+    border: 1.8px solid #8c7d0c;
     border-radius: 50px;
     text-decoration: none;
 
     font-size: var(--fs-p);
     font-family: var(--ff-body);
-    font-weight: 500;
 
-    display: inline-block;
-    transition: filter 0.3s ease, border 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
-    white-space: nowrap;
-
+    white-space: nowrap !important;
     text-align: center;
+    user-select: none;
 }
 
 nav .btn-primary:hover {
-    box-shadow: 0 5px 0 0 var(--header-main);
+    box-shadow: 0 5px 0 0 #775702;
 }
 
 .btn-primary:hover {
@@ -41,32 +40,42 @@ nav .btn-primary:hover {
     filter: brightness(90%);
 }
 
+#packages .learn-more-btn {
+    width: fit-content;
+    margin: 75px auto 0 auto;
+    user-select: none;
+}
+
+#about .btn-primary {
+    margin: 75px 0;
+}
+
 #process .btn-primary {
-    margin: 50px auto;
+    margin: 27px auto 75px auto;
 }
 
 .nav-links-second .btn-secondary {
     position: relative;
     overflow: hidden;
     align-items: flex-start;
-  
+
     background-color: var(--main-white);
-    color: var(--header-main);
+    color: var(--text-main);
+    user-select: none;
     
-    padding: 16px 24px;
-    border: 1.8px solid var(--header-main);
+    padding: 16px 24px !important;
+    border: 1.8px solid var(--text-main);
     border-radius: 50px;
     font-size: var(--fs-p);
     
     text-decoration: none;
-    font-weight: 500;
     transition: all 0.3s ease;
     margin: 0 !important;
 }
 
 .nav-links-second .btn-secondary:hover {
-    box-shadow: 0 5px 0 0 var(--header-main);
-    filter: brightness(95%);
+    box-shadow: 0 5px 0 0 #555;
+    filter: brightness(95%) !important;
 }
 
 .btn-tertiary {
@@ -78,27 +87,12 @@ nav .btn-primary:hover {
     text-decoration: none;
     transition: all 0.3s ease;
     white-space: nowrap;
+    user-select: none;
 }
 
-.btn-tertiary i {
+.btn-secondary i {
     margin-left: 10px;
 }
-
-#process .container a.btn-primary {
-    margin: 75px 0;
-}
-
-#final a.btn-primary {
-    display: flex;
-    max-width: fit-content;
-    margin: 0 auto;
-}
-
-#mySidebar .btn-primary {
-    width: 90% !important;
-    margin: 0 auto;
-}
-
 button.togglebtn {
     font-size: var(--fs-p);
     cursor: pointer;
@@ -106,16 +100,19 @@ button.togglebtn {
     background-color: var(--main-white);
     border: 1.8px solid var(--text-main);
 
+    width: 60px;
+    height: 60px;
     padding: 8px 8px;
     margin: 0;
-    position: absolute;
+    position: fixed;
 
     right: 20px;
-    bottom: 20px;
+    bottom: 5%;
     z-index: 1000;
     border-radius: 15px;
 
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 }

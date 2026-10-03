@@ -1,94 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quote Engine - Multi-Step</title>
-  <style>
-    * { box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 2rem; background: #f8fafc; color: #0f172a; }
-    .calculator-card { max-width: 500px; margin: 0 auto; background: #ffffff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-    
-    /* Progress Bar */
-    .progress-bar { display: flex; justify-content: space-between; margin-bottom: 2rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 1rem; }
-    .step-indicator { font-size: 0.875rem; font-weight: 600; color: #94a3b8; }
-    .step-indicator.active { color: #0d9488; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Engine - Multi-Step</title>
 
-    /* Step Visibility Logic */
-    .form-step { display: none; }
-    .form-step.active { display: block; }
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .calculator-card {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #e3e3e3;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .progress-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--text-main);
+            padding-bottom: 1rem;
+        }
+        .step-indicator {
+            font-size: var(--fs-p);
+            font-family: var(--ff-header);
+            color: #b8b7b7;
+        }
+        .step-indicator.active {
+            color: var(--text-main);
+        }
+        .form-step {
+            display: none;
+        }
+        .form-step.active {
+            display: block;
+        }
+        .option-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            font-size: clamp(0.8rem, 2vw, 1rem);
+            font-family: var(--ff-body);
+            font-weight: 400;
+        }
+        select,
+        input[type="number"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
 
-    /* Form Layout */
-    .option-group { margin-bottom: 1.5rem; }
-    label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
-    select, input[type="number"] { width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
-    
-    /* Buttons & Summary */
-    .button-group { display: flex; justify-content: space-between; margin-top: 2rem; }
-    button { padding: 0.75rem 1.5rem; border-radius: 6px; border: none; font-weight: 600; cursor: pointer; }
-    .btn-prev { background: #e2e8f0; color: #475569; }
-    .btn-next { background: #0d9488; color: #ffffff; }
-    button:disabled { opacity: 0.5; cursor: not-allowed; }
+        button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .btn-prev {
+            background-color: var(--off-white);
+            color: var(--dark-text);
+        }
+        .btn-next {
+            background: var(--text-main);
+            color: #ffffff;
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .total-box {
+            font-size: var(--fs-h3);
+            font-family: var(--ff-body);
+            font-weight: 600;
 
-    .total-box { font-size: 1.5rem; font-weight: 700; color: #0d9488; margin-top: 1rem; text-align: right; }
-  </style>
+            color: var(--dark-text);
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
+    <div class="calculator-card">
+        <div class="progress-bar">
+            <span class="step-indicator active" id="ind-0">1. Package</span>
+            <span class="step-indicator" id="ind-1">2. Scope</span>
+            <span class="step-indicator" id="ind-2">3. Add-ons</span>
+        </div>
 
-<div class="calculator-card">
-  
-  <!-- Step Indicators -->
-  <div class="progress-bar">
-    <span class="step-indicator active" id="ind-0">1. Package</span>
-    <span class="step-indicator" id="ind-1">2. Scope</span>
-    <span class="step-indicator" id="ind-2">3. Add-ons</span>
-  </div>
+        <form id="quoteForm" onsubmit="event.preventDefault();">
+            <div class="form-step active">
+                <div class="option-group">
+                    <label for="package">Select Base Package:</label>
+                    <select id="package">
+                        <option value="1250">Starter Pack (£1,250)</option>
+                        <option value="2450">Business Suite (£2,450)</option>
+                        <option value="4500">Bespoke Suite (£4,500)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-step">
+                <div class="option-group">
+                    <label for="pages">Number of Extra Pages (£150/ea):</label>
+                    <input type="number" id="pages" value="0" min="0">
+                </div>
+            </div>
+            <div class="form-step">
+                <div class="option-group">
+                    <label>
+                        <input type="checkbox" id="seoAddon" value="350"> Include Local SEO Kit (+£350)
+                    </label>
+                </div>
+            </div>
+            <div class="total-box">
+                Total: <span id="priceDisplay">£1,250</span>
+            </div>
+            <div class="button-group">
+                <button type="button" id="prevBtn" class="btn-prev" disabled>Back</button>
+                <button type="button" id="nextBtn" class="btn-next">Next</button>
+            </div>
 
-  <form id="quoteForm" onsubmit="event.preventDefault();">
-    
-    <!-- STEP 1 -->
-    <div class="form-step active">
-      <div class="option-group">
-        <label for="package">Select Base Package:</label>
-        <select id="package">
-          <option value="1250">Starter Pack (£1,250)</option>
-          <option value="2450">Business Suite (£2,450)</option>
-          <option value="4500">Bespoke Suite (£4,500)</option>
-        </select>
-      </div>
+        </form>
     </div>
 
-    <!-- STEP 2 -->
-    <div class="form-step">
-      <div class="option-group">
-        <label for="pages">Number of Extra Pages (£150/ea):</label>
-        <input type="number" id="pages" value="0" min="0">
-      </div>
-    </div>
-
-    <!-- STEP 3 -->
-    <div class="form-step">
-      <div class="option-group">
-        <label>
-          <input type="checkbox" id="seoAddon" value="350"> Include Local SEO Kit (+£350)
-        </label>
-      </div>
-    </div>
-
-    <!-- Live Total Summary -->
-    <div class="total-box">
-      Total: <span id="priceDisplay">£1,250</span>
-    </div>
-
-    <!-- Navigation Buttons -->
-    <div class="button-group">
-      <button type="button" id="prevBtn" class="btn-prev" disabled>Back</button>
-      <button type="button" id="nextBtn" class="btn-next">Next</button>
-    </div>
-
-  </form>
-</div>
-
-<script src="engine.js"></script>
+    <script src="css/calculator.js"></script>
 </body>
+
 </html>
