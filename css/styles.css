@@ -92,10 +92,23 @@ body.active {
     .calculator-card {
         background-color: var(--dark-text) !important;
     }
+    .moon-icon {
+        display: none;
+    }
+    .sun-icon {
+        display: inline-block;
+    }
 }
 
 * {
     box-sizing: border-box;
+}
+
+.moon-icon {
+  display: inline-block;
+}
+.sun-icon {
+  display: none;
 }
 
 @font-face {

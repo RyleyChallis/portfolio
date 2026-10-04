@@ -248,3 +248,9 @@ button.togglebtn {
     align-items: center;
     justify-content: center;
 }
+
+.moon-icon,
+.sun-icon {
+  width: 22px;
+  height: 22px;
+}
