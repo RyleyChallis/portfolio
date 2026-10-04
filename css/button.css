@@ -10,7 +10,7 @@
     font-size: var(--fs-p);
     font-family: var(--ff-body);
 
-    transition: all 0.3s ease;
+    transition: box-shadow 0.2s ease;
     cursor: pointer;
     white-space: nowrap !important;
     text-align: center;
@@ -32,7 +32,7 @@ nav .btn-primary:hover {
 .package-card .btn-primary {
     display: inline-block;
     margin-top: auto;
-    transition: all 0.3s ease;
+    transition: filter 0.2s ease;
     cursor: pointer;
 }
 
@@ -69,7 +69,7 @@ nav .btn-primary:hover {
     font-size: var(--fs-p);
     
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: box-shadow 0.2s ease, filter 0.2s ease;
     margin: 0 !important;
 }
 
@@ -85,7 +85,7 @@ nav .btn-primary:hover {
     font-family: var(--ff-body);
 
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: 0.2s ease;
     white-space: nowrap;
     user-select: none;
 }
@@ -93,6 +93,7 @@ nav .btn-primary:hover {
 .btn-secondary i {
     margin-left: 10px;
 }
+
 button.togglebtn {
     font-size: var(--fs-p);
     cursor: pointer;
@@ -111,7 +112,7 @@ button.togglebtn {
     z-index: 1000;
     border-radius: 15px;
 
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     display: inline-flex;
     align-items: center;
     justify-content: center;
