@@ -197,3 +197,11 @@
         background-color: #efefef;
     }
 }
+
+@media (hover: none) or (pointer: coarse) {
+    .btn-primary {
+        &:active {
+            transform: scale(1.05);
+        }
+    }
+}
