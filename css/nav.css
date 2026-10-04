@@ -104,8 +104,12 @@ nav .logo {
     color: var(--text-main);
     border: 1.8px solid var(--text-main);
     
-    padding: 8px 18px;
+    width: 50px;
+    height: 50px;
+
+    padding: 6px;
     margin: 0;
+    
     position: fixed;
     right: 20px;
     z-index: 1000;
@@ -219,4 +223,28 @@ nav .logo {
 #mySidebar .btn-primary {
     width: 90%;
     margin: 0 auto;
+}
+
+button.togglebtn {
+    font-size: var(--fs-p);
+    cursor: pointer;
+
+    background-color: var(--main-white);
+    border: 1.8px solid var(--text-main);
+
+    width: 60px;
+    height: 60px;
+    padding: 8px 8px;
+    margin: 0;
+    position: fixed;
+
+    right: 20px;
+    bottom: 5%;
+    z-index: 1000;
+    border-radius: 15px;
+
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
