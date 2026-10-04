@@ -181,10 +181,10 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/query.css" media="screen and (max-width: 1323px)">
 </head>
-<button class="togglebtn" id="toggle-btn" onclick="toggleTheme()">
+<body id="packages-page">
+    <button class="togglebtn" id="toggle-btn" aria-label="Toggle dark mode" onclick="toggleTheme()">
         <i class="fa-solid fa-moon"></i>
     </button>
-<body id="packages-page">
     <div id="sidebarOverlay" onclick="toggleNav(false)"></div>
     <header>
         <div id="mySidebar" class="sidebar">
@@ -206,7 +206,7 @@
         </div>
 
         <nav class="navbar">
-            <button class="openbtn" onclick="toggleNav(true)">&#9776;</button>
+            <button class="openbtn" onclick="toggleNav(true)" aria-label="Open side navigation bar">&#9776;</button>
             <a class="logo" href="/">
                 <h3>RC<span>.</span></h3>
             </a>
