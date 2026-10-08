@@ -6,6 +6,7 @@ html, body {
 
 ::selection {
     background-color: var(--main-yellow);
+    color: var(--dark-header);
 }
 
 body.active {
@@ -19,6 +20,7 @@ body.active {
     .btn-secondary {
         background-color: var(--dark-text) !important;
         color: var(--main-white);
+        box-shadow: 0 4px 0 var(--text-main);
     }
     .btn-secondary:hover {
         filter: none;
@@ -29,7 +31,6 @@ body.active {
     .openbtn, .togglebtn, .btn-secondary {
         border: 1.8px solid rgba(255, 255, 255, 0.05);
     }
-
     #mySidebar {
         background-color: #1f1f1f;
     }
@@ -42,14 +43,14 @@ body.active {
     .togglebtn {
         background-color: var(--dark-text);
     }
-
+    section#stats {
+        background-color: var(--dark-yellow);
+    }
     section:nth-child(odd) {
         background-color: var(--dark-header);
     }
     section:nth-child(even) {
         background-color: var(--dark-text) !important;
-    }
-
     h1, h2, h3, button:not(.faq-card) {
         color: var(--main-white) !important;
     }
@@ -62,7 +63,6 @@ body.active {
     li b {
         color: var(--main-white);
     }
-
     .faq-card {
         border-color: var(--dark-text) !important;
     }
@@ -71,8 +71,7 @@ body.active {
     .faq-question:hover {
         background-color: var(--dark-text) !important;
     }
-
-    #packages .container .package-card, #stats, section:nth-child(odd) {
+    #packages .package-card, section:nth-child(odd):not(#stats) {
         background-color: #1f1f1f !important;
     }
     .btn-primary {
@@ -418,7 +417,7 @@ h3 {
 
 #stats {
     min-height: 20vh;
-    background-color: var(--header-main) !important; /* Important flag must be kept. Stats background defaults to pure white without important flag. */
+    background-color: var(--text-main) !important; /* Important flag must be kept. Stats background defaults to pure white without important flag. */
 
     display: flex;
     flex-direction: column;
