@@ -23,7 +23,6 @@ body.active {
     .btn-secondary {
         background-color: var(--dark-text) !important;
         color: var(--main-white);
-        box-shadow: 0 4px 0 var(--text-main);
     }
     .btn-secondary:hover, 
     .btn-primary:hover {
@@ -42,6 +41,7 @@ body.active {
     .togglebtn,
     .btn-secondary {
         border: 1.8px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 4px 0 var(--text-main);
     }
     #mySidebar {
         background-color: #1f1f1f;
