@@ -4,6 +4,10 @@ html, body {
     overflow-x: hidden;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 ::selection {
     background-color: var(--main-yellow);
     color: var(--dark-header);
@@ -26,7 +30,7 @@ body.active {
     }
     .btn-secondary:hover, 
     .btn-primary:hover {
-        filter: 90%;
+        filter: brightness(90%);
     }
     .btn-primary:hover {
         box-shadow: 0 8px 0 #968f33;
@@ -71,10 +75,13 @@ body.active {
     button:not(.faq-card) {
         color: var(--main-white) !important;
     }
-    .faq-card.active, .faq-card.active .faq-question {
+    .faq-card.active, 
+    .faq-card.active .faq-question {
         background-color: var(--dark-text) !important;
     }
-    p, li, span {
+    p,
+    li,
+    span {
         color: var(--dark-ow) !important;
     }
     li b {

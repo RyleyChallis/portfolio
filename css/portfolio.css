@@ -5,28 +5,58 @@ body {
     overflow-x: hidden;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body.active {
     ::selection {
-        background-color: var(--dark-ow);
+        background-color: var(--dark-yellow);
         color: var(--dark-header);
     }
     .nav-links a:not(.btn-primary, .cta-two) {
         color: #e3e3e3;
     }
+    .btn-primary {
+        background-color: var(--dark-yellow);
+        color: var(--header-main);
+        box-shadow: 0 4px 0 #968f33;
+        border: none;
+    }
     .btn-secondary {
         background-color: var(--dark-text) !important;
         color: var(--main-white);
     }
+    .btn-secondary:hover, 
+    .btn-primary:hover {
+        filter: brightness(90%);
+    }
+    .btn-primary:hover {
+        box-shadow: 0 8px 0 #968f33;
+    }
     .btn-secondary:hover {
-        filter: none;
+        box-shadow: 0 8px 0 var(--text-main);
     }
     .nav-links a:hover:not(.btn-primary) {
         background-color: var(--dark-text);
     }
-    .openbtn, .togglebtn, .btn-secondary {
+    .openbtn,
+    .togglebtn,
+    .btn-secondary {
         border: 1.8px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 4px 0 var(--text-main);
     }
-    .nav-links a:hover:not(.btn-primary) {
+    #mySidebar {
+        background-color: #1f1f1f;
+    }
+    .sidebar-links a {
+        color: var(--main-white);
+    }
+    .sidebar-links a:hover, 
+    button.openbtn {
+        background-color: var(--dark-text) !important;
+    }
+    .togglebtn {
         background-color: var(--dark-text);
     }
     #mySidebar {
@@ -57,20 +87,31 @@ body.active {
         color: var(--main-white);
     }
     .btn-primary {
-        background-color: var(--dark-yellow);
-        color: var(--dark-header);
-        border: none;
+        box-shadow: 0 4px 0 #968f33;
     }
     .btn-primary:hover {
-        filter: brightness(80%);
+        filter: brightness(90%);
     }
     .btn-tertiary {
         color: var(--dark-ow);
+    }
+    .moon-icon {
+        display: none;
+    }
+    .sun-icon {
+        display: inline-block;
     }
 }
 
 * {
     box-sizing: border-box;
+}
+
+.moon-icon {
+  display: inline-block;
+}
+.sun-icon {
+  display: none;
 }
 
 @font-face {
