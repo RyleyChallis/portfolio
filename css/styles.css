@@ -17,18 +17,30 @@ body.active {
     .nav-links a:not(.btn-primary, .cta-two) {
         color: #e3e3e3;
     }
+    .btn-primary {
+        box-shadow: 0 4px 0 #968f33;
+    }
     .btn-secondary {
         background-color: var(--dark-text) !important;
         color: var(--main-white);
         box-shadow: 0 4px 0 var(--text-main);
     }
+    .btn-secondary:hover, 
+    .btn-primary:hover {
+        filter: 90%;
+    }
+    .btn-primary:hover {
+        box-shadow: 0 8px 0 #968f33;
+    }
     .btn-secondary:hover {
-        filter: none;
+        box-shadow: 0 8px 0 var(--text-main);
     }
     .nav-links a:hover:not(.btn-primary) {
         background-color: var(--dark-text);
     }
-    .openbtn, .togglebtn, .btn-secondary {
+    .openbtn,
+    .togglebtn,
+    .btn-secondary {
         border: 1.8px solid rgba(255, 255, 255, 0.05);
     }
     #mySidebar {
@@ -37,7 +49,8 @@ body.active {
     .sidebar-links a {
         color: var(--main-white);
     }
-    .sidebar-links a:hover, button.openbtn {
+    .sidebar-links a:hover, 
+    button.openbtn {
         background-color: var(--dark-text) !important;
     }
     .togglebtn {
@@ -51,7 +64,11 @@ body.active {
     }
     section:nth-child(even) {
         background-color: var(--dark-text) !important;
-    h1, h2, h3, button:not(.faq-card) {
+    }
+    h1, 
+    h2, 
+    h3, 
+    button:not(.faq-card) {
         color: var(--main-white) !important;
     }
     .faq-card.active, .faq-card.active .faq-question {
@@ -785,4 +802,3 @@ footer {
             }
         }
     }
-}
