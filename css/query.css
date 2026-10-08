@@ -143,6 +143,10 @@
 @media (max-width: 526px) {
     #hero {
         padding-bottom: 75px;
+
+        p {
+            max-width: min(92%, 90vw);
+        }
     }
     html body main #about .about-container .about-image img {
         max-height: 200px !important;

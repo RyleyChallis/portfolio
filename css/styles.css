@@ -279,12 +279,38 @@ h3 {
             }
         }
     }
+    .subtitle {
+        margin: 75px auto;
+        max-width: 70%;
+        text-align: center;
+    }
 }
 
-#packages .subtitle {
-    margin: 75px auto;
-    max-width: 70%;
-    text-align: center;
+#calculator {
+    min-height: auto;
+
+    .row-container {
+        align-items: center;
+        gap: 48px;
+
+        .container {
+            text-align: left;
+            align-items: flex-start !important;
+
+            h2 {
+                padding-bottom: 20px;
+                padding-left: 0;
+                margin: 0;
+            }
+            p {
+                max-width: 90%;
+            }
+        }
+
+        iframe {
+            display: block;
+        }
+    }
 }
 
 #final .subtitle {
@@ -329,18 +355,6 @@ h3 {
         font-size: 1rem;
         font-family: var(--ff-body);
         color: var(--text-main);
-    }
-}
-
-#featured {
-    min-height: auto;
-
-    .container {
-        max-width: 90%;
-
-        .featured-image {
-            max-width: 100%;
-        }
     }
 }
 

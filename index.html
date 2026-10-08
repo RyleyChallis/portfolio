@@ -79,7 +79,7 @@
         }
 
         #hero p {
-            max-width: min(82%, 90vw);
+            max-width: min(72%, 90vw);
             text-align: left;
             margin-bottom: 50px;
         }
@@ -87,6 +87,7 @@
     <style> /* button css */
         .btn-primary {
             background-color: var(--main-yellow);
+            box-shadow: 0px 4px 0px var(--header-main);
             color: var(--header-main);
             padding: 16px 24px !important;
 
@@ -97,7 +98,7 @@
             font-size: var(--fs-btn);
             font-family: var(--ff-body);
 
-            transition: all 0.3s ease;
+            transition: box-shadow 0.3s ease, filter 0.3s ease;
             cursor: pointer;
             white-space: nowrap !important;
             text-align: center;
@@ -105,7 +106,7 @@
         }
 
         nav .btn-primary:hover {
-            box-shadow: 0 5px 0 0 #775702;
+            box-shadow: 0 8px 0 var(--header-main);
         }
 
         .btn-primary:hover {
@@ -146,6 +147,7 @@
             overflow: hidden;
             align-items: flex-start;
         
+            box-shadow: 0px 4px 0px var(--header-main);
             background-color: var(--main-white);
             color: var(--text-main);
             user-select: none;
@@ -161,8 +163,7 @@
         }
 
         .nav-links-second .btn-secondary:hover {
-            box-shadow: 0 5px 0 0 #555;
-            filter: brightness(95%) !important;
+            box-shadow: 0 8px 0 var(--header-main);
         }
 
         .btn-tertiary {
@@ -222,7 +223,6 @@
         </div>
 
         <nav class="navbar">
-            <button class="openbtn" onclick="toggleNav(true)" aria-label="Open side navigation bar">&#9776;</button>
             <a class="logo" href="/">
                 <h3>RC<span>.</span></h3>
             </a>
@@ -234,6 +234,7 @@
                 <ul class="nav-links-second">
                     <li><a href="mailto:ryley.challis@outlook.com?subject=General Inquiry - Let's Work Together" class="btn-primary" target="_blank">Start a Conversation</a></li>
                     <li><a class="btn-secondary desktop-only" href="/portfolio">Portfolio</a></li>
+                    <li><button class="openbtn" onclick="toggleNav(true)" aria-label="Open side navigation bar">&#9776;</button></li>
                 </ul>
             </div>
         </nav>
@@ -294,13 +295,20 @@
         </section>
 
         <section id="calculator">
-            <iframe 
-                src="calculator.html" 
-                width="100%" 
-                height="600" 
-                style="border: none; overflow: hidden;"
-                title="Interactive Quote Calculator">
-            </iframe>
+            <div class="row-container">
+                <div class="container">
+                    <h2>Dynamic Intake Architecture</h2>
+                    <p>Unqualified inquiries drain your calendar and slow down your sales pipeline. By embedding an interactive project estimator on your site, you set clear budget expectations upfront, educate prospects on your pricing tiers, and ensure every call you take is with a decision-maker ready to invest. Test-drive the intake calculator tailored to my services to see how it works.</p>
+                </div>
+
+                <iframe 
+                    src="calculator.html" 
+                    width="100%" 
+                    height="500" 
+                    style="border: none; overflow: hidden;"
+                    title="Interactive Quote Calculator">
+                </iframe>
+            </div>
         </section>
 
         <section id="process">

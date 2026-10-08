@@ -1,26 +1,21 @@
 // 1. Read values from inputs (e.g., checkboxes, dropdowns, or number inputs)
-let basePrice = 1250; // Standard base fee
+let basePrice = 2500; // Standard base fee
 let pageCount = 5;    // e.g., input from user
-let costPerPage = 200;
+let costPerPage = 150;
 let hasCustomAnimation = true; // e.g., checkbox checked state
 
 // 2. Do the calculation
 let subtotal = basePrice + (pageCount * costPerPage);
 
-// Add conditional add-ons (if checkbox is true)
 if (hasCustomAnimation) {
   subtotal += 450;
 }
 
-// 3. Apply a percentage tax or fee (e.g., 20% VAT)
 let vatRate = 0.20;
 let totalWithVat = subtotal * (1 + vatRate);
 
-// 4. Round the number cleanly
-// Option A: Round to 2 decimal places (returns a string: "2580.00")
 let formattedPrice = totalWithVat.toFixed(2);
 
-// Option B: Format as currency automatically (£2,580.00)
 let ukCurrencyFormatter = new Intl.NumberFormat('en-GB', {
   style: 'currency',
   currency: 'GBP',
@@ -28,7 +23,7 @@ let ukCurrencyFormatter = new Intl.NumberFormat('en-GB', {
 
 let finalDisplayPrice = ukCurrencyFormatter.format(totalWithVat);
 
-console.log(finalDisplayPrice); // Output: £2,580.00
+console.log(finalDisplayPrice);
 
 // --- DOM REFERENCES ---
 const packageSelect = document.getElementById('package');
