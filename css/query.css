@@ -172,7 +172,7 @@
 }
 
 @media (max-width: 451px) {
-    .nav-links-second {
+    .nav-links-second a {
         display: none;
     }
 }
