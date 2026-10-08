@@ -18,18 +18,20 @@
             align-items: center;
         }
         .calculator-card {
-            max-width: 500px;
+            max-width: 700px;
             width: 100%;
-            background-color: #e9e5e5;
+            background-color: var(--text-main);
+
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: 1.8px solid var(--dark-header);
         }
         .progress-bar {
             display: flex;
             justify-content: space-between;
             margin-bottom: 2rem;
-            border-bottom: 2px solid var(--text-main);
+            border-bottom: 2px solid var(--off-white);
             padding-bottom: 1rem;
         }
         .step-indicator {
@@ -38,7 +40,7 @@
             color: #b8b7b7;
         }
         .step-indicator.active {
-            color: var(--text-main);
+            color: var(--main-white);
         }
         .form-step {
             display: none;
@@ -51,9 +53,10 @@
         }
         label {
             display: block;
-            font-size: clamp(0.8rem, 2vw, 1rem);
+            font-size: var(--fs-p);
             font-family: var(--ff-body);
             font-weight: 400;
+            color: var(--main-white);
         }
         select,
         input[type="number"] {
@@ -80,12 +83,12 @@
             cursor: pointer;
         }
         .btn-prev {
-            background-color: var(--off-white);
+            background-color: var(--dark-ow);
             color: var(--dark-text);
         }
         .btn-next {
-            background: var(--text-main);
-            color: var(--main-white);
+            background: var(--main-white);
+            color: var(--dark-header);
         }
         button:disabled {
             opacity: 0.5;
@@ -96,7 +99,7 @@
             font-family: var(--ff-body);
             font-weight: 600;
 
-            color: var(--dark-text);
+            color: var(--main-white);
             text-align: right;
         }
     </style>
@@ -114,9 +117,9 @@
                 <div class="option-group">
                     <label for="package">Select Base Package:</label>
                     <select id="package">
-                        <option value="1250">Starter Pack (£2,500)</option>
-                        <option value="2450">Business Suite (£5,325)</option>
-                        <option value="4500">Bespoke Suite (£8,250)</option>
+                        <option value="2500">Launch Pad (£2,500)</option>
+                        <option value="5325">Business Suite (£5,325)</option>
+                        <option value="8250">Bespoke Suite (£8,250)</option>
                     </select>
                 </div>
             </div>
@@ -130,6 +133,11 @@
                 <div class="option-group">
                     <label>
                         <input type="checkbox" id="seoAddon" value="350"> Include Local SEO Kit (+£350)
+                    </label>
+                </div>
+                <div class="option-group">
+                    <label>
+                        <input type="checkbox" id="copyAddon" value="650"> Copywriting & Tone-of-Voice Package (+£650)
                     </label>
                 </div>
             </div>

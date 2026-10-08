@@ -291,11 +291,12 @@ h3 {
 
     .row-container {
         align-items: center;
-        gap: 48px;
+        gap: 0;
 
         .container {
             text-align: left;
             align-items: flex-start !important;
+            max-width: 60%;
 
             h2 {
                 padding-bottom: 20px;
