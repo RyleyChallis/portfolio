@@ -63,7 +63,7 @@ body.active {
         background-color: var(--dark-header);
     }
     section:nth-child(even) {
-        background-color: var(--dark-text) !important;
+        background-color: #2a2a2a !important;
     }
     h1, 
     h2, 
@@ -88,7 +88,8 @@ body.active {
     .faq-question:hover {
         background-color: var(--dark-text) !important;
     }
-    #packages .package-card, section:nth-child(odd):not(#stats) {
+    #packages .package-card, 
+    section:nth-child(odd):not(#stats) {
         background-color: #1f1f1f !important;
     }
     .btn-primary {
@@ -99,13 +100,11 @@ body.active {
     .btn-primary:hover {
         filter: brightness(80%);
     }
-    #starter .package-card, #bespoke .package-card {
+    #starter .package-card, 
+    #bespoke .package-card {
         background-color: var(--dark-header);
     }
     #business .package-card {
-        background-color: var(--dark-text) !important;
-    }
-    .calculator-card {
         background-color: var(--dark-text) !important;
     }
     .moon-icon {
