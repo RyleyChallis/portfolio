@@ -60,9 +60,6 @@ body.active {
     .togglebtn {
         background-color: var(--dark-text);
     }
-    section#stats {
-        background-color: var(--dark-yellow);
-    }
     section:nth-child(odd) {
         background-color: var(--dark-header);
     }
@@ -96,7 +93,7 @@ body.active {
         background-color: var(--dark-text) !important;
     }
     #packages .package-card, 
-    section:nth-child(odd):not(#stats) {
+    section:nth-child(odd) {
         background-color: #1f1f1f !important;
     }
     .btn-primary {
@@ -440,7 +437,7 @@ h3 {
 
 #stats {
     min-height: 20vh;
-    background-color: var(--text-main) !important; /* Important flag must be kept. Stats background defaults to pure white without important flag. */
+    background-color: var(--header-main) !important; /* Important flag must be kept. Stats background defaults to pure white without important flag. */
 
     display: flex;
     flex-direction: column;

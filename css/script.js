@@ -156,6 +156,7 @@ form.addEventListener('submit', e => {
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('toggle-btn');
   const icon = toggleBtn ? toggleBtn.querySelector('i') : null;
+  const calculatorCard = document.getElementById('calculator-card');
 
   const currentHour = new Date().getHours();
   const isNightTime = currentHour >= 18 || currentHour < 6;
