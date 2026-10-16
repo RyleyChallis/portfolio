@@ -9,7 +9,7 @@ html {
 }
 
 ::selection {
-    background-color: var(--main-yellow);
+    background-color: var(--dark-ow);
     color: var(--dark-header);
 }
 

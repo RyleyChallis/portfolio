@@ -84,8 +84,11 @@
     .nav-links-second {
         gap: 10px;
     }
-    #about .row-container {
+    #about .row-container, #calculator .row-container {
         flex-direction: column;
+    }
+    #calculator div.row-container .container {
+        max-width: none ;
     }
     .gallery-container {
         display: flex;
