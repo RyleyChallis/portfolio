@@ -47,6 +47,10 @@ body.active {
         border: 1.8px solid rgba(255, 255, 255, 0.05);
         box-shadow: 0 4px 0 var(--text-main);
     }
+    .calculator-card {
+        background-color: #2a2a2a !important;
+        border: 1.8px solid #383838;
+    }
     #mySidebar {
         background-color: #1f1f1f;
     }
@@ -69,7 +73,7 @@ body.active {
     h1, 
     h2, 
     h3, 
-    button:not(.faq-card) {
+    button:not(.faq-card, .btn-next) {
         color: var(--main-white) !important;
     }
     .faq-card.active, 
@@ -78,7 +82,7 @@ body.active {
     }
     p,
     li,
-    span {
+    span:not(.step-indicator) {
         color: var(--dark-ow) !important;
     }
     li b {
@@ -95,6 +99,9 @@ body.active {
     #packages .package-card, 
     section:nth-child(odd) {
         background-color: #1f1f1f !important;
+    }
+    #packages .package-card {
+        border: 1.8px solid #383838;
     }
     .btn-primary {
         background-color: var(--dark-yellow);

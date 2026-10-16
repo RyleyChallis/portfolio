@@ -78,6 +78,10 @@ nextBtn.addEventListener('click', () => {
     updateStepUI();
   } else {
     alert(`Quote Finished! Final Price: ${priceDisplay.textContent}`);
+    currentStep = 0;
+    updateStepUI();
+    document.getElementById('quoteForm').reset();
+    calculateTotal();
   }
 });
 

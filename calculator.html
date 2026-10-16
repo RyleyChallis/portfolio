@@ -41,7 +41,7 @@
             color: #b8b7b7;
         }
         .step-indicator.active {
-            color: var(--main-white);
+            color: var(--dark-yellow);
         }
         .form-step {
             display: none;
@@ -65,10 +65,13 @@
             padding: 0.75rem;
             border: 1px solid var(--dark-ow);
             border-radius: 6px;
-
-
             font-size: var(--fs-p);
             font-family: var(--ff-body);
+
+            option, select {
+                font-family: var(--ff-body);
+                background-color: var(--off-white);
+            }
         }
         .button-group {
             display: flex;
@@ -92,7 +95,7 @@
             color: var(--dark-header);
         }
         button:disabled {
-            opacity: 0.5;
+            opacity: 0.3;
             cursor: not-allowed;
         }
         .total-box {
