@@ -20,7 +20,7 @@
         .calculator-card {
             max-width: 700px;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.25);
+            background-color: var(--header-main);
 
             padding: 2rem;
             border-radius: 12px;
@@ -32,7 +32,7 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 2rem;
-            border-bottom: 2px solid rgba(0, 0, 0, 0.10);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.10);
             padding-bottom: 1rem;
         }
         .step-indicator {
@@ -41,7 +41,7 @@
             color: var(--dark-ow);
         }
         .step-indicator.active {
-            color: var(--main-white);
+            color: var(--main-yellow);
         }
         .form-step {
             display: none;
@@ -57,7 +57,7 @@
             font-size: var(--fs-p);
             font-family: var(--ff-body);
             font-weight: 400;
-            color: var(--text-main);
+            color: var(--main-white);
         }
         select,
         input[type="number"] {
@@ -102,12 +102,12 @@
             font-size: var(--fs-h3);
             font-family: var(--ff-body);
             font-weight: 600;
-            color: var(--text-main);
+            color: var(--dark-ow);
 
             text-align: right;
 
             #priceDisplay {
-                color: var(--dark-header);
+                color: var(--main-white);
             }
         }
     </style>

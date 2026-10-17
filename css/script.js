@@ -137,7 +137,6 @@ form.addEventListener('submit', e => {
             submitBtn.style.backgroundColor = "#28a745";
 
             setTimeout(() => {
-                closePopup();
                 form.reset();
                 
                 submitBtn.innerText = "Send Inquiry";
@@ -148,6 +147,7 @@ form.addEventListener('submit', e => {
         .catch(error => {
             console.error('Error!', error.message);
             submitBtn.innerText = "Try Again";
+            submitBtn.style.backgroundColor = "#b63c3a";
             submitBtn.disabled = false;
         });
     });
