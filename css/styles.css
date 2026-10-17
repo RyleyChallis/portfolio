@@ -82,7 +82,7 @@ body.active {
     }
     p,
     li,
-    span:not(.step-indicator) {
+    span:not(.step-indicator, #priceDisplay) {
         color: var(--dark-ow) !important;
     }
     li b {
