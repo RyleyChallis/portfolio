@@ -83,7 +83,7 @@ nav .logo {
     align-items: center;
 }
 
-.nav-links a:not(.btn-primary):hover {
+.nav-links a:not(.btn-primary, .btn-secondary):hover {
     background-color: #e7e7e7;
 }
 

@@ -97,6 +97,7 @@
             font-family: var(--ff-body);
 
             transition: box-shadow 0.3s ease, filter 0.3s ease;
+
             cursor: pointer;
             white-space: nowrap !important;
             text-align: center;
@@ -109,6 +110,7 @@
 
         .btn-primary:hover {
             filter: brightness(90%);
+            box-shadow: 0 4px 0 var(--header-main);
         }
 
         .package-actions .btn-primary {
@@ -153,11 +155,12 @@
             
             text-decoration: none;
             transition: box-shadow 0.3s ease, filter 0.3s ease;
-            margin: 0 !important;
+            margin: 0;
         }
 
         .nav-links-second .btn-secondary:hover {
             box-shadow: 0 8px 0 var(--header-main);
+            filter: brightness(90%);
         }
 
         .btn-tertiary {
