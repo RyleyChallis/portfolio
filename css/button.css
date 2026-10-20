@@ -1,119 +1,46 @@
 .btn-primary {
-    background-color: var(--main-yellow);
-    color: var(--header-main);
-    padding: 16px 24px !important;
+    background-color: var(--green);
+    color: var(--white);
 
-    border: 1.8px solid #8c7d0c;
-    border-radius: 50px;
+    padding: 16px 24px;
     text-decoration: none;
 
     font-size: var(--fs-p);
     font-family: var(--ff-body);
-
-    transition: box-shadow 0.2s ease;
-    cursor: pointer;
-    white-space: nowrap !important;
-    text-align: center;
-    user-select: none;
-}
-
-nav .btn-primary:hover {
-    box-shadow: 0 5px 0 0 #775702;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    filter: brightness(90%);
+    background-color: var(--black);
 }
 
-.package-actions .btn-primary {
-    width: 100%;
-}
+.btn-secondary {
+    color: var(--black);
+    opacity: 0.75;
 
-.package-card .btn-primary {
-    display: inline-block;
-    margin-top: auto;
-    transition: filter 0.2s ease;
-    cursor: pointer;
-}
-
-.package-card .btn-primary:hover {
-    filter: brightness(90%);
-}
-
-#packages .learn-more-btn {
-    width: fit-content;
-    margin: 75px auto 0 auto;
-    user-select: none;
-}
-
-#about .btn-primary {
-    margin: 75px 0;
-}
-
-#process .btn-primary {
-    margin: 27px auto 75px auto;
-}
-
-.nav-links-second .btn-secondary {
-    position: relative;
-    overflow: hidden;
-    align-items: flex-start;
-
-    background-color: var(--main-white);
-    color: var(--text-main);
-    user-select: none;
-    
-    padding: 16px 24px !important;
-    border: 1.8px solid var(--text-main);
-    border-radius: 50px;
-    font-size: var(--fs-p);
-    
     text-decoration: none;
-    transition: box-shadow 0.2s ease, filter 0.2s ease;
-    margin: 0 !important;
-}
 
-.nav-links-second .btn-secondary:hover {
-    box-shadow: 0 5px 0 0 #555;
-    filter: brightness(95%) !important;
-}
-
-.btn-tertiary {
-    background: transparent;
-    color: var(--header-main);
     font-size: var(--fs-p);
     font-family: var(--ff-body);
-
-    text-decoration: none;
-    transition: 0.2s ease;
-    white-space: nowrap;
-    user-select: none;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
 }
 
 .btn-secondary i {
-    margin-left: 10px;
+    transition: transform 0.2s ease;
 }
 
-button.togglebtn {
-    font-size: var(--fs-p);
-    cursor: pointer;
+.btn-secondary:hover {
+    opacity: 1;
+}
 
-    background-color: var(--main-white);
-    border: 1.8px solid var(--text-main);
+.btn-secondary:hover i {
+    transform: translateX(3px);
+}
 
-    width: 60px;
-    height: 60px;
-    padding: 8px 8px;
-    margin: 0;
-    position: fixed;
-
-    right: 20px;
-    bottom: 5%;
-    z-index: 1000;
-    border-radius: 15px;
-
-    transition: all 0.2s ease;
-    display: inline-flex;
+.hero-actions {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 24px;
 }
