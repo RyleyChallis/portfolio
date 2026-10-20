@@ -1,0 +1,24 @@
+@media (max-width: 1250px) {
+    #packages .row-container {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    #packages .package-card {
+        max-width: none !important;
+    }
+
+    .package-divider {
+        width: 90% !important;
+        height: 1px;
+        align-self: auto;
+        margin: 40px 0;
+    }
+}
+
+@media (max-width: 605px) {
+    .hero-actions {
+        display: flex;
+        flex-direction: column;
+    }
+}

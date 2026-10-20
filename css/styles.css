@@ -119,7 +119,7 @@ ul {
     --bg-two: #ececec;
     --green: #264737;
 
-    --fs-h1: clamp(2.6rem, 6vw, 2.95rem);
+    --fs-h1: clamp(2.2rem, 6vw, 2.95rem);
     --fs-h2: clamp(1.8rem, 4.5vw, 2rem);
     --fs-h3: clamp(1.5rem, 3vw, 1.75rem);
     --fs-p: clamp(1rem, 2vw, 1.125rem);
@@ -176,7 +176,6 @@ ul {
             justify-content: space-between;
             align-items: flex-start;
 
-            max-height: 650px;
             max-width: 450px;
 
             .btn-primary {
@@ -194,4 +193,16 @@ ul {
             margin: 0 50px;
         }
     }
+}
+
+footer {
+    padding: 3rem 0 3rem 0;
+
+    font-size: 0.95rem;
+    font-family: var(--ff-heading);
+    letter-spacing: 5%;
+    
+    color: #777;
+    text-align: center;
+    text-transform: uppercase;
 }
