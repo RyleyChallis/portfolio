@@ -152,7 +152,7 @@ ul {
         }
 
         p {
-            max-width: 75%;
+            max-width: clamp(80%, 85vw, 90%);
 
             a {
                 color: inherit;
