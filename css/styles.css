@@ -165,6 +165,9 @@ ul {
 #packages {
     padding-bottom: 75px;
 
+    .container {
+        max-width: 90%;
+    }
     .row-container {
         align-items: stretch;
     }
