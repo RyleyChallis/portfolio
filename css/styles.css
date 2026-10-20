@@ -40,7 +40,7 @@ section:nth-child(3) {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    max-width: 90%;
+    max-width: none;
     margin: 0 auto;
 
     .row-container {
@@ -139,6 +139,7 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 90%;
 
         gap: 24px;
         text-align: center;
@@ -164,34 +165,30 @@ ul {
 #packages {
     padding-bottom: 75px;
 
-    .container {
-        max-width: 90%;
+    .row-container {
+        align-items: stretch;
+    }
+    .package-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
 
-        .row-container {
-            align-items: stretch;
+        max-width: 450px;
+
+        .btn-primary {
+            margin: auto auto 0 0;
+            font-size: 0.9rem;
+            padding: 0.8rem 1.4rem;
+            text-align: center;
         }
-        .package-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
+    }
 
-            max-width: 450px;
-
-            .btn-primary {
-                margin: auto auto 0 0;
-                font-size: 0.9rem;
-                padding: 0.8rem 1.4rem;
-                text-align: center;
-            }
-        }
-
-        .package-divider {
-            width: 1px;
-            align-self: stretch;
-            background-color: #d1d1d1;
-            margin: 0 50px;
-        }
+    .package-divider {
+        width: 1px;
+        align-self: stretch;
+        background-color: #d1d1d1;
+        margin: 0 50px;
     }
 }
 
