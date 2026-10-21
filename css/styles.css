@@ -170,6 +170,7 @@ ul {
     }
     .row-container {
         align-items: stretch;
+        gap: 48px;
     }
     .package-card {
         display: flex;
